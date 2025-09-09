@@ -1,0 +1,73 @@
+---
+alwaysApply: true
+description: Performance and user experience guidelines for optimal site performance
+---
+
+# Performance & UX Rules
+
+## Core Performance Standards
+
+### Image Optimization
+- All images must be WebP format with fallbacks
+- Hero background videos under 6MB, optimized for web
+- Lazy loading for images below the fold
+- Responsive images with proper srcset attributes
+- Alt text required for all images (accessibility + SEO)
+
+### Loading Performance
+- Core Web Vitals targets: LCP < 2.5s, FID < 100ms, CLS < 0.1
+- Critical CSS inlined for above-the-fold content
+- Non-critical JavaScript deferred or loaded asynchronously
+- Preload important fonts and hero images
+
+### Mobile-First Requirements
+- All layouts must work perfectly on 320px screens
+- Touch targets minimum 44px × 44px
+- Click-to-call phone number (904-671-2686) prominent on mobile
+- Sticky mobile CTA bar with phone number
+- Forms optimized for mobile input (proper keyboard types)
+
+## User Experience Guidelines
+
+### Navigation & Interaction
+- Primary CTA "Get a Free Quote" visible above fold on every page
+- Secondary CTA "Call 904-671-2686" always accessible
+- Breadcrumb navigation on service pages
+- Clear page hierarchy: Home → Services → Individual Service
+- Loading states for all async operations (forms, maps)
+
+### Content Accessibility
+- Reading level: 3rd to 8th grade (use Hemingway Editor to verify)
+- Sentences under 20 words for easy scanning
+- Bullet points and short paragraphs for mobile readability
+- Color contrast minimum WCAG AA compliance
+- Focus indicators on all interactive elements
+
+### Trust & Conversion Elements
+- Trust badges visible: Licensed, Insured, Family-owned, 1-Day Install
+- Social proof near CTAs (testimonials, reviews, years in business)
+- Clear next steps on every page
+- Response time promises: "We respond within 24 hours"
+- Privacy reassurance on forms: "We never sell your information"
+
+## Technical UX Requirements
+
+### Form Experience
+- Maximum 8 visible form fields to reduce friction
+- Progressive disclosure for optional/advanced fields
+- Real-time validation with helpful error messages
+- Success states with clear next steps
+- Contact form auto-fills business hours and response expectations
+
+### Error Handling
+- Graceful fallbacks for all external dependencies
+- User-friendly error messages (no technical jargon)
+- Retry mechanisms for failed API calls
+- Offline-friendly static content caching
+
+### Page Speed Optimization
+- Minimize unused CSS and JavaScript
+- Compress all text-based assets (gzip/brotli)
+- CDN delivery for static assets
+- Service Worker for repeat visitors (optional)
+- Database query optimization for dynamic content

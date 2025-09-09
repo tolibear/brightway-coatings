@@ -1,0 +1,177 @@
+---
+alwaysApply: true
+description: Brand color palette for Brightway Coatings - professional, warm, and trustworthy
+---
+
+# Brightway Coatings Color Palette
+
+## Brand Personality Colors
+*Simple, clean, professional, yet warm and friendly*
+
+### Primary Colors
+
+**Brightway Blue (Primary)**
+- `#1e40af` - Main brand color for headers, primary CTAs
+- `#3b82f6` - Lighter blue for hover states, secondary elements
+- `#60a5fa` - Accent blue for highlights, active states
+- **Usage:** Primary CTAs, main navigation, trust badges, key headlines
+- **Personality:** Professional, trustworthy, established
+
+**Warm Orange (Accent)**
+- `#f97316` - Primary orange for warmth and energy
+- `#fb923c` - Secondary orange for highlights
+- `#fed7aa` - Light orange for backgrounds, subtle highlights
+- **Usage:** Secondary CTAs, call-to-action buttons, family story highlights
+- **Personality:** Friendly, approachable, family-owned warmth
+
+### Neutral Foundation
+
+**Professional Grays**
+- `#111827` - Primary text, main content
+- `#374151` - Secondary text, descriptions
+- `#6b7280` - Muted text, form labels, subtle content
+- `#9ca3af` - Disabled states, placeholder text
+- `#d1d5db` - Borders, dividers, subtle backgrounds
+- `#f3f4f6` - Light backgrounds, cards, sections
+- `#ffffff` - Clean backgrounds, cards, primary surfaces
+
+### Semantic Colors
+
+**Success Green** (for form confirmations, trust elements)
+- `#059669` - Success messages, checkmarks
+- `#d1fae5` - Success background tints
+
+**Warning Orange** (for urgency, limited time offers)
+- `#d97706` - Warning text, urgent CTAs
+- `#fef3c7` - Warning background tints
+
+**Error Red** (for form validation, error states)
+- `#dc2626` - Error text, validation messages
+- `#fee2e2` - Error background tints
+
+## Color Usage Guidelines
+
+### Primary CTA Buttons
+```css
+/* Primary: "Get a Free Quote" */
+background: #1e40af (Brightway Blue)
+hover: #3b82f6
+text: #ffffff
+
+/* Secondary: "Call 904-671-2686" */
+background: #f97316 (Warm Orange)
+hover: #fb923c
+text: #ffffff
+```
+
+### Typography Hierarchy
+- **Main Headlines (H1):** `#111827` (Dark Gray)
+- **Section Headers (H2):** `#1e40af` (Brightway Blue)
+- **Subheadings (H3):** `#374151` (Medium Gray)
+- **Body Text:** `#374151` (Medium Gray)
+- **Captions/Small Text:** `#6b7280` (Light Gray)
+
+### Trust & Credibility Elements
+- **Trust Badges Background:** `#1e40af` (Brightway Blue) with white text
+- **Years of Experience:** `#f97316` (Warm Orange)
+- **Customer Testimonials:** `#374151` text on `#f3f4f6` background
+- **Family-Owned Messaging:** `#f97316` (Warm Orange) highlights
+
+### Service Page Accents
+- **Garage Services:** Primary blue (`#1e40af`)
+- **Patio Services:** Warm orange (`#f97316`) 
+- **Pool Deck Services:** Light blue (`#60a5fa`)
+- **Commercial Services:** Professional gray (`#374151`)
+- **Residential Services:** Warm orange (`#f97316`)
+
+## Implementation Standards
+
+### CSS Custom Properties
+```css
+:root {
+  /* Primary Brand Colors */
+  --color-primary: #1e40af;
+  --color-primary-hover: #3b82f6;
+  --color-primary-light: #60a5fa;
+  
+  /* Warm Accent */
+  --color-accent: #f97316;
+  --color-accent-hover: #fb923c;
+  --color-accent-light: #fed7aa;
+  
+  /* Neutral Scale */
+  --color-gray-900: #111827;
+  --color-gray-700: #374151;
+  --color-gray-500: #6b7280;
+  --color-gray-400: #9ca3af;
+  --color-gray-300: #d1d5db;
+  --color-gray-100: #f3f4f6;
+  --color-white: #ffffff;
+  
+  /* Semantic */
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+}
+```
+
+### Tailwind Configuration
+```javascript
+// tailwind.config.js colors section
+colors: {
+  primary: {
+    DEFAULT: '#1e40af',
+    hover: '#3b82f6',
+    light: '#60a5fa'
+  },
+  accent: {
+    DEFAULT: '#f97316',
+    hover: '#fb923c', 
+    light: '#fed7aa'
+  },
+  gray: {
+    900: '#111827',
+    700: '#374151',
+    500: '#6b7280',
+    400: '#9ca3af',
+    300: '#d1d5db',
+    100: '#f3f4f6'
+  }
+}
+```
+
+## Color Psychology & Brand Alignment
+
+### Professional Trust (Blue)
+- Conveys reliability, expertise, established business
+- Used for main navigation, primary CTAs, trust badges
+- Represents 30+ years of experience and licensing
+
+### Warm Approachability (Orange)
+- Represents family-owned values and personal service
+- Used for secondary CTAs, family story highlights
+- Balances professionalism with friendly accessibility
+
+### Clean Professionalism (Grays)
+- Represents attention to detail and clean job sites
+- Used for body text, backgrounds, subtle elements
+- Conveys meticulous craftsmanship and quality work
+
+### Fresh Reliability (White)
+- Represents clean, fresh surfaces and new installations
+- Used for backgrounds, cards, primary surfaces
+- Conveys the transformation from old to new floors
+
+## Accessibility Standards
+
+### Contrast Requirements
+- All text combinations meet WCAG AA standards (4.5:1 minimum)
+- Primary button text (#ffffff) on primary background (#1e40af) = 8.6:1 ✓
+- Body text (#374151) on white background (#ffffff) = 9.6:1 ✓
+- Secondary text (#6b7280) on white background (#ffffff) = 4.7:1 ✓
+
+### Color-Blind Considerations
+- Never rely on color alone to convey information
+- Use icons, text, or patterns alongside color coding
+- Test with color blindness simulators during development
+- Ensure form validation uses text + color for errors

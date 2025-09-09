@@ -1,0 +1,152 @@
+---
+globs: **/contact/**,**/forms/**,**/*form*.tsx,**/*Form*.tsx
+description: Form optimization and validation rules for lead generation and user experience
+---
+
+# Form Optimization Rules
+
+## Form Design Principles
+
+### Friction Reduction
+- Maximum 8 visible fields to minimize form abandonment
+- Use progressive disclosure for optional/advanced fields
+- Group related fields logically (Contact Info → Project Details)
+- Single column layout for mobile optimization
+- Clear field labels above inputs (not inside)
+
+### Required vs Optional Fields
+**Always Required:**
+- First Name, Last Name (separate fields for personalization)
+- Phone Number (primary contact method)
+- Email Address (backup contact)
+- Service Type (helps route inquiry)
+
+**Optional Fields:**
+- Address/ZIP (helpful for estimates)
+- Square Footage (rough estimates only)
+- Timeline/Urgency
+- Photo uploads
+- Additional comments
+
+### Field Types & Validation
+- Phone input with proper tel keyboard on mobile
+- Email validation with helpful error messages
+- Select dropdowns for service types, not text inputs
+- File upload for project photos (optional, multiple files)
+- Textarea for additional details (placeholder suggestions)
+
+## Validation Standards
+
+### React Hook Form + Zod Implementation
+```typescript
+// Example schema structure
+const contactSchema = z.object({
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  phone: z.string().regex(/^\d{10}$/, "Valid 10-digit phone number required"),
+  email: z.string().email("Valid email address required"),
+  serviceType: z.enum(["garage", "patio", "pool-deck", "commercial", "other"]),
+  zipCode: z.string().optional(),
+  timeline: z.enum(["asap", "1-month", "3-months", "planning"]).optional()
+});
+```
+
+### Error Message Guidelines
+- Use friendly, specific language: "We need your phone number to schedule your free estimate"
+- Show errors immediately after field loses focus
+- Use red color with sufficient contrast for error text
+- Include suggestions when possible: "Email should include @ symbol"
+- No technical error codes visible to users
+
+### Success States
+- Clear confirmation message: "Thanks! We'll call you within 24 hours."
+- Set expectations: "Paul or Tim will personally review your request"
+- Next steps clearly outlined
+- Option to call immediately: "Need faster service? Call 904-671-2686 now"
+
+## User Experience Features
+
+### Loading & Feedback
+- Loading spinner on submit button during API call
+- Disable submit button to prevent double submissions
+- Clear loading text: "Sending your request..."
+- Handle network failures gracefully with retry option
+
+### Mobile Optimization
+- Large touch targets (minimum 44px height)
+- Proper keyboard types:
+  - `tel` for phone numbers
+  - `email` for email addresses
+  - `numeric` for square footage
+- Auto-capitalize first/last names
+- Prevent zoom on iOS form focus
+
+### Accessibility
+- Proper form labels associated with inputs
+- ARIA attributes for screen readers
+- Error announcements for screen readers
+- Logical tab order through form fields
+- High contrast for form validation states
+
+## Business Logic Integration
+
+### Lead Routing & Qualification
+- Capture UTM parameters for marketing attribution
+- Service type determines follow-up workflow
+- ZIP code validation for service area coverage
+- Timeline affects priority scoring
+
+### Data Collection Strategy
+- Collect enough info for qualified estimates
+- Don't ask for info not immediately needed
+- Optional photo upload for better estimates
+- "How did you hear about us?" for marketing ROI
+
+### CRM Integration Preparation
+- Structure data for easy CRM import
+- Include lead source and page visited
+- Timestamp and session information
+- Prepare for email automation triggers
+
+## Form Placement & Context
+
+### Strategic Positioning
+- Primary form above the fold on contact page
+- Shorter quote forms after major benefit sections
+- Exit-intent modal with simplified form (optional)
+- Sticky mobile CTA linking to contact form
+
+### Contextual Messaging
+- Before form: "Get your free estimate in under 2 minutes"
+- During form: Progress indicators for multi-step forms
+- After form: "We typically respond within 4 hours"
+- Privacy assurance: "We never sell your information"
+
+### A/B Testing Considerations
+- Test form length (fewer vs more fields)
+- Button text variations: "Get Quote" vs "Get Free Estimate"
+- Required field combinations
+- Form position on page (sidebar vs full-width)
+
+## Technical Implementation
+
+### API Integration
+- POST to `/api/contact` endpoint
+- Proper error handling and status codes
+- Rate limiting to prevent spam
+- Email notification to business owner
+- Lead storage for follow-up tracking
+
+### Security & Privacy
+- CSRF protection on form submissions
+- Input sanitization for all fields
+- No sensitive data in client-side JavaScript
+- GDPR-compliant data handling
+- Honeypot fields for spam prevention
+
+### Analytics & Tracking
+- Form start and completion events
+- Field-level abandonment tracking
+- Conversion funnel analysis
+- Source attribution for leads
+- ROI measurement for marketing channels

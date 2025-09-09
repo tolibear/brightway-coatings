@@ -1,0 +1,52 @@
+---
+alwaysApply: true
+description: SEO optimization guidelines for Brightway Coatings website
+---
+
+# SEO Optimization Rules
+
+## Page-Level SEO Requirements
+
+### Title Tags & Meta Descriptions
+- Title tags: 50-60 characters, include service + "Jacksonville" or "St. Johns"
+- Meta descriptions: 140-160 characters with clear benefit + CTA
+- Every page needs unique titles and descriptions
+- Example: "Garage Floor Coatings Jacksonville FL | 1-Day Install | Brightway"
+
+### Content Structure
+- H1 must be unique per page and match search intent
+- Include primary keyword in first 100 words
+- Use H2/H3 for sections: Benefits → Process → FAQs → Local Trust
+- Every service page mentions "Jacksonville", "St. Johns", or neighborhoods
+
+### Local SEO Targeting
+**Primary locations to mention:**
+- Jacksonville, St. Johns, St. Augustine, Ponte Vedra, Orange Park
+- Fleming Island, Nocatee, Mandarin, Julington Creek
+
+**Primary keywords per page:**
+- Homepage: "concrete coatings Jacksonville"  
+- Garage: "garage floor coating Jacksonville"
+- Patio: "patio coating Jacksonville"
+- Pool Deck: "pool deck coating Jacksonville"
+- Commercial: "commercial floor coating Jacksonville"
+
+### Technical SEO
+- JSON-LD structured data on every page (LocalBusiness schema)
+- Service schema for each service page
+- FAQPage schema for FAQ sections
+- Clean URLs with hyphens: `/garage-floor-coatings-jacksonville`
+- Internal linking: home → services, services cross-link to each other
+
+### Image SEO
+- All images must have descriptive alt text
+- Include location in alt text: "garage floor coating in Nocatee neighborhood"
+- WebP format for performance
+- Descriptive filenames, not generic numbers
+
+## Content Guidelines
+- Lead with benefits, not features
+- Mention "polyaspartic" benefits over "epoxy" when relevant
+- Include "1-day installation" and "family-owned" messaging
+- Every page ends with a clear CTA
+- Use specific neighborhood names for local relevance

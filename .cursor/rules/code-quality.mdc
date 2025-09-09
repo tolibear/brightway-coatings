@@ -1,0 +1,123 @@
+---
+globs: *.ts,*.tsx,*.js,*.jsx
+description: Code quality standards and best practices for React/Next.js development
+---
+
+# Code Quality Rules
+
+## TypeScript Standards
+
+### Type Safety
+- Zero TypeScript errors before committing any changes
+- Use strict mode TypeScript configuration
+- Prefer interfaces over types for object definitions
+- Use proper return types for all functions
+- Avoid `any` type - use `unknown` or proper typing instead
+
+### Component Architecture
+- All React components must be functional components with hooks
+- Use proper TypeScript props interfaces with JSDoc comments
+- Export components as named exports (not default exports)
+- Component files follow PascalCase naming: `TrustBadges.tsx`
+- One component per file with related types in same file
+
+### Code Organization
+- Use absolute imports with path mapping from src/
+- Group imports: React → Next.js → External libs → Internal components
+- Separate business logic from presentation components
+- Use custom hooks for reusable stateful logic
+
+## React Best Practices
+
+### Performance Optimization
+- Use React.memo() for components with expensive renders
+- Implement proper dependency arrays in useEffect
+- Use useCallback for event handlers passed to child components
+- Lazy load components not needed for initial render
+- Avoid creating objects/functions in render methods
+
+### State Management
+- Use useState for local component state
+- Use useReducer for complex state logic
+- Context API for global state (user preferences, theme)
+- Form state managed with React Hook Form + Zod validation
+
+### Error Handling
+- Implement Error Boundaries for component trees
+- Use proper error states in async operations
+- Provide fallback UI for failed API calls
+- Log errors to monitoring service (production)
+
+## Next.js Specific Rules
+
+### File Structure
+```
+src/
+├── app/                 # App Router pages
+├── components/          # Reusable UI components
+├── lib/                # Utilities and configurations
+├── types/              # TypeScript type definitions
+└── data/               # Static data and constants
+```
+
+### SEO & Performance
+- Use Next.js Image component for all images
+- Implement proper metadata API for each page
+- Use Server Components by default, Client Components when needed
+- Static generation for pages that don't change frequently
+
+### API Routes
+- Use proper HTTP status codes
+- Implement request validation with Zod
+- Return consistent error response format
+- Use proper CORS headers if needed
+
+## Styling Standards
+
+### Tailwind CSS Guidelines
+- Use Tailwind utility classes over custom CSS
+- Create component variants with cva (class-variance-authority)
+- Use CSS variables for brand colors and spacing
+- Implement responsive design with mobile-first approach
+- Use semantic color names: primary, secondary, accent, neutral
+
+### Component Styling
+- Use shadcn/ui components as base, customize as needed
+- Consistent spacing system using Tailwind scale
+- Typography scale defined in tailwind.config.js
+- Dark mode consideration (optional for this project)
+
+## Code Formatting & Linting
+
+### ESLint Configuration
+- Extend @next/eslint-config-next for Next.js rules
+- Use @typescript-eslint for TypeScript-specific rules
+- React Hooks rules enforced
+- Accessibility rules enabled (eslint-plugin-jsx-a11y)
+
+### Prettier Standards
+- 2-space indentation
+- Single quotes for strings
+- Trailing commas in objects and arrays
+- Semicolons required
+- Line length: 80 characters for readability
+
+### Git Workflow
+- Meaningful commit messages following conventional commits
+- No direct commits to main branch
+- Pre-commit hooks run lint and type check
+- All tests must pass before merge
+
+## Documentation Requirements
+
+### Code Documentation
+- JSDoc comments for all exported functions
+- README.md files for complex features
+- Type definitions document expected props/parameters
+- Comment complex business logic
+
+### Component Documentation
+- Prop interfaces with JSDoc descriptions
+- Usage examples in component comments
+- Accessibility notes where relevant
+- Performance considerations documented
