@@ -36,8 +36,6 @@ export default function AboutCallout() {
     and a lifetime warranty.
   `;
   
-  // Count words (for development reference)
-  const wordCount = aboutText.trim().split(/\s+/).length;
 
   return (
     <section className="py-16 bg-gradient-to-b from-slate-50 to-white">
@@ -53,12 +51,6 @@ export default function AboutCallout() {
                 <p className="text-lg text-gray-600 leading-relaxed">
                   {aboutText}
                 </p>
-                {/* Word count for development reference */}
-                {process.env.NODE_ENV === 'development' && (
-                  <span className="text-xs text-gray-400 block mt-2">
-                    Word count: {wordCount}
-                  </span>
-                )}
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">

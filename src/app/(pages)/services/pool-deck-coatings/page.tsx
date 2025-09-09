@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
 import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
+import FlakeColorShowcase from '@/components/sections/FlakeColorShowcase';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
@@ -284,6 +285,11 @@ export default function PoolDeckCoatingsPage() {
           </div>
         </div>
       </section>
+
+      <FlakeColorShowcase 
+        title="Cool-Touch Pool Deck Colors & Textures"
+        description="Select from slip-resistant coatings designed specifically for pool areas. Every option stays cooler underfoot and provides superior safety around water."
+      />
 
       <TrustBadges />
       

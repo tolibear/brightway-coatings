@@ -1,11 +1,14 @@
 import { Button } from '@/components/ui/button';
 import { businessInfo, ctaText } from '@/data/business';
+import ImagePlaceholder from '@/components/ui/image-placeholder';
 
 interface HeroProps {
   title: string;
   subtitle: string;
   description?: string;
   showVideo?: boolean;
+  showImage?: boolean;
+  imageDescription?: string;
   ctaPrimary?: string;
   ctaSecondary?: string;
 }
@@ -15,6 +18,8 @@ export default function Hero({
   subtitle,
   description,
   showVideo = false,
+  showImage = false,
+  imageDescription = 'Professional garage floor coating installation in Jacksonville',
   ctaPrimary = ctaText.primary,
   ctaSecondary = ctaText.secondary,
 }: HeroProps) {
@@ -46,7 +51,20 @@ export default function Hero({
         </div>
       )}
       
-      <div className="relative container mx-auto px-4 py-24 md:py-32">
+      {showImage && (
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40 z-10"></div>
+          <div className="w-full h-full">
+            <ImagePlaceholder 
+              alt={imageDescription}
+              className="w-full h-full rounded-none border-none bg-gray-600"
+              variant="gray"
+            />
+          </div>
+        </div>
+      )}
+      
+      <div className="relative container mx-auto px-4 py-32 md:py-40 lg:py-48">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
             {title}

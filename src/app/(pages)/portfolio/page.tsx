@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
 import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
@@ -7,7 +8,8 @@ import { generateLocalBusinessStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { MapPin, Calendar, Square } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { MapPin, Calendar, Square, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Brightway Coatings Jacksonville FL',
@@ -27,7 +29,9 @@ const portfolioProjects = [
     description: 'Complete garage makeover with decorative flake system in charcoal and silver blend.',
     beforeImage: '/portfolio/garage-before-1.jpg',
     afterImage: '/portfolio/garage-after-1.jpg',
-    features: ['Oil Resistant', '1-Day Install', 'Custom Flakes', 'Lifetime Warranty']
+    features: ['Oil Resistant', '1-Day Install', 'Custom Flakes', 'Lifetime Warranty'],
+    slug: 'ponte-vedra-garage-transformation',
+    hasDetailPage: true
   },
   {
     id: 2,
@@ -39,7 +43,9 @@ const portfolioProjects = [
     description: 'Slip-resistant polyaspartic coating in coastal blue with texture additives for pool safety.',
     beforeImage: '/portfolio/pool-before-1.jpg',
     afterImage: '/portfolio/pool-after-1.jpg',
-    features: ['Slip Resistant', 'UV Stable', 'Cool Surface', 'Chemical Resistant']
+    features: ['Slip Resistant', 'UV Stable', 'Cool Surface', 'Chemical Resistant'],
+    slug: 'jacksonville-luxury-pool-deck',
+    hasDetailPage: true
   },
   {
     id: 3,
@@ -51,7 +57,9 @@ const portfolioProjects = [
     description: 'Stunning outdoor living space transformation with warm earth tone decorative system.',
     beforeImage: '/portfolio/patio-before-1.jpg',
     afterImage: '/portfolio/patio-after-1.jpg',
-    features: ['Weather Resistant', 'Easy Clean', 'Decorative Finish', 'Fast Cure']
+    features: ['Weather Resistant', 'Easy Clean', 'Decorative Finish', 'Fast Cure'],
+    slug: 'st-augustine-patio-makeover',
+    hasDetailPage: false
   },
   {
     id: 4,
@@ -63,7 +71,9 @@ const portfolioProjects = [
     description: 'Heavy-duty industrial flooring system designed for forklift traffic and chemical exposure.',
     beforeImage: '/portfolio/commercial-before-1.jpg',
     afterImage: '/portfolio/commercial-after-1.jpg',
-    features: ['Heavy Duty', 'Chemical Proof', 'High Traffic', 'Low Maintenance']
+    features: ['Heavy Duty', 'Chemical Proof', 'High Traffic', 'Low Maintenance'],
+    slug: 'orange-park-commercial-warehouse',
+    hasDetailPage: false
   },
   {
     id: 5,
@@ -75,7 +85,9 @@ const portfolioProjects = [
     description: 'Seamless driveway extension with matching color and texture to existing concrete.',
     beforeImage: '/portfolio/driveway-before-1.jpg',
     afterImage: '/portfolio/driveway-after-1.jpg',
-    features: ['Color Match', 'Seamless Blend', 'Weather Proof', 'Enhanced Curb Appeal']
+    features: ['Color Match', 'Seamless Blend', 'Weather Proof', 'Enhanced Curb Appeal'],
+    slug: 'fleming-island-driveway-extension',
+    hasDetailPage: false
   },
   {
     id: 6,
@@ -87,7 +99,9 @@ const portfolioProjects = [
     description: 'Three-car garage with premium granite flake blend and high-gloss clear coat finish.',
     beforeImage: '/portfolio/garage-before-2.jpg',
     afterImage: '/portfolio/garage-after-2.jpg',
-    features: ['Granite Flakes', 'High Gloss', 'Stain Proof', 'Mirror Finish']
+    features: ['Granite Flakes', 'High Gloss', 'Stain Proof', 'Mirror Finish'],
+    slug: 'nocatee-multi-car-garage',
+    hasDetailPage: false
   },
   {
     id: 7,
@@ -99,7 +113,9 @@ const portfolioProjects = [
     description: 'Complete pool deck and patio combination with tropical color scheme and texture.',
     beforeImage: '/portfolio/pool-before-2.jpg',
     afterImage: '/portfolio/pool-after-2.jpg',
-    features: ['Tropical Colors', 'Large Area', 'Texture Finish', 'Coordinate Design']
+    features: ['Tropical Colors', 'Large Area', 'Texture Finish', 'Coordinate Design'],
+    slug: 'mandarin-resort-pool-area',
+    hasDetailPage: false
   },
   {
     id: 8,
@@ -111,7 +127,9 @@ const portfolioProjects = [
     description: 'Perfect for entertaining with custom decorative pattern and integrated seating areas.',
     beforeImage: '/portfolio/patio-before-2.jpg',
     afterImage: '/portfolio/patio-after-2.jpg',
-    features: ['Custom Pattern', 'Entertainment Ready', 'Integrated Design', 'Low Maintenance']
+    features: ['Custom Pattern', 'Entertainment Ready', 'Integrated Design', 'Low Maintenance'],
+    slug: 'st-johns-entertainment-patio',
+    hasDetailPage: false
   }
 ];
 
@@ -219,13 +237,27 @@ export default function PortfolioPage() {
                       </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-1">
+                    <div className="flex flex-wrap gap-1 mb-4">
                       {project.features.map((feature, index) => (
                         <Badge key={index} variant="secondary" className="text-xs">
                           {feature}
                         </Badge>
                       ))}
                     </div>
+
+                    {/* View Details Button */}
+                    {project.hasDetailPage ? (
+                      <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
+                        <Link href={`/portfolio/${project.slug}`} className="flex items-center justify-center gap-2">
+                          View Details
+                          <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </Button>
+                    ) : (
+                      <div className="text-center py-2">
+                        <span className="text-xs text-gray-500">Detailed page coming soon</span>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               ))}

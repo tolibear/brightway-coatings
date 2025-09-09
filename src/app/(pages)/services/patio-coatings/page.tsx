@@ -3,6 +3,7 @@ import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
 import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
+import FlakeColorShowcase from '@/components/sections/FlakeColorShowcase';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
@@ -268,6 +269,11 @@ export default function PatioCoatingsPage() {
           </div>
         </div>
       </section>
+
+      <FlakeColorShowcase 
+        title="Beautiful Patio Color & Texture Options"
+        description="Design your perfect outdoor space with slip-resistant textures and stunning color combinations. Every option is engineered for Florida's climate and UV exposure."
+      />
 
       <TrustBadges />
       

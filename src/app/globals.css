@@ -119,4 +119,79 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Enhanced Typography for Better Readability */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+    line-height: 1.1;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+
+  /* Improved paragraph spacing and readability */
+  p {
+    line-height: 1.7;
+    @apply mb-4 text-gray-700;
+  }
+
+  /* Better spacing for text blocks */
+  .prose {
+    line-height: 1.7;
+  }
+
+  .prose p {
+    @apply mb-6 text-gray-700;
+  }
+
+  .prose h2 {
+    @apply mt-12 mb-6 text-gray-900;
+  }
+
+  .prose h3 {
+    @apply mt-8 mb-4 text-gray-900;
+  }
+
+  .prose ul, .prose ol {
+    @apply my-6;
+  }
+
+  .prose li {
+    @apply mb-2;
+    line-height: 1.6;
+  }
+
+  /* Enhanced section spacing */
+  section {
+    @apply py-16 md:py-20;
+  }
+
+  /* Better card content spacing */
+  .card-content-enhanced {
+    @apply space-y-4;
+  }
+
+  .card-content-enhanced h3 {
+    @apply mb-3;
+  }
+
+  .card-content-enhanced p {
+    @apply mb-0;
+    line-height: 1.6;
+  }
+
+  /* Improved button spacing */
+  .button-group {
+    @apply space-y-4 sm:space-y-0 sm:space-x-4;
+  }
 }
