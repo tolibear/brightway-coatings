@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { businessInfo } from '@/data/business';
 
 interface GoogleMapProps {
@@ -25,44 +25,6 @@ export default function GoogleMap({
   const mapRef = useRef<HTMLDivElement>(null);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
   const [mapError, setMapError] = useState<string | null>(null);
-
-  useEffect(() => {
-    // Check if Google Maps is available
-    if (!window.google) {
-      loadGoogleMaps();
-      return;
-    }
-
-    initializeMap();
-  }, [loadGoogleMaps, initializeMap]);
-
-  const loadGoogleMaps = useCallback(() => {
-    // Check if API key is available
-    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-    
-    if (!apiKey) {
-      setMapError('Google Maps API key not configured');
-      return;
-    }
-
-    // Create script element to load Google Maps
-    const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=places`;
-    script.async = true;
-    script.defer = true;
-
-    // Define callback function
-    window.initMap = () => {
-      setIsMapLoaded(true);
-      initializeMap();
-    };
-
-    script.onerror = () => {
-      setMapError('Failed to load Google Maps');
-    };
-
-    document.head.appendChild(script);
-  }, []);
 
   const initializeMap = useCallback(() => {
     if (!mapRef.current || !window.google) return;
@@ -155,7 +117,45 @@ export default function GoogleMap({
       console.error('Error initializing map:', error);
       setMapError('Error loading map');
     }
-  }, []);
+  }, [zoom, showInfoWindow]);
+
+  const loadGoogleMaps = useCallback(() => {
+    // Check if API key is available
+    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+    
+    if (!apiKey) {
+      setMapError('Google Maps API key not configured');
+      return;
+    }
+
+    // Create script element to load Google Maps
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=places`;
+    script.async = true;
+    script.defer = true;
+
+    // Define callback function
+    window.initMap = () => {
+      setIsMapLoaded(true);
+      initializeMap();
+    };
+
+    script.onerror = () => {
+      setMapError('Failed to load Google Maps');
+    };
+
+    document.head.appendChild(script);
+  }, [initializeMap]);
+
+  useEffect(() => {
+    // Check if Google Maps is available
+    if (!window.google) {
+      loadGoogleMaps();
+      return;
+    }
+
+    initializeMap();
+  }, [loadGoogleMaps, initializeMap]);
 
   // Fallback component when map can't load
   const MapFallback = () => (
