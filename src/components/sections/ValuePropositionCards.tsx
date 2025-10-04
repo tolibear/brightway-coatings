@@ -3,29 +3,29 @@ import { Clock, Shield, Award, Users, Zap } from 'lucide-react';
 
 const valueProps = [
   {
-    icon: Clock,
-    title: "One-Day Installation",
-    description: "Most residential floors completed in a single day. No week-long disruption to your life - just beautiful, durable results fast."
-  },
-  {
     icon: Zap,
-    title: "Advanced Epoxy & Polyaspartic Systems", 
-    description: "Our premium epoxy and polyaspartic coating systems outperform traditional garage floor epoxy. UV-resistant, impact-proof, and chemical-resistant for Jacksonville's demanding climate."
+    title: "Advanced Polyurea & Polyaspartic Systems", 
+    description: "Our premium Polyurea and polyaspartic coating systems outperform traditional garage floor epoxy. UV-resistant, impact-proof, and chemical-resistant for Jacksonville's demanding climate."
   },
   {
     icon: Shield,
     title: "Licensed & Fully Insured",
-    description: "Complete peace of mind with proper licensing, full insurance coverage, and lifetime warranty. Your investment is protected every step."
+    description: "Complete peace of mind with proper licensing, full insurance coverage, and 15 year warranty. Your investment is protected every step."
   },
   {
     icon: Users,
     title: "Jacksonville's Most Experienced Team",
-    description: "Father-and-son epoxy specialists with over 30 years of Jacksonville experience. Meticulous attention to detail in every concrete coating and epoxy floor installation."
+    description: "Father-and-son coatings specialists with over 30 years of home service experience, 5 of those in the coatings industry. Meticulous attention to detail in every concrete coating installation."
   },
   {
     icon: Award,
-    title: "Lifetime Durability Promise",
-    description: "Built to last decades, not years. Our polyaspartic system handles heavy traffic, hot tires, and harsh weather without fading or chipping."
+    title: "15 Year Durability Promise",
+    description: "Built to last decades, not years. Our systems handle heavy traffic, hot tires, and harsh weather without fading or chipping."
+  },
+  {
+    icon: Clock,
+    title: "Complete Concrete Coating Solutions",
+    description: "From residential garages to commercial warehouses, we deliver custom coating solutions engineered for your specific needs and environment"
   }
 ];
 
@@ -35,10 +35,10 @@ export default function ValuePropositionCards() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="mb-6 text-gray-900">
-            Why Jacksonville Homeowners Choose Brightway for Epoxy & Concrete Coatings
+            Why Jacksonville Homeowners Choose Brightway for Concrete Coatings
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Five key advantages that make us Jacksonville's most trusted epoxy floor and concrete coating specialists
+            Five key advantages that make us Jacksonville's most trusted concrete coating specialists
           </p>
         </div>
         

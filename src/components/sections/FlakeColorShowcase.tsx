@@ -213,7 +213,7 @@ export default function FlakeColorShowcase({
                   size="lg"
                   asChild
                 >
-                  <a href="tel:904-671-2686">Call 904-671-2686</a>
+                  <a href="tel:904-540-9693">Call 904-540-9693</a>
                 </Button>
               </div>
             </div>

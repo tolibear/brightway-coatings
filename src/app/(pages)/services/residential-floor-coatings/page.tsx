@@ -11,7 +11,7 @@ import { Home, Droplets, Sparkles, TrendingUp, Shield, Clock } from 'lucide-reac
 
 export const metadata: Metadata = {
   title: 'Residential Floor Coatings Jacksonville FL | Brightway',
-  description: 'Complete residential floor coating solutions in Jacksonville FL. Basements, sunrooms, workshops, driveways. Moisture protection, easy maintenance. Family-owned since 1990.',
+  description: 'Complete residential floor coating solutions in Jacksonville FL. Basements, sunrooms, workshops, driveways. Moisture protection, easy maintenance. Family-owned since 2024.',
   keywords: ['residential floor coatings Jacksonville', 'home concrete coating FL', 'basement floor coating', 'sunroom flooring', 'driveway coating'],
 };
 
@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     question: 'How long do residential coatings typically last?',
-    answer: 'With proper maintenance, our residential coatings last decades. We provide lifetime warranties because we\'re confident in the long-term performance of our polyaspartic systems.'
+    answer: 'With proper maintenance, our residential coatings last decades. We provide 15 year warranties because we\'re confident in the long-term performance of our polyaspartic systems.'
   },
   {
     question: 'Do you handle furniture and equipment moving?',
@@ -115,7 +115,7 @@ const faqs = [
 export default function ResidentialFloorCoatingsPage() {
   const serviceData = generateServiceStructuredData(
     'Residential Floor Coatings',
-    'Complete residential floor coating solutions in Jacksonville FL. Basements, sunrooms, workshops, driveways. Moisture protection, easy maintenance. Licensed family business since 1990.'
+    'Complete residential floor coating solutions in Jacksonville FL. Basements, sunrooms, workshops, driveways. Moisture protection, easy maintenance. Licensed family business since 2024.'
   );
   
   const faqData = generateFAQStructuredData(faqs);
@@ -127,10 +127,10 @@ export default function ResidentialFloorCoatingsPage() {
       
       <Hero
         title="Jacksonville Residential Floor Coatings"
-        subtitle="From basement moisture barriers to decorative driveways, we deliver complete residential coating solutions that protect, beautify, and add value to your Jacksonville home."
+        subtitle="Transform your home's concrete surfaces - whether in basements, workshops, or living areas - into durable, stylish spaces built to last. Our industrial-grade coatings lock out humidity and create sleek, easy to clean finishes that stand up to Florida's climate and busy lifestyles."
         ctaPrimary={ctaText.primary}
         
-        ctaSecondary="Call Now: 904-671-2686"
+        ctaSecondary="Call Now: 904-540-9693"
         
       />
 
@@ -152,14 +152,14 @@ export default function ResidentialFloorCoatingsPage() {
               
               <p>
                 Our comprehensive residential coating systems solve these problems permanently. We've helped 
-                thousands of Jacksonville homeowners transform basements into dry, comfortable spaces, turn 
+                Jacksonville homeowners transform basements into dry, comfortable spaces, turn 
                 sunrooms into year-round retreats, and create stunning driveways that boost curb appeal 
                 throughout St. Johns County and beyond.
               </p>
 
               <p>
-                As a family-owned business since 1990, we understand that your home is your biggest investment. 
-                That's why we use only premium polyaspartic systems with lifetime warranty protection. Every 
+                As a family-owned business since 2024, we understand that your home is your biggest investment. 
+                That's why we use only premium polyaspartic systems with 15 year warranty protection. Every 
                 surface gets the same meticulous attention to detail, whether it's a small utility room or 
                 an expansive basement renovation.
               </p>
@@ -251,24 +251,24 @@ export default function ResidentialFloorCoatingsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Protecting Jacksonville Homes Since 1990
+              Protecting Jacksonville Homes Since 2024
             </h2>
             
             <div className="grid md:grid-cols-4 gap-6 mb-8">
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">3,000+</div>
-                <div className="text-gray-600 text-sm">Homes Protected</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">30+</div>
+                <div className="text-gray-600 text-sm">Years Home Service</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
-                <div className="text-gray-600 text-sm">Surface Types</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
+                <div className="text-gray-600 text-sm">Years Coatings</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-purple-600 mb-2">Licensed</div>
                 <div className="text-gray-600 text-sm">& Fully Insured</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">Lifetime</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">15 Year</div>
                 <div className="text-gray-600 text-sm">Warranty</div>
               </div>
             </div>

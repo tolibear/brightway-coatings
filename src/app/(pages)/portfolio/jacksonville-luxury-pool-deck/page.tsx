@@ -62,7 +62,7 @@ export default function JacksonvillePoolDeckProject() {
         showImage={true}
         imageDescription="Beautiful pool deck with coastal blue cool-surface coating"
         ctaPrimary="Get Your Free Quote"
-        ctaSecondary="Call 904-671-2686"
+        ctaSecondary="Call 904-540-9693"
       />
 
       {/* Back to Portfolio */}

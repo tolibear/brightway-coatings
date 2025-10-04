@@ -29,7 +29,7 @@ const portfolioProjects = [
     description: 'Complete garage makeover with decorative flake system in charcoal and silver blend.',
     beforeImage: '/portfolio/garage-before-1.jpg',
     afterImage: '/portfolio/garage-after-1.jpg',
-    features: ['Oil Resistant', '1-Day Install', 'Custom Flakes', 'Lifetime Warranty'],
+    features: ['Oil Resistant', '1-Day Install', 'Custom Flakes', '15 Year Warranty'],
     slug: 'ponte-vedra-garage-transformation',
     hasDetailPage: true
   },
@@ -145,7 +145,7 @@ export default function PortfolioPage() {
         subtitle="Browse our portfolio of completed projects featuring garage floors, pool decks, patios, and commercial installations. See the Brightway difference in every transformation."
         ctaPrimary={ctaText.primary}
         
-        ctaSecondary="Call Now: 904-671-2686"
+        ctaSecondary="Call Now: 904-540-9693"
         
       />
 
@@ -154,7 +154,7 @@ export default function PortfolioPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Over 2,000 Successful Transformations
+              Building Trust, One Floor at a Time
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Each project represents a family who trusted us with their home improvement investment. 
@@ -164,20 +164,20 @@ export default function PortfolioPage() {
             
             <div className="grid md:grid-cols-4 gap-6 mb-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">2000+</div>
-                <div className="text-gray-600">Projects Completed</div>
-              </div>
-              <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
-                <div className="text-gray-600">Years Experience</div>
+                <div className="text-gray-600">Years Home Service</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-gray-600">Years Coatings Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-2">98%</div>
                 <div className="text-gray-600">Customer Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">8</div>
-                <div className="text-gray-600">Counties Served</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">2024</div>
+                <div className="text-gray-600">Founded</div>
               </div>
             </div>
           </div>
@@ -343,7 +343,7 @@ export default function PortfolioPage() {
 
       <CTABand
         title="Your Dream Floor is Just a Click Away"
-        description="Join the thousands of satisfied customers in our portfolio with a custom concrete transformation"
+        description="Join satisfied customers in our portfolio with a custom concrete transformation"
         primaryCTA={ctaText.primary}
         
         secondaryCTA={ctaText.secondary}

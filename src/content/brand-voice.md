@@ -30,18 +30,19 @@
 ## Brand Messaging Framework
 
 ### Value Proposition
-"Family-owned concrete coating experts delivering premium polyaspartic systems with 1-day installation and lifetime durability."
+"Family-owned concrete coating experts delivering premium polyurea and polyaspartic systems with 1-day installation and 15 year durability."
 
 ### Key Differentiators
 1. **Speed**: Most residential jobs completed in one day
 2. **Quality**: Polyaspartic systems stronger than traditional epoxy
 3. **Trust**: Licensed, insured, local family business
 4. **Experience**: 30+ years of father-and-son craftsmanship
-5. **Value**: Lifetime durability at fair pricing
+5. **Value**: 15 year durability with fair pricing
 
 ### Primary CTAs
 - **Primary**: "Get a Free Quote"
-- **Secondary**: "Call 904-671-2686" (click-to-call enabled)
+- **Primary**: "Call 904-540-9693" (Tim - click-to-call enabled)
+- **Secondary**: "Call 904-671-2686" (Paul - click-to-call enabled)
 
 ### Trust Microcopy
 "Family-owned in St. Johns - 30+ years of craftsmanship - 1-Day Install"
@@ -81,7 +82,8 @@ Naturally incorporate: Jacksonville, St. Johns, St. Augustine, Ponte Vedra, Oran
 Ensure consistent Name, Address, Phone across all mentions:
 - **Name**: Brightway Coatings
 - **Address**: 172 Little Bear Run, St Johns, FL 32259  
-- **Phone**: 904-671-2686
+- **Phone (Primary)**: 904-540-9693 (Tim)
+- **Phone (Secondary)**: 904-671-2686 (Paul)
 
 ## Avoid These Common Mistakes
 

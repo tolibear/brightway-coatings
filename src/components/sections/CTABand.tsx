@@ -56,10 +56,10 @@ export default function CTABand({
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm opacity-80">
           <div className="flex items-center gap-1">
             <span className="text-yellow-400">★★★★★</span>
-            <span className="ml-1">5.0 Rating • 500+ Reviews</span>
+            <span className="ml-1">98% Customer Satisfaction</span>
           </div>
           <div className="hidden sm:block w-1 h-1 rounded-full bg-current opacity-50"></div>
-          <div>30+ Years Experience</div>
+          <div>30+ Years Home Service • 5+ Years Coatings</div>
           <div className="hidden sm:block w-1 h-1 rounded-full bg-current opacity-50"></div>
           <div>Same-Day Response Guaranteed</div>
         </div>

@@ -11,8 +11,8 @@ interface WarrantyFeature {
 const warrantyFeatures: WarrantyFeature[] = [
   {
     icon: Shield,
-    title: 'Lifetime Material Warranty',
-    description: 'Premium polyaspartic systems guaranteed against delamination, cracking, and coating failure',
+    title: '15 Year Material Warranty',
+    description: 'Premium polyurea and polyaspartic systems guaranteed against delamination, cracking, and coating failure',
   },
   {
     icon: Award,
@@ -50,11 +50,11 @@ export default function WarrantySection() {
             Industry's Best Warranty Protection
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Lifetime Warranty, Guaranteed Results
+            15 Year Warranty, Guaranteed Results
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Your investment is protected by the most comprehensive warranty in the industry. 
-            We guarantee your satisfaction and stand behind every installation with a lifetime commitment.
+            Your investment is protected by comprehensive warranty coverage. 
+            We guarantee your satisfaction and stand behind every installation with our 15 year commitment.
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export default function WarrantySection() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                What's Covered Under Your Lifetime Warranty
+                What's Covered Under Your 15 Year Warranty
               </h3>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
@@ -157,7 +157,7 @@ export default function WarrantySection() {
                   "We guarantee your complete satisfaction or we make it right - no exceptions."
                 </p>
                 <p className="text-xs text-blue-600 text-center mt-1">
-                  - Paul Brightway, Owner
+                  - Paul & Tim, Brightway Coatings
                 </p>
               </div>
             </div>

@@ -3,7 +3,9 @@ export interface BusinessInfo {
   name: string;
   address: string;
   phone: string;
+  secondaryPhone?: string;
   email: string;
+  secondaryEmail?: string;
   hours: string;
   serviceAreas: string[];
 }

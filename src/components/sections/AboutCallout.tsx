@@ -7,33 +7,34 @@ const aboutStats = [
   {
     icon: Users,
     number: "30+",
-    label: "Years Combined Experience"
+    label: "Years Home Service Experience"
   },
   {
     icon: Home,
-    number: "500+",
-    label: "Local Projects Completed"
+    number: "5+",
+    label: "Years Coatings Experience"
   },
   {
     icon: Award,
-    number: "100%",
-    label: "Customer Satisfaction"
+    number: "98%",
+    label: "Customer Satisfaction Rate"
   },
   {
     icon: Heart,
-    number: "2nd",
-    label: "Generation Family Business"
+    number: "3rd",
+    label: "Generation American Family"
   }
 ];
 
 export default function AboutCallout() {
   const aboutText = `
-    Three decades ago, Paul started Brightway Coatings with a simple promise: treat every customer&rsquo;s home like our own. 
-    Today, alongside his son, we continue that tradition throughout St. Johns County and Jacksonville. We&rsquo;re not the biggest 
-    coating company in Northeast Florida, but we&rsquo;re the most meticulous. Every surface we transform reflects our family 
-    name and reputation built on honest work, premium materials, and old-school craftsmanship. When you choose Brightway, 
-    you&rsquo;re not just getting a floor coating - you&rsquo;re getting neighbors who stand behind their work with a handshake 
-    and a lifetime warranty.
+    Brightway Coatings was founded on a legacy of hard work, family, and a commitment to excellence. Our story began with Paul, 
+    who immigrated from Ukraine at the age of six, started working alongside his father in the family construction services business. 
+    After spending 30+ years honing his skills, Paul went on to start his own construction services company, continuing the tradition 
+    of quality and craftmanship. Now, as a third generation American, Paul has the privilege of working alongside his son, Tim, in the 
+    same way he once worked with his father. Tim grew up in the business, and together they launched Brightway Coatings, focusing on 
+    providing high-quality concrete coatings for residential and commercial customers. At Brightway Coatings, we're more than just a 
+    business, we're a family.
   `;
   
 
@@ -60,8 +61,8 @@ export default function AboutCallout() {
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="tel:9046712686">
-                    Meet the Team: 904-671-2686
+                  <a href="tel:9045409693">
+                    Meet the Team: 904-540-9693
                   </a>
                 </Button>
               </div>

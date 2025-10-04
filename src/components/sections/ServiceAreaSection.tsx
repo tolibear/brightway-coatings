@@ -206,7 +206,7 @@ export default function ServiceAreaSection() {
           </div>
           
           <p className="text-sm text-gray-500">
-            Licensed contractor serving Northeast Florida since 1990 • Free consultations within our service area
+            Licensed contractor serving Northeast Florida since 2024 • Free consultations within our service area
           </p>
         </div>
       </div>

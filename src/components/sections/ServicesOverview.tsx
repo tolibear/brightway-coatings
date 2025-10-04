@@ -8,7 +8,7 @@ const services = [
     icon: Car,
     title: "Garage Floor Coatings",
     slug: "/services/garage-floor-coatings",
-    description: "Transform your garage into a showroom with slip-resistant polyaspartic coatings. Handles hot tires, oil spills, and heavy traffic while adding significant home value with stunning visual appeal.",
+    description: "Transform your garage into a showroom with a slip-resistant coating. Handles hot tires, oil spills, and heavy traffic while adding significant home value with stunning visual appeal.",
     highlight: "Hot Tire Resistant"
   },
   {
@@ -29,7 +29,7 @@ const services = [
     icon: Home,
     title: "Residential Floor Coatings", 
     slug: "/services/residential-floor-coatings",
-    description: "Whole-home concrete transformation for basements, workshops, and living areas. Moisture-barrier protection prevents mold while creating easy-to-clean surfaces perfect for Florida's humid climate and active lifestyles.",
+    description: "Transform your home's concrete surfaces - whether in basements, workshops, or living areas - into durable, stylish spaces built to last. Our industrial-grade coatings lock out humidity and create sleek, easy to clean finishes that stand up to Florida's climate and busy lifestyles.",
     highlight: "Moisture Protection"
   },
   {

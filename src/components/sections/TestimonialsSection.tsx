@@ -7,94 +7,76 @@ import { Star, Quote, MapPin, Calendar, ChevronLeft, ChevronRight } from 'lucide
 
 const testimonials = [
   {
-    name: "Mike & Jennifer Rodriguez",
-    location: "Mandarin, Jacksonville",
+    name: "Joe Phoebus III",
+    location: "Jacksonville",
+    service: "Workshop Floor Coating",
+    date: "June 2025",
+    rating: 5,
+    quote: "Shoutout to Brightway Coatings for the awesome job! Family owned and operated by Paul and his sons. They were very knowledgeable and professional, answering all our questions about the project we were planning. We are very happy with the amazing job they did on our workshop floor! It looks great and we are happy, happy customers!",
+    highlight: "Family Business Excellence"
+  },
+  {
+    name: "Richard Olszewski",
+    location: "Jacksonville",
     service: "Garage Floor Coating",
-    date: "November 2023",
+    date: "June 2025",
     rating: 5,
-    quote: "Our garage went from embarrassing to showcase quality in just one day. Paul and his son were meticulous with every detail - from the prep work to the final coat. Three months later, it still looks perfect despite heavy use. Worth every penny and more.",
-    highlight: "Quality & Transformation"
+    quote: "Paul and Son's knocked it out of the park on my garage. Very respectful and took the time to explain the process. I would highly recommend them for any floor system needs.",
+    highlight: "Professional Service"
   },
   {
-    name: "Sarah Chen",
-    location: "Ponte Vedra Beach",
-    service: "Pool Deck Coating", 
-    date: "October 2023",
+    name: "Jeffrey Blanton",
+    location: "Jacksonville",
+    service: "Garage Floor Coating",
+    date: "May 2025",
     rating: 5,
-    quote: "The professionalism was outstanding from start to finish. They arrived exactly on time, protected all our landscaping, and cleaned up completely. The cool-touch coating is a game-changer in Florida heat - no more burning feet by the pool!",
-    highlight: "Customer Service & Innovation"
+    quote: "Tim and Paul @ Brightway Coatings came out THE SAME DAY because I had just bought the place and needed to move in!!!! Cracked oil covered 2 car garage and adjoining single car garage. I did my research. Same material but a fraction of the Shark coating cost. Got the two top coats for a smidge extra. Definitely worth it. I highly recommend it. Even came out just to double check their work and make sure everything was tip top shape.",
+    highlight: "Same Day Service"
   },
   {
-    name: "Tom Harrison",
-    location: "Fleming Island", 
-    service: "Patio Coating",
-    date: "September 2023",
+    name: "Austin Beard",
+    location: "Jacksonville",
+    service: "Garage Floor Coating",
+    date: "May 2025",
     rating: 5,
-    quote: "I was skeptical about the one-day promise, but they delivered exactly as promised. Started at 8 AM, finished by 5 PM with a gorgeous patio that has transformed our outdoor entertaining. My wife loves the decorative flakes - very elegant look.",
-    highlight: "Timeliness & Results"
+    quote: "Awesome company! Paul and Tim were great to work with. They were friendly, punctual, and hard working. My garage looks brand new!",
+    highlight: "Outstanding Results"
   },
   {
-    name: "David & Maria Santos",
-    location: "St. Augustine",
-    service: "Garage & Workshop Floors",
-    date: "August 2023", 
+    name: "Yelena Burshtynskiy",
+    location: "Jacksonville",
+    service: "Garage Floor Coating",
+    date: "February 2025",
     rating: 5,
-    quote: "Our neighbor recommended Brightway after their amazing results. Now I see why - this is true craftsmanship from a local family business. The floor handles everything I throw at it in my woodworking shop. Built to last by people who care.",
-    highlight: "Local Trust & Durability"
+    quote: "We had an excellent experience with Brightway Coatings Company! Reliable, nice, polite crew who showed up on time, communicated really well, answered all the questions, did an exceptional work and cleaned up after the job. Love the variety of colors that were introduced to us. The suggestions on our garage were excellent by the professionals, the quality of the product really made a difference for the older garage to look amazing! Thank you for going above and beyond with your work!",
+    highlight: "Exceptional Quality"
   },
   {
-    name: "Linda Thompson",
-    location: "Nocatee",
-    service: "Residential Floor Coating",
-    date: "December 2023",
+    name: "Ray Torres",
+    location: "Jacksonville",
+    service: "Garage Floor Coating",
+    date: "March 2025",
     rating: 5,
-    quote: "Two years later and our basement floor still looks brand new. Best investment we made in our home. The moisture protection has been perfect through Florida's humid summers. Paul stands behind his work - that means everything to me.",
-    highlight: "Long-term Value & Warranty"
+    quote: "Paul and Timothy did an amazing job on my garage floor! I am very happy with their work. They were very knowledgeable and detailed. I would highly recommend!!",
+    highlight: "Amazing Results"
   },
   {
-    name: "Robert & Jessica Wilson",
-    location: "Orange Park",
+    name: "Palm Coast Cycle Traders",
+    location: "Palm Coast",
     service: "Commercial Floor Coating",
-    date: "January 2024",
+    date: "April 2025",
     rating: 5,
-    quote: "We needed our auto shop floor redone over a weekend to minimize downtime. Brightway delivered beyond expectations - professional, efficient, and the floor can handle heavy equipment and constant traffic. Excellent communication throughout the project.",
-    highlight: "Commercial Excellence"
+    quote: "Excellent experience with this small family owned company. They are very knowledgeable, very professional and very skilled at floor coatings. I was given a referral to use them to repair a bad job from another flooring company. Brightway did a fantastic job. Very neat and clean. Great communication. On time. Fair prices. I will use them again and so should you!",
+    highlight: "Problem Solving Experts"
   },
   {
-    name: "Marcus Jefferson",
-    location: "Julington Creek",
+    name: "Valentin Borishkevich",
+    location: "Jacksonville",
     service: "Garage Floor Coating",
-    date: "February 2024",
+    date: "April 2025",
     rating: 5,
-    quote: "After getting three quotes, Brightway offered the best value and materials. The polyaspartic system was exactly what I needed - no peeling like my neighbor's epoxy from another company. Fast installation and beautiful results.",
-    highlight: "Superior Materials"
-  },
-  {
-    name: "Amanda & Chris Taylor",
-    location: "St. Johns",
-    service: "Pool Deck Coating",
-    date: "March 2024",
-    rating: 5,
-    quote: "Living where they work makes a difference. Paul lives right here in St. Johns and genuinely cares about his reputation in the community. The slip-resistant coating is perfect for our kids, and it stays cool even in summer heat.",
-    highlight: "Local Expertise"
-  },
-  {
-    name: "Steven Martinez",
-    location: "Downtown Jacksonville",
-    service: "Patio Coating",
-    date: "April 2024",
-    rating: 5,
-    quote: "My historic home's concrete patio was cracking and stained from years of weather. The restoration and coating work was flawless - they matched the aesthetic of my 1920s home perfectly while providing modern protection.",
-    highlight: "Historic Restoration"
-  },
-  {
-    name: "Karen & Bill Anderson",
-    location: "Middleburg",
-    service: "Residential Floor Coating",
-    date: "May 2024",
-    rating: 5,
-    quote: "We've been in this house for 15 years and always hated our concrete floors. This transformation exceeded our expectations - elegant, durable, and maintenance-free. Should have done this years ago!",
-    highlight: "Home Transformation"
+    quote: "Tim and Paul at Brightway Coatings did an amazing job on my garage floor. The flake system they installed looks fantastic and really gives the space a clean, polished look. They were professional, on time, and clearly take pride in their work. We couldn't be happier with the result—highly recommend these guys if you're looking to upgrade your garage floor!",
+    highlight: "Flake System Specialists"
   }
 ];
 
@@ -286,7 +268,7 @@ export default function TestimonialsSection() {
             Join hundreds of satisfied customers throughout Jacksonville, St. Johns, and St. Augustine
           </p>
           <p className="text-sm text-gray-500">
-            Licensed FL Contractor • Fully Insured • Lifetime Warranty • Family-Owned Since 1990
+            Licensed FL Contractor #L24000469209 • Fully Insured • 15 Year Warranty • Family-Owned Since 2024
           </p>
         </div>
       </div>

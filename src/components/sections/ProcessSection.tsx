@@ -16,16 +16,16 @@ const processSteps = [
     icon: Search,
     title: "Surface Preparation", 
     duration: "2-4 hours",
-    description: "Meticulous concrete preparation using diamond grinding and shot blasting. Proper prep work is critical - we never skip steps that ensure long-term adhesion and performance.",
-    highlights: ["Diamond grinding", "Crack repair", "Oil stain removal", "Profile testing"]
+    description: "Meticulous concrete preparation, diamond grinding, Thorough vacuuming, Crack repair. Proper prep work is critical - we never skip steps that ensure long-term adhesion and performance.",
+    highlights: ["Moisture testing", "Diamond grinding", "Thorough vacuum", "Crack repair"]
   },
   {
     step: 3,
     icon: Wrench,
     title: "Professional Installation",
     duration: "4-6 hours", 
-    description: "Application of premium polyaspartic coating system with decorative flakes and topcoat. Our experienced team works efficiently while maintaining the highest quality standards.",
-    highlights: ["Base coat application", "Decorative broadcast", "Seamless finish", "Quality control checks"]
+    description: "Application of premium polyurea coating system with decorative flakes and Polyaspartic topcoat. Our experienced team works efficiently while maintaining the highest quality standards.",
+    highlights: ["Base coat application", "Decorative Flake broadcast", "Polyaspartic top coat", "Seamless finish"]
   },
   {
     step: 4,
@@ -51,11 +51,11 @@ const processFeatures = [
   {
     icon: Users,
     title: "Experienced Team",
-    description: "Father-and-son craftsmen with 30+ years combined experience in concrete coating applications."
+    description: "Father-and-son craftsmen with 5+ years of coatings experience, 30+ years home service expertise."
   },
   {
     icon: Award,
-    title: "Lifetime Warranty",
+    title: "15 Year Warranty",
     description: "Comprehensive warranty coverage backed by premium materials and professional installation."
   }
 ];
@@ -170,7 +170,7 @@ export default function ProcessSection() {
               Schedule Free Consultation
             </Button>
             <Button variant="outline" size="lg">
-              Call 904-671-2686
+              Call 904-540-9693
             </Button>
           </div>
         </div>

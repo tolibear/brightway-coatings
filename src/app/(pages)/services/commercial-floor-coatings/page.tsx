@@ -11,7 +11,7 @@ import { Building, Truck, Zap, DollarSign, Shield, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Commercial Floor Coatings Jacksonville FL | Brightway',
-  description: 'Heavy-duty commercial floor coatings in Jacksonville FL. Warehouses, retail, industrial facilities. High-traffic durability, chemical resistance. Licensed commercial contractor.',
+  description: 'Heavy-duty commercial floor coatings in Jacksonville FL. Warehouses, retail, industrial facilities. High-traffic durability, chemical resistance. Licensed commercial contractor since 2024.',
   keywords: ['commercial floor coatings Jacksonville', 'industrial concrete coating FL', 'warehouse floor coating', 'retail floor coating', 'heavy duty coatings'],
 };
 
@@ -84,7 +84,7 @@ const industries = [
 const faqs = [
   {
     question: 'Can your coatings handle forklift and heavy equipment traffic?',
-    answer: 'Yes. Our commercial-grade polyaspartic systems are specifically engineered for heavy traffic loads. We\'ve coated warehouses with constant forklift traffic, loading docks with pallet jack use, and manufacturing floors with heavy machinery.'
+    answer: 'Yes. Our commercial-grade coating systems are specifically engineered for heavy traffic loads. We\'ve coated warehouses with constant forklift traffic, loading docks with pallet jack use, and manufacturing floors with heavy machinery.'
   },
   {
     question: 'How do you minimize disruption to business operations?',
@@ -115,7 +115,7 @@ const faqs = [
 export default function CommercialFloorCoatingsPage() {
   const serviceData = generateServiceStructuredData(
     'Commercial Floor Coatings',
-    'Heavy-duty commercial floor coatings in Jacksonville FL. Warehouses, retail, industrial facilities. High-traffic durability, chemical resistance. Licensed commercial contractor since 1990.'
+    'Heavy-duty commercial floor coatings in Jacksonville FL. Warehouses, retail, industrial facilities. High-traffic durability, chemical resistance. Licensed commercial contractor since 2024.'
   );
   
   const faqData = generateFAQStructuredData(faqs);
@@ -127,10 +127,10 @@ export default function CommercialFloorCoatingsPage() {
       
       <Hero
         title="Jacksonville Commercial Floor Coatings"
-        subtitle="Professional-grade polyaspartic systems engineered for high-traffic commercial and industrial facilities. Licensed, insured, and trusted by Jacksonville businesses since 1990."
+        subtitle="Professional-grade polyaspartic systems engineered for high-traffic commercial and industrial facilities. Licensed, insured, and trusted by Jacksonville businesses since 2024."
         ctaPrimary={ctaText.primary}
         
-        ctaSecondary="Call Now: 904-671-2686"
+        ctaSecondary="Call Now: 904-540-9693"
         
       />
 

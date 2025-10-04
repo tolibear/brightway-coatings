@@ -13,7 +13,7 @@ import { Shield, Droplet, Thermometer, Footprints, Star, Clock } from 'lucide-re
 
 export const metadata: Metadata = {
   title: 'Pool Deck Coatings Jacksonville FL | Slip Resistant',
-  description: 'Safe, beautiful pool deck coatings in Jacksonville FL. Slip-resistant, chlorine resistant, cool-to-touch surfaces. Licensed pool coating specialists since 1990.',
+  description: 'Safe, beautiful pool deck coatings in Jacksonville FL. Slip-resistant, chlorine resistant, cool-to-touch surfaces. Licensed pool coating specialists since 2024.',
   keywords: ['pool deck coating Jacksonville', 'pool deck resurfacing FL', 'slip resistant pool deck', 'cool deck coating', 'pool surround coating'],
 };
 
@@ -116,7 +116,7 @@ const faqs = [
 export default function PoolDeckCoatingsPage() {
   const serviceData = generateServiceStructuredData(
     'Pool Deck Coatings',
-    'Safe, slip-resistant pool deck coatings in Jacksonville FL. Chlorine resistant, cool-to-touch surfaces, lifetime warranty. Licensed pool coating specialists since 1990.'
+    'Safe, slip-resistant pool deck coatings in Jacksonville FL. Chlorine resistant, cool-to-touch surfaces, 15 year warranty. Licensed pool coating specialists since 2024.'
   );
   
   const faqData = generateFAQStructuredData(faqs);
@@ -128,10 +128,10 @@ export default function PoolDeckCoatingsPage() {
       
       <Hero
         title="Jacksonville Pool Deck Coatings"
-        subtitle="Transform your pool deck into a slip-resistant, cool-to-touch surface that handles Florida's sun and pool chemicals. Professional installation by licensed, insured specialists."
+        subtitle="As Jacksonville's pool coating specialists since 2024, we understand the unique demands pool environments place on surface coatings. Our polyaspartic system is specifically formulated for wet areas, delivering the traction, chemical resistance, and temperature control that make pools safer and more enjoyable."
         ctaPrimary={ctaText.primary}
         
-        ctaSecondary="Call Now: 904-671-2686"
+        ctaSecondary="Call Now: 904-540-9693"
         
       />
 
@@ -159,7 +159,7 @@ export default function PoolDeckCoatingsPage() {
               </p>
 
               <p>
-                As <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">Jacksonville's pool coating specialists since 1990</Link>, we understand the unique demands pool environments 
+                As <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">Jacksonville's pool coating specialists since 2024</Link>, we understand the unique demands pool environments 
                 place on surface coatings. Our polyaspartic system is specifically formulated for wet areas, delivering 
                 the traction, chemical resistance, and temperature control that make pools safer and more enjoyable. Planning 
                 a complete outdoor makeover? Consider our <Link href="/services/patio-coatings" className="text-blue-600 hover:text-blue-800 underline">patio coatings</Link> for 
@@ -228,11 +228,11 @@ export default function PoolDeckCoatingsPage() {
                 <div>
                   <h4 className="font-semibold mb-4">Why Pool Owners Choose Us:</h4>
                   <ul className="space-y-2 text-gray-700">
-                    <li>• 30+ years of pool coating experience</li>
+                    <li>• 5+ years of pool coating experience</li>
                     <li>• Licensed and insured for your protection</li>
                     <li>• Specialized equipment for textured finishes</li>
                     <li>• Understanding of pool chemistry effects</li>
-                    <li>• Lifetime warranty on materials and labor</li>
+                    <li>• 15 year warranty on materials and labor</li>
                     <li>• Fast installation to minimize pool downtime</li>
                   </ul>
                 </div>
@@ -252,16 +252,16 @@ export default function PoolDeckCoatingsPage() {
             
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">800+</div>
-                <div className="text-gray-600">Pool Decks Coated</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-gray-600">Years of Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">Zero</div>
-                <div className="text-gray-600">Safety Incidents</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">Licensed</div>
+                <div className="text-gray-600">& Fully Insured</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                <div className="text-gray-600">Chemical Resistance</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">15 Year</div>
+                <div className="text-gray-600">Warranty</div>
               </div>
             </div>
 
@@ -277,10 +277,11 @@ export default function PoolDeckCoatingsPage() {
 
             <div className="bg-gray-50 rounded-lg p-8">
               <p className="text-lg italic text-gray-700 mb-4">
-                "Pool safety isn't just about the water. The deck surface plays a huge role in preventing accidents. 
-                That's why we never compromise on slip resistance or installation quality."
+                "Why Pool Owners Choose Us: 5+ years of pool coating experience, Licensed and insured for your protection, 
+                Specialized equipment for textured finishes, Understanding of pool chemistry effects, 15 year warranty on materials and labor, 
+                Fast installation to minimize pool downtime"
               </p>
-              <p className="font-semibold">- Paul Brightway, Certified Pool Deck Specialist</p>
+              <p className="font-semibold">- Paul & Tim, Brightway Coatings</p>
             </div>
           </div>
         </div>

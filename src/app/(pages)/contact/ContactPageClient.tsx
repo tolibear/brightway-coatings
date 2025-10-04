@@ -57,7 +57,7 @@ const contactInfo = [
     title: 'Visit Our Office',
     content: businessInfo.address,
     href: `https://maps.google.com/?q=${encodeURIComponent(businessInfo.address)}`,
-    description: 'Family-owned and local since 1990'
+    description: 'Family-owned and local since 2024'
   },
   {
     icon: Clock,
@@ -133,8 +133,8 @@ export default function ContactPageClient() {
     <>
       <Hero
         title="Get Your Free Estimate Today"
-        subtitle="Family-owned experts serving Jacksonville and Northeast Florida since 1990. Quick responses, honest estimates, and quality craftsmanship you can trust."
-        ctaPrimary="Call Now: 904-671-2686"
+        subtitle="Family-owned experts serving Jacksonville and Northeast Florida since 2024. Quick responses, honest estimates, and quality craftsmanship you can trust."
+        ctaPrimary="Call Now: 904-540-9693"
         ctaSecondary="Send Message Below"
       />
 
@@ -496,7 +496,7 @@ export default function ContactPageClient() {
       <CTABand
         title="Ready to Get Started?"
         description="The sooner we connect, the sooner you'll have the beautiful floors you've been dreaming of"
-        primaryCTA="Call Now: 904-671-2686"
+        primaryCTA="Call Now: 904-540-9693"
         secondaryCTA={ctaText.primary}
       />
     </>

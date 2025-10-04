@@ -4,46 +4,46 @@ import { Palette, Sparkles, Eye, ArrowRight } from 'lucide-react';
 
 const flakeOptions = [
   {
-    name: "Classic Gray Blend",
-    description: "Timeless combination of gray and black flakes with subtle white accents",
-    colors: ["#4A5568", "#2D3748", "#E2E8F0"],
-    popularity: "Most Popular",
-    bestFor: "Garages, workshops"
+    name: "Tuxedo",
+    description: "Timeless combination of black flakes with subtle white accents",
+    colors: ["#000000", "#2D3748", "#F7FAFC"],
+    popularity: "Classic",
+    bestFor: "Garages, modern spaces"
   },
   {
-    name: "Coastal Blue Mix", 
+    name: "Tidal Wave", 
     description: "Ocean-inspired blues with white and gray for a coastal Florida feel",
-    colors: ["#3182CE", "#4299E1", "#F7FAFC"],
-    popularity: "Trending",
+    colors: ["#3182CE", "#4A5568", "#F7FAFC"],
+    popularity: "Coastal",
     bestFor: "Pool decks, patios"
   },
   {
-    name: "Sunset Blend",
-    description: "Warm browns and tans with gold accents for rich, natural appeal",
-    colors: ["#D69E2E", "#C05621", "#F7FAFC"],
-    popularity: "Premium",
+    name: "Gravel",
+    description: "Light gray charcoal with white/grey shades for modern industrial look",
+    colors: ["#6B7280", "#4A5568", "#E5E7EB"],
+    popularity: "Modern",
+    bestFor: "Commercial, contemporary homes"
+  },
+  {
+    name: "Cappucino",
+    description: "Warm browns and tans with coffee accents for rich, natural appeal",
+    colors: ["#92400E", "#B45309", "#FEF3C7"],
+    popularity: "Warm",
     bestFor: "Living areas, showrooms"
   },
   {
-    name: "Charcoal Storm",
-    description: "Bold charcoal with metallic silver flakes for modern industrial look",
-    colors: ["#2D3748", "#4A5568", "#CBD5E0"],
-    popularity: "Bold Choice",
-    bestFor: "Commercial, modern homes"
+    name: "Quicksilver",
+    description: "Luxury shades of white and silver with bold yet subtle hints of flat gold",
+    colors: ["#F3F4F6", "#9CA3AF", "#D4AF37"],
+    popularity: "Luxury",
+    bestFor: "Upscale residential, showrooms"
   },
   {
-    name: "Forest Green Mix",
-    description: "Natural greens with earth tones for outdoor-inspired spaces",
-    colors: ["#38A169", "#2F855A", "#F0FDF4"],
-    popularity: "Nature Lover",
-    bestFor: "Patios, garden rooms"
-  },
-  {
-    name: "Desert Sand",
-    description: "Warm beiges and browns mimicking Florida&rsquo;s natural landscape",
-    colors: ["#D69E2E", "#B7791F", "#FFFAF0"],
-    popularity: "Elegant",
-    bestFor: "Residential, upscale areas"
+    name: "Comet",
+    description: "Bold mix of Blue, Gray, Black, and white for a striking commercial look",
+    colors: ["#1E40AF", "#4A5568", "#000000", "#F7FAFC"],
+    popularity: "Bold",
+    bestFor: "Commercial, workshops"
   }
 ];
 
@@ -56,11 +56,11 @@ export default function FlakeGallery() {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Palette className="h-8 w-8 text-blue-600" />
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Custom Colors & Decorative Flakes
+              Decorative Flake Gallery
             </h2>
           </div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Transform your concrete into a work of art with our extensive selection of decorative flakes and custom color combinations. 
+            Transform your concrete into a work of art with our extensive selection of decorative flake combinations. 
             Each blend creates unique patterns and depth that make your floor truly one-of-a-kind.
           </p>
           

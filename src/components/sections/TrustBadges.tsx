@@ -14,13 +14,13 @@ const trustBadges: TrustBadge[] = [
     icon: Shield,
     title: 'Licensed & Insured',
     description: 'Fully certified for your protection',
-    highlight: 'FL License #123456',
+    highlight: 'License #L24000469209',
   },
   {
     icon: Users,
     title: 'Family-Owned',
-    description: '30+ years of craftsmanship',
-    highlight: 'Since 1990',
+    description: '30+ years home service experience, 5+ years in coatings',
+    highlight: 'Since 2024',
   },
   {
     icon: Zap,
@@ -30,8 +30,8 @@ const trustBadges: TrustBadge[] = [
   },
   {
     icon: Award,
-    title: 'Lifetime Warranty',
-    description: 'Premium polyaspartic systems',
+    title: '15 Year Warranty',
+    description: 'Premium polyurea & polyaspartic systems',
     highlight: 'Materials & Labor',
   },
 ];

@@ -17,7 +17,7 @@ import { MapPin, Phone, Clock, Star, CheckCircle, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Jacksonville Concrete Coating & Epoxy Floor Specialists | Brightway',
-  description: 'Premier concrete coating and epoxy floor specialists serving Jacksonville, FL. Garage floors, pool decks, patios. Licensed, insured, family-owned since 1990. Free quotes.',
+  description: 'Premier concrete coating and epoxy floor specialists serving Jacksonville, FL. Garage floors, pool decks, patios. Licensed, insured, family-owned since 2024. Free quotes.',
   keywords: [
     'concrete coating Jacksonville',
     'epoxy floors Jacksonville', 
@@ -36,9 +36,9 @@ const jacksonvilleNeighborhoods = [
 ];
 
 const localStats = {
-  projectsCompleted: '500+',
-  yearsInJacksonville: '15+',
-  averageRating: '4.9',
+  projectsCompleted: '98%',
+  yearsInJacksonville: '5+',
+  averageRating: '15 Yr',
   responseTime: '24 hours'
 };
 
@@ -62,12 +62,12 @@ export default function JacksonvilleCoatingPage() {
       
       <Hero
         title="Jacksonville's Premier Concrete Coating Specialists"
-        subtitle="Transform your garage, patio, and pool deck with professional-grade polyaspartic and epoxy coating systems. Serving Jacksonville and Northeast Florida since 1990."
-        description="Family-owned business delivering superior concrete transformations throughout Jacksonville's neighborhoods. Licensed, insured, and trusted by thousands of local families."
+        subtitle="Transform your garage, patio, and pool deck with professional-grade polyurea, polyaspartic and epoxy coating systems. Serving Jacksonville and Northeast Florida since 2024."
+        description="Family-owned business delivering superior concrete transformations throughout Jacksonville's neighborhoods. Licensed, insured, and trusted by local families."
         showImage={true}
         imageDescription="Beautiful garage floor coating installation in Jacksonville neighborhood"
         ctaPrimary="Get Free Jacksonville Quote"
-        ctaSecondary="Call 904-671-2686"
+        ctaSecondary="Call 904-540-9693"
       />
 
       {/* Jacksonville-Specific Introduction */}
@@ -82,21 +82,21 @@ export default function JacksonvilleCoatingPage() {
                 
                 <div className="prose prose-xl max-w-none mb-8">
                   <p className="leading-relaxed text-gray-700">
-                    For over 15 years, Jacksonville families have trusted Brightway Coatings to transform their concrete surfaces. 
-                    From historic Riverside homes to modern Southside developments, we understand the unique challenges Florida's 
-                    climate presents to concrete floors and outdoor surfaces.
+                    Jacksonville families trust Brightway Coatings to transform their concrete surfaces with 5+ years of specialized coatings experience 
+                    backed by 30+ years of home service expertise. From historic Riverside homes to modern Southside developments, we understand the 
+                    unique challenges Florida's climate presents to concrete floors and outdoor surfaces.
                   </p>
                   
                   <p className="leading-relaxed text-gray-700">
-                    Our polyaspartic and epoxy coating systems are specifically engineered for Jacksonville's hot, humid climate. 
+                    Our polyurea, polyaspartic and epoxy coating systems are specifically engineered for Jacksonville's hot, humid climate. 
                     Unlike traditional epoxy that can fail in Florida heat, our premium coatings resist UV damage, handle thermal 
                     cycling, and provide superior protection against the salt air from our nearby coast.
                   </p>
 
                   <p className="leading-relaxed text-gray-700">
                     Whether you're in downtown Jacksonville's urban core or the suburban neighborhoods of Mandarin and Orange Park, 
-                    we bring the same level of craftsmanship and attention to detail that has made us Northeast Florida's 
-                    most trusted concrete coating company.
+                    we bring the same level of craftsmanship and attention to detail as a father-and-son team committed to quality work and 
+                    lasting relationships with our customers.
                   </p>
                 </div>
 
@@ -195,7 +195,7 @@ export default function JacksonvilleCoatingPage() {
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="w-4 h-4 text-blue-600" />
-                          <span>Family-Owned Since 1990</span>
+                          <span>Family-Owned Since 2024</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <CheckCircle className="w-4 h-4 text-blue-600" />
@@ -214,7 +214,7 @@ export default function JacksonvilleCoatingPage() {
                       
                       <div className="space-y-3 text-sm">
                         <div>
-                          <strong>Phone:</strong> <a href="tel:904-671-2686" className="text-blue-600 hover:text-blue-800">904-671-2686</a>
+                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-blue-600 hover:text-blue-800">904-540-9693</a>
                         </div>
                         <div>
                           <strong>Service Area:</strong> All of Jacksonville & Northeast FL
@@ -302,7 +302,7 @@ export default function JacksonvilleCoatingPage() {
         title="Ready to Transform Your Jacksonville Property?"
         description="Join hundreds of satisfied Jacksonville homeowners with professional concrete coating"
         primaryCTA="Get Free Jacksonville Quote"
-        secondaryCTA="Call 904-671-2686"
+        secondaryCTA="Call 904-540-9693"
       />
     </>
   );

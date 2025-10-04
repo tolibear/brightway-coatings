@@ -28,7 +28,7 @@ const projectDetails = {
   client: 'The Johnson Family',
   challenge: 'Old stained concrete with oil spots and cracks',
   solution: 'Complete surface preparation with polyaspartic system and decorative flakes',
-  features: ['Oil Resistant', '1-Day Install', 'Custom Flakes', 'Lifetime Warranty', 'UV Stable', 'Chemical Resistant'],
+  features: ['Oil Resistant', '1-Day Install', 'Custom Flakes', '15 Year Warranty', 'UV Stable', 'Chemical Resistant'],
   materials: [
     'Polyaspartic primer system',
     'Charcoal and silver decorative flakes',
@@ -61,7 +61,7 @@ export default function PonteVedraGarageProject() {
         showImage={true}
         imageDescription="Before and after comparison of garage floor coating transformation"
         ctaPrimary="Get Your Free Quote"
-        ctaSecondary="Call 904-671-2686"
+        ctaSecondary="Call 904-540-9693"
       />
 
       {/* Back to Portfolio */}

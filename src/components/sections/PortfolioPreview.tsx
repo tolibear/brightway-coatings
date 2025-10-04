@@ -6,42 +6,42 @@ import Link from 'next/link';
 const portfolioProjects = [
   {
     id: 1,
-    title: "Mandarin Garage Transformation",
-    location: "Mandarin, Jacksonville",
-    service: "Garage Floor Coating",
-    completedDate: "December 2023",
+    title: "Green Cove Shop Transformation",
+    location: "Green Cove Springs, Jacksonville",
+    service: "Shop Floor Coating",
+    completedDate: "May 2025",
     rating: 5,
-    beforeImage: "/images/portfolio/garage-before-1.jpg", // Placeholder
-    afterImage: "/images/portfolio/garage-after-1.jpg", // Placeholder
-    description: "Complete garage makeover with decorative flakes and high-gloss polyaspartic finish. Transformed from oil-stained concrete to showroom quality.",
-    testimonialSnippet: "Absolutely stunning results! My garage looks better than most showrooms now.",
-    customerName: "Mike R."
+    beforeImage: "/images/portfolio/shop-before-1.jpg", // Placeholder
+    afterImage: "/images/portfolio/shop-after-1.jpg", // Placeholder
+    description: "Complete shop makeover with decorative flakes and commercial grade polyaspartic finish. Transformed from oil-stained concrete to showroom quality.",
+    testimonialSnippet: "Shoutout to Brightway Coatings for the awesome job! Family owned and operated by Paul and his sons. They were very knowledgeable and professional, answering all our questions about the project we were planning. We are very happy with the amazing job they did on our workshop floor! It looks great and we are happy, happy customers!",
+    customerName: "Joe Phoebus III"
   },
   {
     id: 2,
-    title: "Ponte Vedra Pool Deck Coating",
-    location: "Ponte Vedra Beach",
+    title: "Vilano Beach Pool Deck Coating",
+    location: "Vilano Beach",
     service: "Pool Deck Coating", 
-    completedDate: "November 2023",
+    completedDate: "July 2025",
     rating: 5,
     beforeImage: "/images/portfolio/pool-before-1.jpg", // Placeholder
     afterImage: "/images/portfolio/pool-after-1.jpg", // Placeholder
     description: "Slip-resistant pool deck coating with cool-touch technology. Perfect for Florida heat with elegant stone-look finish.",
     testimonialSnippet: "Safe, beautiful, and stays cool even in summer heat. Exceeded expectations!",
-    customerName: "Sarah & Tom M."
+    customerName: "Ronald Fossati"
   },
   {
     id: 3,
-    title: "St. Augustine Patio Makeover",
-    location: "St. Augustine",
-    service: "Decorative Patio Coating",
-    completedDate: "October 2023", 
+    title: "Deer Creek Garage Makeover",
+    location: "Deer Creek, Jacksonville",
+    service: "Garage Floor Coating",
+    completedDate: "January 2025", 
     rating: 5,
-    beforeImage: "/images/portfolio/patio-before-1.jpg", // Placeholder
-    afterImage: "/images/portfolio/patio-after-1.jpg", // Placeholder
-    description: "Custom color patio coating with decorative broadcast system. UV-stable finish that won't fade in Florida sun.",
-    testimonialSnippet: "Our patio is now the focal point of our backyard. Guests can't stop complimenting it!",
-    customerName: "Jennifer L."
+    beforeImage: "/images/portfolio/garage-before-1.jpg", // Placeholder
+    afterImage: "/images/portfolio/garage-after-1.jpg", // Placeholder
+    description: "Tim and Paul at Brightway Coatings did an amazing job on my garage floor. The flake system they installed looks fantastic and really gives the space a clean, polished look.",
+    testimonialSnippet: "Tim and Paul were professional, on time, and clearly take pride in their work. We couldn't be happier with the result—highly recommend these guys if you're looking to upgrade your garage floor!",
+    customerName: "Valentin Borishkevich"
   }
 ];
 

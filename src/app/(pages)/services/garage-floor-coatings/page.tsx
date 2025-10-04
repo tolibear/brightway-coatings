@@ -13,9 +13,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Shield, Clock, Star, Award, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Garage Floor Epoxy Coating Jacksonville FL | Brightway Coatings',
-  description: 'Jacksonville\'s premier garage floor epoxy and polyaspartic coatings. Superior to traditional epoxy floors. Oil resistant, no hot tire pickup, lifetime warranty. Licensed family business since 1990.',
-  keywords: ['garage floor epoxy Jacksonville', 'epoxy garage floors Jacksonville FL', 'garage floor coating Jacksonville', 'polyaspartic garage floors Jacksonville', 'concrete epoxy Jacksonville', 'garage flooring epoxy FL'],
+  title: 'Garage Floor Concrete Coating Jacksonville FL | Brightway Coatings',
+  description: 'Jacksonville\'s premier garage floor concrete coatings. Premium polyurea and polyaspartic systems. Oil resistant, no hot tire pickup, 15 year warranty. Licensed family business since 2024.',
+  keywords: ['garage floor coating Jacksonville', 'concrete coating Jacksonville', 'garage floor polyurea Jacksonville', 'polyaspartic garage floors Jacksonville', 'garage flooring Jacksonville FL'],
 };
 
 const benefits = [
@@ -36,7 +36,7 @@ const benefits = [
   },
   {
     icon: Award,
-    title: 'Lifetime Warranty',
+    title: '15 Year Warranty',
     description: 'We stand behind our work with comprehensive warranty protection for materials and labor.'
   },
   {
@@ -59,8 +59,8 @@ const processSteps = [
   },
   {
     step: 2,
-    title: 'Prime Coat Application',
-    description: 'A specialized primer penetrates deep into the concrete, creating an unbreakable bond between your floor and coating system.'
+    title: 'Base Coat Application',
+    description: 'A specialized Polyurea base coat penetrates deep into the concrete, creating an unbreakable bond between your floor and coating system.'
   },
   {
     step: 3,
@@ -77,15 +77,15 @@ const processSteps = [
 const faqs = [
   {
     question: 'How long does a garage floor coating installation take?',
-    answer: 'Most residential garages are completed in a single day. We start early morning and typically finish by late afternoon. The floor is ready to walk on immediately and ready for vehicles the next morning.'
+    answer: 'Most residential garages are completed in a single day. We start 8AM and typically finish by 5PM. The floor is ready to walk on in 24 hours and vehicles ready to drive in 72 hours.'
   },
   {
     question: 'Will the coating peel up from hot tires like epoxy does?',
-    answer: 'No. This is one of the biggest advantages of polyaspartic over epoxy. Our polyaspartic system has excellent heat resistance and will not soften or peel from hot tires, even during Florida\'s hottest summer days.'
+    answer: 'No. This is one of the biggest advantages of polyaspartic over polyurea. Our polyaspartic system has excellent heat resistance and will not soften or peel from hot tires, even during Florida\'s hottest summer days.'
   },
   {
     question: 'Can you coat over existing epoxy that\'s failing?',
-    answer: 'In many cases, yes. We evaluate each situation individually. If the existing epoxy is well-bonded, we can often apply our polyaspartic system over it. If it\'s failing or poorly bonded, we\'ll remove it first for the best long-term results.'
+    answer: 'Absolutely not. Every coating we install must be poured on fresh ground concrete. If there are any previous failed epoxy coatings we make sure to professionally remove them and continue with our grind prep.'
   },
   {
     question: 'What happens if I spill oil or other fluids on the floor?',
@@ -101,14 +101,14 @@ const faqs = [
   },
   {
     question: 'What kind of warranty do you provide?',
-    answer: 'We provide a comprehensive lifetime warranty covering materials and labor. This covers delamination, excessive wear, and manufacturing defects. Normal wear from proper use is expected over many years.'
+    answer: 'We provide a comprehensive 15 year warranty covering materials and labor. This covers delamination, cracking and yellowing of coating. Normal wear from proper use is expected over many years.'
   }
 ];
 
 export default function GarageFloorCoatingsPage() {
   const serviceData = generateServiceStructuredData(
     'Garage Floor Coatings',
-    'Premium polyaspartic garage floor coatings in Jacksonville FL. Oil resistant, no hot tire pickup, lifetime warranty. Licensed family business since 1990.'
+    'Premium polyurea and polyaspartic garage floor coatings in Jacksonville FL. Oil resistant, no hot tire pickup, 15 year warranty. Licensed family business since 2024.'
   );
   
   const faqData = generateFAQStructuredData(faqs);
@@ -119,12 +119,12 @@ export default function GarageFloorCoatingsPage() {
       <StructuredData data={faqData} />
       
       <Hero
-        title="Jacksonville Garage Floor Epoxy & Coating Specialists"
-        subtitle="Jacksonville's family-owned garage floor epoxy experts delivering premium polyaspartic and epoxy systems since 1990. Licensed, insured, and trusted by thousands of Jacksonville homeowners for superior epoxy floor installations."
+        title="Jacksonville garage concrete coating specialists"
+        subtitle="Jacksonville's family owned garage floor coating experts delivering premium polyurea and polyaspartic systems since 2020. Licensed, insured, and trusted by Jacksonville homeowners for superior coating installation."
         showImage={true}
-        imageDescription="Beautiful garage floor epoxy coating with decorative flakes in Jacksonville home"
+        imageDescription="Beautiful garage floor polyurea coating with decorative flakes in Jacksonville home"
         ctaPrimary={ctaText.primary}
-        ctaSecondary="Call Now: 904-671-2686"
+        ctaSecondary="Call Now: 904-540-9693"
       />
 
       {/* Main Content Section */}
@@ -133,7 +133,7 @@ export default function GarageFloorCoatingsPage() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="mb-8 text-gray-900">
-                Why Jacksonville Homeowners Choose Our Advanced Epoxy & Polyaspartic Systems
+                Why Jacksonville Homeowners Choose Our Advanced Polyurea and Polyaspartic Systems
               </h2>
             </div>
             
@@ -141,13 +141,13 @@ export default function GarageFloorCoatingsPage() {
               <div className="grid md:grid-cols-1 gap-8 text-lg">
                 <p className="leading-relaxed">
                   Your Jacksonville garage floor takes a beating from Florida's harsh conditions. Hot sun, oil spills, chemical exposure, and constant traffic 
-                  demand an epoxy coating system that can handle it all. Traditional garage floor epoxy looks good initially but fails when 
+                  demand a durable poly concrete coating system that can handle it all. Traditional garage floor epoxy looks good initially but fails when 
                   you need it most - peeling from hot tires, yellowing under Jacksonville's intense UV exposure, and staining from automotive fluids.
                 </p>
                 
                 <p className="leading-relaxed">
-                  Our advanced epoxy and polyaspartic garage floor systems solve these problems permanently. Engineered specifically for Jacksonville's harsh 
-                  climate, these premium epoxy coatings deliver unmatched durability, chemical resistance, and visual appeal that 
+                  Our advanced Polyurea and polyaspartic garage floor systems solve these problems permanently. Engineered specifically for Jacksonville's harsh 
+                  climate, these premium concrete coatings deliver unmatched durability, chemical resistance, and visual appeal that 
                   lasts decades, not years - far superior to basic garage epoxy options.
                 </p>
 
@@ -243,7 +243,7 @@ export default function GarageFloorCoatingsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Trusted by St. Johns County Families Since 1990
+              Trusted by St. Johns County Families Since 2024
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -252,12 +252,12 @@ export default function GarageFloorCoatingsPage() {
                 <div className="text-gray-600">Years of Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">2000+</div>
-                <div className="text-gray-600">Satisfied Customers</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-gray-600">Years Coatings Experience</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                <div className="text-gray-600">Lifetime Warranty</div>
+                <div className="text-gray-600">15 Year Warranty</div>
               </div>
             </div>
 

@@ -17,7 +17,7 @@ import { MapPin, Phone, Clock, Star, CheckCircle, Users, Home } from 'lucide-rea
 
 export const metadata: Metadata = {
   title: 'St. Johns Concrete Coating & Epoxy Floor Company | Brightway Local',
-  description: 'Local St. Johns concrete coating specialists. Garage epoxy floors, pool decks, patios. Family-owned & operated right here in St. Johns, FL since 1990. Free estimates.',
+  description: 'Local St. Johns concrete coating specialists. Garage epoxy floors, pool decks, patios. Family-owned & operated right here in St. Johns, FL since 2024. Free estimates.',
   keywords: [
     'concrete coating St Johns FL',
     'epoxy floors St Johns',
@@ -36,9 +36,9 @@ const stJohnsNeighborhoods = [
 ];
 
 const localStats = {
-  projectsCompleted: '800+',
-  yearsInStJohns: '30+',
-  averageRating: '5.0',
+  projectsCompleted: '98%',
+  yearsInStJohns: '5+',
+  averageRating: '15 Yr',
   responseTime: 'Same day'
 };
 
@@ -49,12 +49,12 @@ export default function StJohnsCoatingPage() {
       
       <Hero
         title="St. Johns' Own Concrete Coating Experts"
-        subtitle="Your local neighbors delivering premium polyaspartic and epoxy coating solutions. Based right here in St. Johns County, serving our community since 1990."
+        subtitle="Your local neighbors delivering premium polyurea, polyaspartic and epoxy coating solutions. Based right here in St. Johns County, serving our community since 2024."
         description="When you choose Brightway Coatings, you're supporting a local St. Johns family business that lives and works in your community. We understand your needs because we share them."
         showImage={true}
         imageDescription="Local St. Johns concrete coating project with beautiful results"
         ctaPrimary="Get Free Local Quote"
-        ctaSecondary="Call 904-671-2686"
+        ctaSecondary="Call 904-540-9693"
       />
 
       {/* Local Business Emphasis */}
@@ -246,7 +246,7 @@ export default function StJohnsCoatingPage() {
                           St Johns, FL 32259
                         </div>
                         <div>
-                          <strong>Phone:</strong> <a href="tel:904-671-2686" className="text-blue-600 hover:text-blue-800">904-671-2686</a>
+                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-blue-600 hover:text-blue-800">904-540-9693</a>
                         </div>
                         <div className="flex items-center gap-2">
                           <Clock className="w-4 h-4 text-gray-500" />
@@ -306,7 +306,7 @@ export default function StJohnsCoatingPage() {
         title="Support Your Local St. Johns Business"
         description="Choose your neighbors for quality concrete coating with guaranteed local support"
         primaryCTA="Get Free Local Quote"
-        secondaryCTA="Call 904-671-2686"
+        secondaryCTA="Call 904-540-9693"
       />
     </>
   );

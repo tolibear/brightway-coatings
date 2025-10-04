@@ -37,10 +37,10 @@ const ponteVedraAreas = [
 ];
 
 const localStats = {
-  projectsCompleted: '200+',
-  yearsInPonteVedra: '15+',
-  averageRating: '5.0',
-  avgHomeValue: '$800K+'
+  projectsCompleted: '98%',
+  yearsInPonteVedra: '5+',
+  averageRating: '15 Yr',
+  avgHomeValue: 'Licensed'
 };
 
 export default function PonteVedraCoatingPage() {
@@ -55,7 +55,7 @@ export default function PonteVedraCoatingPage() {
         showImage={true}
         imageDescription="Luxury garage floor coating in Ponte Vedra Beach estate"
         ctaPrimary="Get Premium Quote"
-        ctaSecondary="Call 904-671-2686"
+        ctaSecondary="Call 904-540-9693"
       />
 
       {/* Coastal Expertise Highlight */}
@@ -257,7 +257,7 @@ export default function PonteVedraCoatingPage() {
                       
                       <div className="space-y-3 text-sm">
                         <div>
-                          <strong>Phone:</strong> <a href="tel:904-671-2686" className="text-blue-600 hover:text-blue-800">904-671-2686</a>
+                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-blue-600 hover:text-blue-800">904-540-9693</a>
                         </div>
                         <div>
                           <strong>Service Area:</strong> All Ponte Vedra communities
@@ -320,7 +320,7 @@ export default function PonteVedraCoatingPage() {
         title="Elevate Your Ponte Vedra Property"
         description="Experience the premium service and unmatched quality that Ponte Vedra's elite properties deserve"
         primaryCTA="Request Premium Consultation"
-        secondaryCTA="Call 904-671-2686"
+        secondaryCTA="Call 904-540-9693"
       />
     </>
   );

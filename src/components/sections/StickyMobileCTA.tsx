@@ -39,7 +39,7 @@ export default function StickyMobileCTA() {
         {/* Trust text */}
         <div className="bg-blue-50 px-4 py-2 text-center">
           <p className="text-xs text-blue-700 font-medium">
-            Licensed • Family-Owned Since 1990 • Same Day Response
+            Licensed • Family-Owned Since 2024 • Same Day Response
           </p>
           <button
             onClick={handleDismiss}

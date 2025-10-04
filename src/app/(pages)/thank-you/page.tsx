@@ -15,7 +15,7 @@ const nextSteps = [
   {
     icon: Clock,
     title: 'Response Within 24 Hours',
-    description: 'Paul or his team will contact you within one business day to discuss your project and schedule a free on-site consultation.',
+    description: 'Tim or Paul will contact you within one business day to discuss your project and schedule a free on-site consultation.',
     timeline: 'Within 24 hours',
   },
   {
@@ -136,7 +136,7 @@ export default function ThankYouPage() {
                   Need Immediate Assistance?
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  For urgent questions or to speak directly with Paul, call us now. We're always happy to help.
+                  For urgent questions or to speak directly with Tim or Paul, call us now. We're always happy to help.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" asChild>
@@ -204,23 +204,23 @@ export default function ThankYouPage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 <div>
                   <div className="text-2xl font-bold text-blue-600">30+</div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
+                  <div className="text-sm text-gray-600">Years Home Service</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">500+</div>
-                  <div className="text-sm text-gray-600">Happy Customers</div>
+                  <div className="text-2xl font-bold text-blue-600">5+</div>
+                  <div className="text-sm text-gray-600">Years Coatings</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">5.0★</div>
-                  <div className="text-sm text-gray-600">Customer Rating</div>
+                  <div className="text-2xl font-bold text-blue-600">98%</div>
+                  <div className="text-sm text-gray-600">Satisfaction Rate</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">100%</div>
-                  <div className="text-sm text-gray-600">Warranty Coverage</div>
+                  <div className="text-2xl font-bold text-blue-600">15 Yr</div>
+                  <div className="text-sm text-gray-600">Warranty</div>
                 </div>
               </div>
               <p className="text-sm text-gray-600">
-                Licensed FL Contractor • Fully Insured • Family-Owned Since 1990
+                Licensed FL Contractor #L24000469209 • Fully Insured • Family-Owned Since 2024
               </p>
             </div>
           </div>

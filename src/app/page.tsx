@@ -18,11 +18,11 @@ export default function Home() {
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
-        title="Jacksonville's Premier Epoxy & Concrete Coating Experts"
-        subtitle="Jacksonville's trusted father-and-son team delivering premium epoxy and polyaspartic concrete coatings. Transform Jacksonville garages, patios, and pool decks with surfaces built to endure Northeast Florida's toughest conditions."
+        title="Jacksonville's premier concrete coating experts"
+        subtitle="Jacksonville's trusted father-and-son team delivering premium polyurea and epoxy concrete coatings. Transform Florida garages, patios, and pool decks with surfaces built to endure Northeast Florida's toughest conditions."
         showVideo={true}
         showImage={true}
-        imageDescription="Professional epoxy floor coating installation in Jacksonville home showing beautiful garage transformation"
+        imageDescription="Professional polyurea and epoxy floor coating installation in Jacksonville home showing beautiful garage transformation"
       />
       
       <TrustBadges />

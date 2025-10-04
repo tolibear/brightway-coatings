@@ -3,30 +3,14 @@ import { Button } from '@/components/ui/button';
 import { Phone, Calendar, Clock, Shield, Award, Star, ArrowRight, CheckCircle } from 'lucide-react';
 import { businessInfo, ctaText } from '@/data/business';
 
-const urgencyReasons = [
-  {
-    icon: Calendar,
-    title: "Book Before February",
-    subtitle: "Lock in 2023 pricing"
-  },
-  {
-    icon: Clock,
-    title: "Same-Week Installation",
-    subtitle: "January availability filling fast"
-  },
-  {
-    icon: Award,
-    title: "Free Color Upgrade",
-    subtitle: "Premium flakes included this month"
-  }
-];
+// Removed urgency reasons per user request
 
 const finalBenefits = [
-  "Lifetime warranty included",
+  "15 year warranty included",
   "Free color consultation",
   "Licensed & fully insured",
   "One-day installation guarantee",
-  "30+ years local experience",
+  "5+ years coatings experience",
   "Transparent, upfront pricing"
 ];
 
@@ -47,41 +31,11 @@ export default function FinalCTASection() {
               Ready to Transform Your Concrete?
             </h2>
             <p className="text-xl md:text-2xl text-blue-200 mb-8 leading-relaxed">
-              Join 500+ satisfied Northeast Florida homeowners who chose Brightway Coatings 
-              for lifetime durability, one-day installation, and unmatched craftsmanship.
+              Join satisfied Northeast Florida homeowners who chose Brightway Coatings 
+              for 15 year durability, one-day installation, and unmatched craftsmanship.
             </p>
-            
-            {/* 5-Star Rating */}
-            <div className="flex items-center justify-center gap-2 mb-8">
-              <div className="flex items-center">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <span className="text-lg font-semibold">5.0</span>
-              <span className="text-blue-200">(500+ reviews)</span>
-            </div>
           </div>
           
-          {/* Urgency Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {urgencyReasons.map((reason, index) => {
-              const IconComponent = reason.icon;
-              return (
-                <Card key={index} className="bg-white/10 backdrop-blur-sm border-blue-400/30 hover:bg-white/15 transition-all">
-                  <CardContent className="p-4 text-center">
-                    <div className="mb-3 flex justify-center">
-                      <div className="p-2 bg-blue-500/20 rounded-lg">
-                        <IconComponent className="h-6 w-6 text-blue-300" />
-                      </div>
-                    </div>
-                    <h3 className="font-bold text-lg mb-1">{reason.title}</h3>
-                    <p className="text-blue-200 text-sm">{reason.subtitle}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
           
           {/* Main CTA Section */}
           <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20">
@@ -108,7 +62,7 @@ export default function FinalCTASection() {
                   </div>
                   <div className="flex items-center gap-1">
                     <Award className="h-4 w-4" />
-                    Family-Owned Since 1990
+                    Family-Owned Since 2024
                   </div>
                 </div>
               </div>

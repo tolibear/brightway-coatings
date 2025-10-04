@@ -12,7 +12,7 @@ import { Sun, Droplets, Shield, Palette, Home, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Patio Coatings Jacksonville FL | UV Resistant | Brightway',
-  description: 'Transform your patio with UV-stable polyaspartic coatings in Jacksonville FL. Weather resistant, slip-resistant, beautiful finishes. Family-owned since 1990.',
+  description: 'Transform your patio with UV-stable polyaspartic coatings in Jacksonville FL. Weather resistant, slip-resistant, beautiful finishes. Family-owned since 2024.',
   keywords: ['patio coating Jacksonville', 'concrete patio coating', 'outdoor floor coating FL', 'UV resistant coatings', 'weather resistant patio'],
 };
 
@@ -110,7 +110,7 @@ const faqs = [
 export default function PatioCoatingsPage() {
   const serviceData = generateServiceStructuredData(
     'Patio Coatings',
-    'UV-resistant polyaspartic patio coatings in Jacksonville FL. Weather resistant, slip-resistant options, lifetime warranty. Licensed family business since 1990.'
+    'UV-resistant polyaspartic patio coatings in Jacksonville FL. Weather resistant, slip-resistant options, 15 year warranty. Licensed family business since 2024.'
   );
   
   const faqData = generateFAQStructuredData(faqs);
@@ -122,10 +122,10 @@ export default function PatioCoatingsPage() {
       
       <Hero
         title="Jacksonville Patio Coatings"
-        subtitle="UV-resistant polyaspartic coatings that transform ordinary patios into beautiful, durable surfaces. Perfect for entertaining, poolside relaxation, and outdoor living."
+        subtitle="UV-resistant polyurea and polyaspartic coatings that transform ordinary patios into beautiful, durable surfaces. Perfect for entertaining, poolside relaxation, and outdoor living."
         ctaPrimary={ctaText.primary}
         
-        ctaSecondary="Call Now: 904-671-2686"
+        ctaSecondary="Call Now: 904-540-9693"
         
       />
 
@@ -145,15 +145,15 @@ export default function PatioCoatingsPage() {
               </p>
               
               <p>
-                Our premium polyaspartic patio coatings solve these problems permanently. Unlike traditional sealers 
+                Our premium poly patio coatings solve these problems permanently. Unlike traditional sealers 
                 that fail within years, our UV-stable system maintains its beauty and protection decade after decade. 
-                From Ponte Vedra beachfront properties to St. Johns County family homes, we've helped thousands of 
-                homeowners create outdoor spaces they're proud to show off.
+                From Ponte Vedra beachfront properties to St. Johns County family homes, we've helped homeowners 
+                create outdoor spaces they're proud to show off.
               </p>
 
               <p>
                 Whether you're coating a simple concrete slab or transforming an elaborate outdoor kitchen area, 
-                our father-and-son team brings three decades of expertise to every installation. We understand Florida's 
+                our father-and-son team brings 30+ years of home service expertise and 5+ years of coatings experience to every installation. We understand Florida's 
                 unique challenges and engineer our systems specifically for long-term performance in our climate.
               </p>
             </div>
@@ -236,7 +236,7 @@ export default function PatioCoatingsPage() {
             
             <div className="bg-blue-50 rounded-lg p-8 mb-8">
               <p className="text-lg text-gray-700 mb-4">
-                <strong>Serving the Jacksonville area since 1990:</strong> {businessInfo.serviceAreas.join(', ')}
+                <strong>Serving the Jacksonville area since 2024:</strong> {businessInfo.serviceAreas.join(', ')}
               </p>
               <p className="text-gray-600">
                 From oceanfront Ponte Vedra properties to inland St. Johns County homes, we understand 

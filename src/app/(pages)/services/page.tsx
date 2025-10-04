@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 const services = [
   {
     title: 'Garage Floor Coatings',
-    description: 'Transform your garage into a showroom-quality space with our premium polyaspartic coatings. Resistant to oil stains, chemicals, and hot tire pickup.',
+    description: 'Transform your garage into a showroom with a slip-resistant coating. Handles hot tires, oil spills, and heavy traffic while adding significant home value with stunning visual appeal.',
     features: [
       '1-Day installation for most garages',
       'Oil and chemical resistant surface',
       'No hot tire pickup or peeling',
       'Custom decorative flake options',
-      'Lifetime warranty protection'
+      '15 year warranty protection'
     ],
     slug: 'garage-floor-coatings',
   },
@@ -51,7 +51,7 @@ const services = [
   },
   {
     title: 'Residential Floor Coatings',
-    description: 'Complete home flooring solutions from basements to sunrooms. Durable, beautiful surfaces that add value to your property.',
+    description: 'Transform your home\'s concrete surfaces - whether in basements, workshops, or living areas - into durable, stylish spaces built to last. Our industrial-grade coatings lock out humidity and create sleek, easy to clean finishes.',
     features: [
       'Interior and exterior applications',
       'Moisture barrier protection',
@@ -63,7 +63,7 @@ const services = [
   },
   {
     title: 'Commercial Floor Coatings',
-    description: 'Heavy-duty solutions for warehouses, retail spaces, and industrial facilities. Built to withstand high traffic and demanding conditions.',
+    description: 'Industrial-strength solutions for warehouses, showrooms, and retail spaces. Chemical-resistant formulations withstand heavy equipment, constant foot traffic, and harsh cleaning protocols while maintaining professional appearance.',
     features: [
       'Heavy traffic durability',
       'Chemical and abrasion resistant',
@@ -82,10 +82,10 @@ export default function ServicesPage() {
       
       <Hero
         title="Professional Floor Coating Services"
-        subtitle="From garage floors to commercial spaces, we deliver premium coating systems with lifetime durability. Licensed, insured, and family-owned since 1990."
+        subtitle="From garage floors to commercial spaces, we deliver premium coating systems with 15 year durability. Licensed, insured, and family-owned since 2024."
         ctaPrimary={ctaText.primary}
         
-        ctaSecondary="Call Now: 904-671-2686"
+        ctaSecondary="Call Now: 904-540-9693"
         
       />
 
@@ -96,8 +96,8 @@ export default function ServicesPage() {
               Our Coating Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Every surface gets the same meticulous attention to detail. We use only premium polyaspartic systems 
-              that outperform traditional epoxy in durability, speed, and appearance.
+              Every surface gets the same meticulous attention to detail. We use only premium polyurea and polyaspartic systems 
+              that surpass expectations in durability, speed, and appearance.
             </p>
           </div>
 

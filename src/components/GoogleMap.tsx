@@ -31,7 +31,7 @@ export default function GoogleMap({
 
     try {
       // Create map
-      const map = new window.google.maps.Map(mapRef.current, {
+      const map = new (window.google.maps as any).Map(mapRef.current, {
         center: DEFAULT_CENTER,
         zoom: zoom,
         styles: [
@@ -75,20 +75,20 @@ export default function GoogleMap({
       });
 
       // Create marker
-      const marker = new window.google.maps.Marker({
+      const marker = new (window.google.maps as any).Marker({
         position: DEFAULT_CENTER,
         map: map,
         title: businessInfo.name,
         icon: {
           url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%232563eb'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/%3E%3C/svg%3E",
-          scaledSize: new window.google.maps.Size(32, 32),
-          anchor: new window.google.maps.Point(16, 32),
+          scaledSize: { width: 32, height: 32 },
+          anchor: { x: 16, y: 32 },
         },
       });
 
       // Create info window if requested
       if (showInfoWindow) {
-        const infoWindow = new window.google.maps.InfoWindow({
+        const infoWindow = new (window.google.maps as any).InfoWindow({
           content: `
             <div style="padding: 10px; max-width: 250px;">
               <h3 style="margin: 0 0 8px 0; color: #1f2937; font-size: 16px; font-weight: 600;">${businessInfo.name}</h3>
@@ -105,11 +105,11 @@ export default function GoogleMap({
         });
 
         // Show info window by default
-        infoWindow.open(map, marker);
+        (infoWindow as any).open(map, marker);
 
         // Toggle info window on marker click
-        marker.addListener('click', () => {
-          infoWindow.open(map, marker);
+        (marker as any).addListener('click', () => {
+          (infoWindow as any).open(map, marker);
         });
       }
 

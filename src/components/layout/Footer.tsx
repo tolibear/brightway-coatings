@@ -11,8 +11,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">{businessInfo.name}</h3>
             <p className="text-gray-400 mb-6 text-sm">
-              Family-owned concrete coating experts serving Northeast Florida since 1990. 
-              Licensed, insured, and trusted by 500+ local homeowners.
+              Family-owned concrete coating experts serving Northeast Florida since 2024. 
+              Licensed, insured, and trusted by local homeowners.
             </p>
             
             {/* NAP Information - Structured for SEO */}
@@ -52,15 +52,15 @@ export default function Footer() {
             <div className="mt-6 space-y-2">
               <div className="flex items-center gap-2 text-xs text-green-400">
                 <Shield className="h-3 w-3" />
-                <span>Licensed FL Contractor</span>
+                <span>Licensed FL Contractor #L24000469209</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-green-400">
                 <Award className="h-3 w-3" />
-                <span>Fully Insured & Bonded</span>
+                <span>Fully Insured • 15 Year Warranty</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-green-400">
                 <Star className="h-3 w-3" />
-                <span>5.0 Star Rating • 500+ Reviews</span>
+                <span>Family-Owned Since 2024</span>
               </div>
             </div>
           </div>
@@ -124,14 +124,69 @@ export default function Footer() {
             <div className="text-sm text-gray-400">
               <p>&copy; 2024 {businessInfo.name}. All rights reserved.</p>
               <p className="text-xs mt-1">
-                Licensed FL Contractor • Fully Insured & Bonded • Family-Owned Since 1990
+                Licensed FL Contractor • Fully Insured • Family-Owned Since 2024
               </p>
             </div>
             <div className="text-right text-sm text-gray-400">
               <p>Serving Jacksonville, St. Johns, St. Augustine & Surrounding Areas</p>
               <p className="text-xs mt-1">
-                Polyaspartic Floor Coating Specialists • Lifetime Warranty • Same-Day Installation
+                Polyurea & Polyaspartic Floor Coating Specialists • 15 Year Warranty • 1-Day Installation
               </p>
+            </div>
+          </div>
+          
+          {/* Team Contact Section */}
+          <div className="border-t border-gray-800 mt-8 pt-8">
+            <div className="text-center mb-6">
+              <h4 className="font-semibold text-lg mb-2">Meet the Team</h4>
+              <p className="text-sm text-gray-400">Father-and-son partnership delivering quality craftsmanship</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {/* Tim's Contact */}
+              <div className="bg-gray-800 rounded-lg p-6 text-center">
+                <div className="w-20 h-20 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold">
+                  T
+                </div>
+                <h5 className="font-semibold text-lg mb-1">Tim</h5>
+                <p className="text-sm text-gray-400 mb-4">Lead Coatings Specialist</p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <Phone className="h-4 w-4 text-blue-400" />
+                    <a href="tel:9045409693" className="text-blue-300 hover:text-blue-200">
+                      904-540-9693
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <Mail className="h-4 w-4 text-blue-400" />
+                    <a href="mailto:timbrightwaycoatings@gmail.com" className="text-blue-300 hover:text-blue-200 text-xs">
+                      timbrightwaycoatings@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Paul's Contact */}
+              <div className="bg-gray-800 rounded-lg p-6 text-center">
+                <div className="w-20 h-20 bg-orange-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold">
+                  P
+                </div>
+                <h5 className="font-semibold text-lg mb-1">Paul</h5>
+                <p className="text-sm text-gray-400 mb-4">Master Craftsman</p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <Phone className="h-4 w-4 text-orange-400" />
+                    <a href="tel:9046712686" className="text-orange-300 hover:text-orange-200">
+                      904-671-2686
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <Mail className="h-4 w-4 text-orange-400" />
+                    <a href="mailto:paulbrightwayepoxy@gmail.com" className="text-orange-300 hover:text-orange-200 text-xs">
+                      paulbrightwayepoxy@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

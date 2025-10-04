@@ -11,8 +11,8 @@ import { Heart, Users, Award, Shield, Clock, Home } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About | Family-Owned Concrete Coatings Jacksonville',
-  description: 'Meet the family behind Jacksonville\'s premier concrete coating company. 30+ years of father-and-son craftsmanship, licensed and insured, serving St. Johns County with pride.',
-  keywords: ['about Brightway Coatings', 'family concrete coating business Jacksonville', 'Paul Brightway owner', 'St Johns concrete contractors', 'family business FL'],
+  description: 'Meet the family behind Jacksonville\'s premier concrete coating company. 30+ years home service experience, 5+ years coatings expertise, licensed and insured, serving St. Johns County with pride.',
+  keywords: ['about Brightway Coatings', 'family concrete coating business Jacksonville', 'Paul and Tim Brightway owners', 'St Johns concrete contractors', 'family business FL'],
 };
 
 const familyValues = [
@@ -28,8 +28,8 @@ const familyValues = [
   },
   {
     icon: Award,
-    title: 'Decades of Excellence',
-    description: 'Over 30 years perfecting our craft and building lasting relationships throughout Northeast Florida.'
+    title: '15 Year Warranty',
+    description: 'Comprehensive warranty coverage backed by premium materials and professional installation.'
   },
   {
     icon: Shield,
@@ -50,24 +50,24 @@ const familyValues = [
 
 const milestones = [
   {
-    year: '1990',
-    title: 'The Beginning',
-    description: 'Paul Brightway started the company with a commitment to quality craftsmanship and customer satisfaction.'
+    year: '1980s',
+    title: 'The Immigration',
+    description: 'Paul immigrated from Ukraine at the age of six, started working alongside his father in the family construction services business.'
   },
   {
-    year: '2000',
-    title: 'Growing Reputation',
-    description: 'Word-of-mouth referrals led to expanded services throughout Jacksonville and surrounding communities.'
+    year: '1990s-2020',
+    title: 'Building Experience',
+    description: 'After spending 30+ years honing his skills, Paul went on to start his own construction services company, continuing the tradition of quality and craftsmanship.'
   },
   {
-    year: '2010',
-    title: 'Technology Evolution',
-    description: 'Adopted advanced polyaspartic coating systems, moving beyond traditional epoxy to deliver superior results.'
+    year: '2024',
+    title: 'Brightway Coatings Founded',
+    description: 'Paul and his son Tim launched Brightway Coatings, focusing on providing high-quality concrete coatings for residential and commercial customers.'
   },
   {
-    year: '2020',
-    title: 'Next Generation',
-    description: 'The next generation joined the business, bringing fresh energy while maintaining family traditions.'
+    year: 'Today',
+    title: 'Third Generation American',
+    description: 'Paul has the privilege of working alongside his son, Tim, in the same way he once worked with his father. At Brightway Coatings, we\'re more than just a business, we\'re a family.'
   }
 ];
 
@@ -89,43 +89,39 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-                Building Trust, One Floor at a Time
+                A Family Legacy of Craftsmanship
               </h2>
               
               <p>
-                In 1990, Paul Brightway had a simple vision: deliver concrete coating services with the care 
-                and attention you'd give your own family's home. What started as a one-man operation has grown 
-                into Northeast Florida's premier concrete transformation company, but our commitment to family 
-                values remains unchanged.
+                Brightway Coatings was founded on a legacy of hard work, family, and a commitment to excellence. 
+                Our story began with Paul, who immigrated from Ukraine at the age of six, started working alongside 
+                his father in the family construction services business.
               </p>
               
               <p>
-                For over three decades, we've watched Jacksonville grow and change, and we've been honored to 
-                be part of that journey. From the first garage floor we coated in St. Johns to the hundreds 
-                of pool decks, patios, and driveways we transform each year, every project carries the weight 
-                of our family name and reputation. You can see examples of our craftsmanship in our 
+                After spending 30+ years honing his skills, Paul went on to start his own construction services 
+                company, continuing the tradition of quality and craftsmanship. Now, as a third generation American, 
+                Paul has the privilege of working alongside his son, Tim, in the same way he once worked with his father.
+              </p>
+
+              <p>
+                Tim grew up in the business, and together they launched Brightway Coatings in 2024, focusing on 
+                providing high-quality concrete coatings for residential and commercial customers throughout Jacksonville 
+                and Northeast Florida. You can see examples of our craftsmanship in our 
                 <Link href="/portfolio" className="text-blue-600 hover:text-blue-800 underline">project portfolio</Link>.
               </p>
 
               <p>
-                What makes us different isn't just our advanced polyaspartic coating systems or our lifetime 
-                warranties - it's the fact that we live and work in this community. We shop at the same stores, 
-                our kids attend the same schools, and we understand what it means to invest in a home that will 
-                serve your family for generations.
+                At Brightway Coatings, we're more than just a business, we're a family. We take pride in building 
+                lasting relationships with our customers, and we treat every project as an opportunity to deliver 
+                the highest quality work while building trust and connection.
               </p>
 
               <p>
-                Today, the Brightway name represents more than just concrete coatings. It represents honest 
-                craftsmanship, reliable service, and the peace of mind that comes from working with people 
-                who genuinely care about your satisfaction. When you choose Brightway Coatings, you're not 
-                just hiring contractors - you're partnering with neighbors who take personal pride in making 
-                your home more beautiful, functional, and valuable.
-              </p>
-
-              <p>
-                As we look toward the future, our mission remains the same: treat every customer like family, 
-                deliver work we'd be proud to show our own neighbors, and continue building the trust that has 
-                made us Jacksonville's choice for premium concrete transformations.
+                This is why our core values are centered around quality craftsmanship and a relational approach to 
+                doing business, rather than just transactional interactions. When you choose Brightway Coatings, 
+                you're partnering with a father-and-son team that brings 30+ years of home service expertise and 
+                5+ years of specialized coatings experience to every project.
               </p>
             </div>
           </div>
@@ -195,25 +191,26 @@ export default function AboutPage() {
             
             <div className="bg-white rounded-lg p-8 shadow-lg mb-12">
               <p className="text-xl italic text-gray-700 mb-6 leading-relaxed">
-                "When you invite us into your home, you're trusting us with more than just a flooring project. 
-                You're trusting us with your family's comfort, safety, and investment. That's a responsibility 
-                we never take lightly."
+                "We take pride in building lasting relationships with our customers, and we treat every project 
+                as an opportunity to deliver the highest quality work while building trust and connection. This is 
+                why our core values are centered around quality craftsmanship and a relational approach to doing 
+                business, rather than just transactional interactions."
               </p>
-              <p className="font-semibold text-lg">- The Brightway Family</p>
+              <p className="font-semibold text-lg">- Paul & Tim, Brightway Coatings</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">2000+</div>
-                <div className="text-gray-600">Happy Families Served</div>
-              </div>
-              <div>
                 <div className="text-4xl font-bold text-blue-600 mb-2">30+</div>
-                <div className="text-gray-600">Years in Business</div>
+                <div className="text-gray-600">Years Home Service Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                <div className="text-gray-600">Family-Owned & Operated</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-gray-600">Years Coatings Expertise</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                <div className="text-gray-600">Customer Satisfaction Rate</div>
               </div>
             </div>
 
@@ -238,7 +235,7 @@ export default function AboutPage() {
 
       <CTABand
         title="Ready to Experience the Brightway Difference?"
-        description="Join thousands of satisfied Jacksonville families who chose quality, reliability, and family values"
+        description="Join satisfied Jacksonville families who chose quality, reliability, and family values"
         primaryCTA={ctaText.primary}
         secondaryCTA={ctaText.secondary}
       />
