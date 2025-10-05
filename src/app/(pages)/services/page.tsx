@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import ServiceCard from '@/components/sections/ServiceCard';
-import CTABand from '@/components/sections/CTABand';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
 import { ctaText } from '@/data/business';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Floor Coating Services | Jacksonville FL | Brightway',
@@ -78,6 +78,11 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Concrete?"
+        subtitle="Join satisfied Northeast Florida homeowners and businesses who chose Brightway Coatings for expert transformations with 15 year durability, one-day installation, and unmatched craftsmanship."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
@@ -114,14 +119,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      <CTABand
-        title="Ready to Transform Your Floors?"
-        description="Get your free quote today and discover why Jacksonville trusts Brightway Coatings"
-        primaryCTA={ctaText.primary}
-        
-        secondaryCTA={ctaText.secondary}
-      />
     </>
   );
 }

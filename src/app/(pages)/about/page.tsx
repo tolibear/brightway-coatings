@@ -1,13 +1,13 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Award, Shield, Clock, Home } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'About | Family-Owned Concrete Coatings Jacksonville',
@@ -74,6 +74,11 @@ const milestones = [
 export default function AboutPage() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Work With a Family You Can Trust?"
+        subtitle="Join satisfied Northeast Florida families who chose Brightway Coatings for honest service, expert craftsmanship, and the personal touch only a family business can provide."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
@@ -317,13 +322,6 @@ export default function AboutPage() {
       </section>
 
       <TrustBadges />
-
-      <CTABand
-        title="Ready to Experience the Brightway Difference?"
-        description="Join satisfied Jacksonville families who chose quality, reliability, and family values"
-        primaryCTA={ctaText.primary}
-        secondaryCTA={ctaText.secondary}
-      />
     </>
   );
 }

@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
 import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
@@ -9,6 +8,7 @@ import { generateServiceStructuredData, generateFAQStructuredData } from '@/util
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Sun, Droplets, Shield, Palette, Home, Clock } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Patio Coatings Jacksonville FL | UV Resistant | Brightway',
@@ -117,6 +117,11 @@ export default function PatioCoatingsPage() {
 
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Patio?"
+        subtitle="Join satisfied Northeast Florida homeowners who chose Brightway Coatings for patio transformations with UV-resistant coatings, beautiful finishes, and unmatched durability."
+      />
+      
       <StructuredData data={serviceData} />
       <StructuredData data={faqData} />
       
@@ -343,19 +348,11 @@ export default function PatioCoatingsPage() {
         </div>
       </section>
 
-      <FlakeGallery />
-
       <TrustBadges />
       
       <FAQSection faqs={faqs} title="Patio Coating Questions" />
 
-      <CTABand
-        title="Transform Your Patio Today"
-        description="Create the outdoor living space you've always wanted with professional-grade coatings"
-        primaryCTA={ctaText.primary}
-        
-        secondaryCTA={ctaText.secondary}
-      />
+      <FlakeGallery />
     </>
   );
 }

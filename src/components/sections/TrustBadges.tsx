@@ -38,7 +38,7 @@ const trustBadges: TrustBadge[] = [
 
 export default function TrustBadges() {
   return (
-    <section className="py-32 bg-gray-900">
+    <section className="pt-12 pb-32 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">

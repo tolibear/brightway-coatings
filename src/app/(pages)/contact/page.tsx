@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import ContactPageClient from './ContactPageClient';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Contact | Free Estimates Jacksonville FL | Brightway',
@@ -12,6 +13,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Get Your Free Estimate?"
+        subtitle="Contact us today for your no-obligation quote. We'll visit your property, show you samples, and provide honest, upfront pricing for your project."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       <ContactPageClient />
     </>

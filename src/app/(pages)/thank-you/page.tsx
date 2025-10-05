@@ -4,6 +4,7 @@ import { CheckCircle, Clock, Phone, Mail, Calendar, FileText, Home, Shield } fro
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { businessInfo } from '@/data/business';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Thank You | Contact Received - Brightway Coatings',
@@ -65,6 +66,11 @@ const additionalResources = [
 export default function ThankYouPage() {
   return (
     <>
+      <TransformationSetter 
+        title="We Can't Wait to Transform Your Space!"
+        subtitle="Thank you for choosing Brightway Coatings. We'll contact you within 24 hours to start your transformation journey."
+      />
+      
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 py-16">
         <div className="container mx-auto px-4">
           {/* Success Message */}

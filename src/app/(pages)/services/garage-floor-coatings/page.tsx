@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
 import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
@@ -10,6 +9,7 @@ import { generateServiceStructuredData, generateFAQStructuredData } from '@/util
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Shield, Clock, Star, Award, Users } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Garage Floor Concrete Coating Jacksonville FL | Brightway Coatings',
@@ -114,6 +114,11 @@ export default function GarageFloorCoatingsPage() {
 
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Garage?"
+        subtitle="Join satisfied Northeast Florida homeowners who chose Brightway Coatings for garage transformations with 15 year durability, one-day installation, and unmatched craftsmanship."
+      />
+      
       <StructuredData data={serviceData} />
       <StructuredData data={faqData} />
       
@@ -312,8 +317,6 @@ export default function GarageFloorCoatingsPage() {
         </div>
       </section>
 
-      <FlakeGallery />
-
       {/* Local Trust Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
@@ -352,13 +355,7 @@ export default function GarageFloorCoatingsPage() {
       
       <FAQSection faqs={faqs} title="Garage Floor Coating Questions" />
 
-      <CTABand
-        title="Ready to Transform Your Garage?"
-        description="Join thousands of satisfied Jacksonville homeowners with a premium polyaspartic garage floor"
-        primaryCTA={ctaText.primary}
-        
-        secondaryCTA={ctaText.secondary}
-      />
+      <FlakeGallery />
     </>
   );
 }

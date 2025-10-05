@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import StructuredData from '@/components/SEO/StructuredData';
@@ -10,6 +9,7 @@ import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Calendar, Square, Clock, CheckCircle, ArrowLeft, Thermometer } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Jacksonville Luxury Pool Deck Coating Project | Brightway Portfolio',
@@ -53,6 +53,11 @@ export default function JacksonvillePoolDeckProject() {
 
   return (
     <>
+      <TransformationSetter 
+        title="Ready for a Transformation Like This?"
+        subtitle="See yourself in this success story. Contact us today to start your own stunning transformation with Brightway Coatings."
+      />
+      
       <StructuredData data={serviceData} />
       
       <Hero
@@ -378,13 +383,6 @@ export default function JacksonvillePoolDeckProject() {
       </section>
 
       <TrustBadges />
-
-      <CTABand
-        title="Transform Your Pool Area Today"
-        description="Get the same professional results as this Jacksonville project with cool-surface, slip-resistant coating"
-        primaryCTA={ctaText.primary}
-        secondaryCTA={ctaText.secondary}
-      />
     </>
   );
 }

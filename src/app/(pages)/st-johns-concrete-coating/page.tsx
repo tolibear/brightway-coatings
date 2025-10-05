@@ -6,7 +6,6 @@ import ValuePropositionCards from '@/components/sections/ValuePropositionCards';
 import ServicesOverview from '@/components/sections/ServicesOverview';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import BeforeAfterGallery from '@/components/sections/BeforeAfterGallery';
-import CTABand from '@/components/sections/CTABand';
 import StructuredData from '@/components/SEO/StructuredData';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
@@ -14,6 +13,7 @@ import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Phone, Clock, Star, CheckCircle, Users, Home } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'St. Johns Concrete Coating & Epoxy Floor Company | Brightway Local',
@@ -45,6 +45,11 @@ const localStats = {
 export default function StJohnsCoatingPage() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your St. Johns Concrete?"
+        subtitle="Join satisfied St. Johns neighbors who chose Brightway Coatings, your local family business delivering 15 year durability, one-day installation, and hometown service."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
@@ -301,13 +306,6 @@ export default function StJohnsCoatingPage() {
       <TestimonialsSection />
 
       <TrustBadges />
-
-      <CTABand
-        title="Support Your Local St. Johns Business"
-        description="Choose your neighbors for quality concrete coating with guaranteed local support"
-        primaryCTA="Get Free Local Quote"
-        secondaryCTA="Call 904-540-9693"
-      />
     </>
   );
 }

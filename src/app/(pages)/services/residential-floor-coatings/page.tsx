@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
+import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Home, Droplets, Sparkles, TrendingUp, Shield, Clock } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Residential Floor Coatings Jacksonville FL | Brightway',
@@ -122,6 +123,11 @@ export default function ResidentialFloorCoatingsPage() {
 
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Home?"
+        subtitle="Join satisfied Northeast Florida homeowners who chose Brightway Coatings for residential transformations with durable, beautiful surfaces throughout your home."
+      />
+      
       <StructuredData data={serviceData} />
       <StructuredData data={faqData} />
       
@@ -299,13 +305,7 @@ export default function ResidentialFloorCoatingsPage() {
       
       <FAQSection faqs={faqs} title="Residential Coating Questions" />
 
-      <CTABand
-        title="Protect Your Home's Concrete Surfaces"
-        description="Get comprehensive residential coating solutions that last a lifetime"
-        primaryCTA={ctaText.primary}
-        
-        secondaryCTA={ctaText.secondary}
-      />
+      <FlakeGallery />
     </>
   );
 }

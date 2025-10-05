@@ -6,7 +6,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'next/navigation';
 import * as z from 'zod';
 import Hero from '@/components/sections/Hero';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -492,13 +491,6 @@ export default function ContactPageClient() {
       </section>
 
       <TrustBadges />
-
-      <CTABand
-        title="Ready to Get Started?"
-        description="The sooner we connect, the sooner you'll have the beautiful floors you've been dreaming of"
-        primaryCTA="Call Now: 904-540-9693"
-        secondaryCTA={ctaText.primary}
-      />
     </>
   );
 }

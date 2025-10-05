@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
 import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
@@ -10,6 +9,7 @@ import { generateServiceStructuredData, generateFAQStructuredData } from '@/util
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Droplet, Thermometer, Footprints, Star, Clock } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Pool Deck Coatings Jacksonville FL | Slip Resistant',
@@ -123,6 +123,11 @@ export default function PoolDeckCoatingsPage() {
 
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Pool Deck?"
+        subtitle="Join satisfied Northeast Florida homeowners who chose Brightway Coatings for safe, beautiful pool deck transformations with slip-resistant surfaces and unmatched durability."
+      />
+      
       <StructuredData data={serviceData} />
       <StructuredData data={faqData} />
       
@@ -360,19 +365,11 @@ export default function PoolDeckCoatingsPage() {
         </div>
       </section>
 
-      <FlakeGallery />
-
       <TrustBadges />
       
       <FAQSection faqs={faqs} title="Pool Deck Coating Questions" />
 
-      <CTABand
-        title="Make Your Pool Area Safer Today"
-        description="Get a slip-resistant, comfortable pool deck that your family will love"
-        primaryCTA={ctaText.primary}
-        
-        secondaryCTA={ctaText.secondary}
-      />
+      <FlakeGallery />
     </>
   );
 }

@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
@@ -10,6 +9,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { MapPin, Calendar, Square, ArrowRight } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Brightway Coatings Jacksonville FL',
@@ -251,6 +251,11 @@ const categories = ['All', 'Garage', 'Pool Deck', 'Patio', 'Commercial', 'Reside
 export default function PortfolioPage() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to See Your Project Here?"
+        subtitle="Join these satisfied Northeast Florida homeowners who transformed their spaces with Brightway Coatings. Your stunning transformation is next."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
@@ -460,14 +465,6 @@ export default function PortfolioPage() {
       </section>
 
       <TrustBadges />
-
-      <CTABand
-        title="Your Dream Floor is Just a Click Away"
-        description="Join satisfied customers in our portfolio with a custom concrete transformation"
-        primaryCTA={ctaText.primary}
-        
-        secondaryCTA={ctaText.secondary}
-      />
     </>
   );
 }

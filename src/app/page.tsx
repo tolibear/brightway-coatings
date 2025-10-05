@@ -7,13 +7,18 @@ import FlakeGallery from '@/components/sections/FlakeGallery';
 import AboutCallout from '@/components/sections/AboutCallout';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import ServiceAreaSection from '@/components/sections/ServiceAreaSection';
-import FinalCTASection from '@/components/sections/FinalCTASection';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export default function Home() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Concrete?"
+        subtitle="Join satisfied Northeast Florida homeowners who chose Brightway Coatings for 15 year durability, one-day installation, and unmatched craftsmanship."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
@@ -39,8 +44,6 @@ export default function Home() {
       <TestimonialsSection />
       
       <ServiceAreaSection />
-      
-      <FinalCTASection />
     </>
   );
 }

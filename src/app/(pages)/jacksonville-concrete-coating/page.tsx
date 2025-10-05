@@ -6,7 +6,6 @@ import ValuePropositionCards from '@/components/sections/ValuePropositionCards';
 import ServicesOverview from '@/components/sections/ServicesOverview';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import BeforeAfterGallery from '@/components/sections/BeforeAfterGallery';
-import CTABand from '@/components/sections/CTABand';
 import StructuredData from '@/components/SEO/StructuredData';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
@@ -14,6 +13,7 @@ import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Phone, Clock, Star, CheckCircle, Users } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Jacksonville Concrete Coating & Epoxy Floor Specialists | Brightway',
@@ -58,6 +58,11 @@ const serviceAreas = [
 export default function JacksonvilleCoatingPage() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Jacksonville Concrete?"
+        subtitle="Join satisfied Jacksonville homeowners who chose Brightway Coatings for expert local service with 15 year durability, one-day installation, and unmatched craftsmanship."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
@@ -297,13 +302,6 @@ export default function JacksonvilleCoatingPage() {
       <TestimonialsSection />
 
       <TrustBadges />
-
-      <CTABand
-        title="Ready to Transform Your Jacksonville Property?"
-        description="Join hundreds of satisfied Jacksonville homeowners with professional concrete coating"
-        primaryCTA="Get Free Jacksonville Quote"
-        secondaryCTA="Call 904-540-9693"
-      />
     </>
   );
 }

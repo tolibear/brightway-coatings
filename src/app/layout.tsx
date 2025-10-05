@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import StickyMobileCTA from "@/components/sections/StickyMobileCTA";
+import { TransformationProvider } from "@/contexts/TransformationContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <StickyMobileCTA />
+        <TransformationProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <StickyMobileCTA />
+        </TransformationProvider>
       </body>
     </html>
   );

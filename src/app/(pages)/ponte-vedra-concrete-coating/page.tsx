@@ -6,7 +6,6 @@ import ValuePropositionCards from '@/components/sections/ValuePropositionCards';
 import ServicesOverview from '@/components/sections/ServicesOverview';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import BeforeAfterGallery from '@/components/sections/BeforeAfterGallery';
-import CTABand from '@/components/sections/CTABand';
 import StructuredData from '@/components/SEO/StructuredData';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
@@ -14,6 +13,7 @@ import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Phone, Clock, Star, CheckCircle, Users, Waves } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Ponte Vedra Concrete Coating & Epoxy Floors | Luxury Home Specialists',
@@ -46,6 +46,11 @@ const localStats = {
 export default function PonteVedraCoatingPage() {
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Ponte Vedra Home?"
+        subtitle="Join satisfied Ponte Vedra homeowners who chose Brightway Coatings for luxury-grade transformations with coastal-resilient finishes and unmatched craftsmanship."
+      />
+      
       <StructuredData data={generateLocalBusinessStructuredData()} />
       
       <Hero
@@ -315,13 +320,6 @@ export default function PonteVedraCoatingPage() {
       <TestimonialsSection />
 
       <TrustBadges />
-
-      <CTABand
-        title="Elevate Your Ponte Vedra Property"
-        description="Experience the premium service and unmatched quality that Ponte Vedra's elite properties deserve"
-        primaryCTA="Request Premium Consultation"
-        secondaryCTA="Call 904-540-9693"
-      />
     </>
   );
 }

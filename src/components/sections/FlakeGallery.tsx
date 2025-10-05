@@ -30,7 +30,7 @@ const flakeColors = [
 
 export default function FlakeGallery() {
   return (
-    <section className="py-32 bg-gray-900">
+    <section className="pt-32 pb-12 bg-gray-900">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
 import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
-import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
+import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Building, Truck, Zap, DollarSign, Shield, Clock } from 'lucide-react';
+import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Commercial Floor Coatings Jacksonville FL | Brightway',
@@ -122,6 +123,11 @@ export default function CommercialFloorCoatingsPage() {
 
   return (
     <>
+      <TransformationSetter 
+        title="Ready to Transform Your Business?"
+        subtitle="Join satisfied Northeast Florida businesses who chose Brightway Coatings for commercial-grade transformations with heavy-duty durability, minimal downtime, and professional results."
+      />
+      
       <StructuredData data={serviceData} />
       <StructuredData data={faqData} />
       
@@ -339,13 +345,7 @@ export default function CommercialFloorCoatingsPage() {
       
       <FAQSection faqs={faqs} title="Commercial Coating Questions" />
 
-      <CTABand
-        title="Upgrade Your Business Floors"
-        description="Get heavy-duty commercial coating solutions that reduce costs and enhance your professional image"
-        primaryCTA={ctaText.primary}
-        
-        secondaryCTA={ctaText.secondary}
-      />
+      <FlakeGallery />
     </>
   );
 }
