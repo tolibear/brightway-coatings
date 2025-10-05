@@ -62,8 +62,22 @@ const processFeatures = [
 
 export default function ProcessSection() {
   return (
-    <section className="py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
-      <div className="container mx-auto px-4">
+    <section className="relative py-32 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 opacity-25">
+        <div 
+          className="w-full h-full bg-repeat" 
+          style={{
+            backgroundImage: "url('/images/Flakes/Cappuccino /cappucino.png')",
+            backgroundSize: "600px 600px"
+          }}
+        ></div>
+      </div>
+      
+      {/* Light overlay */}
+      <div className="absolute inset-0 bg-white/70"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
@@ -90,7 +104,7 @@ export default function ProcessSection() {
                          style={{transform: 'translateX(-50%)', width: 'calc(100% - 2rem)'}} />
                   )}
                   
-                  <Card className="relative z-10 hover:shadow-lg transition-all duration-300 border-2 hover:border-blue-300 h-full">
+                  <Card className="relative z-10 shadow-lg hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-300 h-full">
                     <CardContent className="p-6">
                       {/* Step Number & Icon */}
                       <div className="flex items-center justify-between mb-4">

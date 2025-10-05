@@ -95,7 +95,7 @@ export default function FinalCTASection() {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="w-full border-white text-white hover:bg-white hover:text-gray-900 text-lg py-6"
+                    className="w-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg py-6"
                   >
                     Schedule Free Consultation <ArrowRight className="ml-3 h-5 w-5" />
                   </Button>

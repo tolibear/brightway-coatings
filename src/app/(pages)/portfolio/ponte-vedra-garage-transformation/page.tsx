@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
 import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
-import FlakeColorShowcase from '@/components/sections/FlakeColorShowcase';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData } from '@/utils/seo';
@@ -65,7 +64,7 @@ export default function PonteVedraGarageProject() {
       />
 
       {/* Back to Portfolio */}
-      <section className="py-8 bg-white border-b">
+      <section className="py-16 bg-white border-b">
         <div className="container mx-auto px-4">
           <Link 
             href="/portfolio" 

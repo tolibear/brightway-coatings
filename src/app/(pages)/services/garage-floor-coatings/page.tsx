@@ -4,9 +4,8 @@ import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
 import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
-import FlakeColorShowcase from '@/components/sections/FlakeColorShowcase';
+import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
-import ImagePlaceholder from '@/components/ui/image-placeholder';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
@@ -182,6 +181,79 @@ export default function GarageFloorCoatingsPage() {
         </div>
       </section>
 
+      {/* Before/After Gallery Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Jacksonville Garage Transformations
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                See the dramatic difference our polyaspartic garage floor coatings make. From oil-stained concrete 
+                to showroom-quality floors that resist everything life throws at them.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Home Page/Deer creek garage makeover /deer-creek-garage-makeover--1.jpg"
+                    alt="Deer Creek garage transformation - before and after garage floor coating in Jacksonville"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Deer Creek
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Residential Garage Makeover</h3>
+                  <p className="text-sm text-gray-600">Decorative flake system with oil-resistant finish</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Portfolio/Cappuccino job, /cappuccino-job--1.jpg"
+                    alt="Cappuccino flake garage floor coating transformation in Jacksonville"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Cappuccino Flakes
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Cappuccino Flake System</h3>
+                  <p className="text-sm text-gray-600">Warm brown tones with premium durability</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Portfolio/Quicksilver job, Bentley car /quicksilver-job-bentley-car--1.jpg"
+                    alt="Quicksilver garage floor coating for luxury car storage in Ponte Vedra"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Luxury Grade
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Quicksilver Luxury Finish</h3>
+                  <p className="text-sm text-gray-600">Perfect for high-end vehicle storage</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
       <section className="bg-gray-50">
         <div className="container mx-auto px-4">
@@ -205,12 +277,19 @@ export default function GarageFloorCoatingsPage() {
                     </div>
                   </div>
                   <div className="md:col-span-1">
-                    <ImagePlaceholder
-                      alt={`Step ${step.step}: ${step.title} - Professional garage floor coating process in Jacksonville`}
-                      aspectRatio="landscape"
-                      variant="blue"
-                      className="w-full"
-                    />
+                    <div className="relative aspect-video overflow-hidden rounded-lg">
+                      <img 
+                        src={
+                          index === 0 ? '/images/Home Page/Deer creek garage makeover /deer-creek-garage-makeover--2.jpg' :
+                          index === 1 ? '/images/Portfolio/Cappuccino job, /cappuccino-job--5.jpg' :
+                          index === 2 ? '/images/Portfolio/Three car garage/three-car-garage-2.jpg' :
+                          '/images/Portfolio/Quicksilver job, Bentley car /quicksilver-job-bentley-car--4.jpg'
+                        }
+                        alt={`Step ${step.step}: ${step.title} - Professional garage floor coating process in Jacksonville`}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 </div>
               ))}
@@ -233,13 +312,10 @@ export default function GarageFloorCoatingsPage() {
         </div>
       </section>
 
-      <FlakeColorShowcase 
-        title="Custom Garage Floor Colors & Decorative Options"
-        description="Transform your garage with professional-grade decorative flakes. Choose from dozens of color combinations to complement your home's style and hide everyday wear."
-      />
+      <FlakeGallery />
 
       {/* Local Trust Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">

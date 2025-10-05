@@ -17,118 +17,231 @@ export const metadata: Metadata = {
   keywords: ['concrete coating portfolio Jacksonville', 'garage floor before after', 'pool deck coatings gallery', 'patio coating photos', 'Brightway Coatings projects'],
 };
 
-// Sample project data - In a real app, this would come from a CMS or database
+// Real project data based on actual completed projects
 const portfolioProjects = [
   {
     id: 1,
-    title: 'Modern Garage Transformation',
-    location: 'Ponte Vedra Beach, FL',
+    title: 'Cappuccino Flake Garage Transformation',
+    location: 'Jacksonville, FL',
     date: '2024',
     category: 'Garage',
-    size: '650 sq ft',
-    description: 'Complete garage makeover with decorative flake system in charcoal and silver blend.',
-    beforeImage: '/portfolio/garage-before-1.jpg',
-    afterImage: '/portfolio/garage-after-1.jpg',
-    features: ['Oil Resistant', '1-Day Install', 'Custom Flakes', '15 Year Warranty'],
-    slug: 'ponte-vedra-garage-transformation',
-    hasDetailPage: true
+    size: '700 sq ft',
+    description: 'Stunning garage transformation featuring our popular Cappuccino flake system with polyaspartic coating. Rich brown tones create a warm, sophisticated finish.',
+    mainImage: '/images/Portfolio/Cappuccino job, /cappuccino-job--1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Cappuccino job, /cappuccino-job--1.jpg',
+      '/images/Portfolio/Cappuccino job, /cappuccino-job--2.jpg',
+      '/images/Portfolio/Cappuccino job, /cappuccino-job--3.jpg',
+      '/images/Portfolio/Cappuccino job, /cappuccino-job--4.jpg'
+    ],
+    features: ['Cappuccino Flakes', '1-Day Install', 'Oil Resistant', '15 Year Warranty'],
+    slug: 'cappuccino-flake-garage-transformation',
+    hasDetailPage: true,
+    hasVideo: true,
+    videoSrc: '/images/Portfolio/Cappuccino job, /cappuccino-job--video-1.mp4'
   },
   {
     id: 2,
     title: 'Luxury Pool Deck Coating',
-    location: 'Jacksonville, FL',
+    location: 'St. Augustine, FL',
     date: '2024',
     category: 'Pool Deck',
     size: '1,200 sq ft',
-    description: 'Slip-resistant polyaspartic coating in coastal blue with texture additives for pool safety.',
-    beforeImage: '/portfolio/pool-before-1.jpg',
-    afterImage: '/portfolio/pool-after-1.jpg',
+    description: 'Premium pool deck transformation with slip-resistant coating system. Cool to the touch and UV stable for years of Florida sun exposure.',
+    mainImage: '/images/Portfolio/Luxury pool deck coating/luxury-pool-deck-coating-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Luxury pool deck coating/luxury-pool-deck-coating-1.jpg',
+      '/images/Portfolio/Luxury pool deck coating/luxury-pool-deck-coating-2.jpg',
+      '/images/Portfolio/Luxury pool deck coating/luxury-pool-deck-coating-3.jpg',
+      '/images/Portfolio/Luxury pool deck coating/luxury-pool-deck-coating-4.jpg'
+    ],
     features: ['Slip Resistant', 'UV Stable', 'Cool Surface', 'Chemical Resistant'],
-    slug: 'jacksonville-luxury-pool-deck',
+    slug: 'luxury-pool-deck-coating',
     hasDetailPage: true
   },
   {
     id: 3,
-    title: 'Elegant Patio Makeover',
-    location: 'St. Augustine, FL',
+    title: 'Quicksilver Garage with Bentley',
+    location: 'Ponte Vedra, FL',
     date: '2024',
-    category: 'Patio',
-    size: '800 sq ft',
-    description: 'Stunning outdoor living space transformation with warm earth tone decorative system.',
-    beforeImage: '/portfolio/patio-before-1.jpg',
-    afterImage: '/portfolio/patio-after-1.jpg',
-    features: ['Weather Resistant', 'Easy Clean', 'Decorative Finish', 'Fast Cure'],
-    slug: 'st-augustine-patio-makeover',
-    hasDetailPage: false
+    category: 'Garage',
+    size: '650 sq ft',
+    description: 'High-end garage featuring Quicksilver metallic flake system. Perfect complement to luxury vehicles with mirror-like finish and superior durability.',
+    mainImage: '/images/Portfolio/Quicksilver job, Bentley car /quicksilver-job-bentley-car--1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Quicksilver job, Bentley car /quicksilver-job-bentley-car--1.jpg',
+      '/images/Portfolio/Quicksilver job, Bentley car /quicksilver-job-bentley-car--2.jpg',
+      '/images/Portfolio/Quicksilver job, Bentley car /quicksilver-job-bentley-car--3.jpg',
+      '/images/Portfolio/Quicksilver job, Bentley car /quicksilver-job-bentley-car--4.jpg'
+    ],
+    features: ['Quicksilver Flakes', 'Mirror Finish', 'Luxury Grade', 'Show Car Ready'],
+    slug: 'quicksilver-garage-bentley',
+    hasDetailPage: true
   },
   {
     id: 4,
-    title: 'Commercial Warehouse Floor',
-    location: 'Orange Park, FL',
-    date: '2023',
+    title: 'Tidal Wave Warehouse Floor',
+    location: 'Green Cove Springs, FL',
+    date: '2024',
     category: 'Commercial',
-    size: '5,000 sq ft',
-    description: 'Heavy-duty industrial flooring system designed for forklift traffic and chemical exposure.',
-    beforeImage: '/portfolio/commercial-before-1.jpg',
-    afterImage: '/portfolio/commercial-after-1.jpg',
-    features: ['Heavy Duty', 'Chemical Proof', 'High Traffic', 'Low Maintenance'],
-    slug: 'orange-park-commercial-warehouse',
+    size: '8,000 sq ft',
+    description: 'Heavy-duty commercial flooring with Tidal Wave decorative system. Built for high traffic and industrial use while maintaining aesthetic appeal.',
+    mainImage: '/images/Portfolio/Tidal wave job, warehouse /tidal-wave-job-warehouse-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Tidal wave job, warehouse /tidal-wave-job-warehouse-1.jpg',
+      '/images/Portfolio/Tidal wave job, warehouse /tidal-wave-job-warehouse-2.jpg',
+      '/images/Portfolio/Tidal wave job, warehouse /tidal-wave-job-warehouse-3.jpg',
+      '/images/Portfolio/Tidal wave job, warehouse /tidal-wave-job-warehouse-4.jpg'
+    ],
+    features: ['Heavy Duty', 'High Traffic', 'Chemical Resistant', 'Industrial Grade'],
+    slug: 'tidal-wave-warehouse-floor',
     hasDetailPage: false
   },
   {
     id: 5,
-    title: 'Driveway Extension Project',
-    location: 'Fleming Island, FL',
+    title: 'Elegant Patio Makeover',
+    location: 'St. Johns, FL',
     date: '2024',
-    category: 'Residential',
-    size: '400 sq ft',
-    description: 'Seamless driveway extension with matching color and texture to existing concrete.',
-    beforeImage: '/portfolio/driveway-before-1.jpg',
-    afterImage: '/portfolio/driveway-after-1.jpg',
-    features: ['Color Match', 'Seamless Blend', 'Weather Proof', 'Enhanced Curb Appeal'],
-    slug: 'fleming-island-driveway-extension',
+    category: 'Patio',
+    size: '800 sq ft',
+    description: 'Stunning outdoor entertainment space transformation with decorative coating system. Weather-resistant and easy to maintain for years of enjoyment.',
+    mainImage: '/images/Portfolio/Elegant patio makeover /elegant-patio-makeover--1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Elegant patio makeover /elegant-patio-makeover--1.jpg',
+      '/images/Portfolio/Elegant patio makeover /elegant-patio-makeover--2.jpg',
+      '/images/Portfolio/Elegant patio makeover /elegant-patio-makeover--3.jpg',
+      '/images/Portfolio/Elegant patio makeover /elegant-patio-makeover--4.jpg'
+    ],
+    features: ['Weather Resistant', 'Easy Clean', 'Decorative Finish', 'Entertainment Ready'],
+    slug: 'elegant-patio-makeover',
     hasDetailPage: false
   },
   {
     id: 6,
-    title: 'Multi-Car Garage System',
-    location: 'Nocatee, FL',
+    title: 'Three Car Garage System',
+    location: 'Fleming Island, FL',
     date: '2024',
     category: 'Garage',
-    size: '950 sq ft',
-    description: 'Three-car garage with premium granite flake blend and high-gloss clear coat finish.',
-    beforeImage: '/portfolio/garage-before-2.jpg',
-    afterImage: '/portfolio/garage-after-2.jpg',
-    features: ['Granite Flakes', 'High Gloss', 'Stain Proof', 'Mirror Finish'],
-    slug: 'nocatee-multi-car-garage',
+    size: '900 sq ft',
+    description: 'Large three-car garage with premium coating system. Spacious layout accommodates multiple vehicles with room for storage and workspace.',
+    mainImage: '/images/Portfolio/Three car garage/three-car-garage-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Three car garage/three-car-garage-1.jpg',
+      '/images/Portfolio/Three car garage/three-car-garage-2.jpg',
+      '/images/Portfolio/Three car garage/three-car-garage-3.jpg',
+      '/images/Portfolio/Three car garage/three-car-garage-4.jpg'
+    ],
+    features: ['Large Space', 'Multi-Vehicle', 'Storage Ready', 'Professional Grade'],
+    slug: 'three-car-garage-system',
     hasDetailPage: false
   },
   {
     id: 7,
-    title: 'Resort-Style Pool Area',
-    location: 'Mandarin, FL',
-    date: '2023',
-    category: 'Pool Deck',
-    size: '1,800 sq ft',
-    description: 'Complete pool deck and patio combination with tropical color scheme and texture.',
-    beforeImage: '/portfolio/pool-before-2.jpg',
-    afterImage: '/portfolio/pool-after-2.jpg',
-    features: ['Tropical Colors', 'Large Area', 'Texture Finish', 'Coordinate Design'],
-    slug: 'mandarin-resort-pool-area',
+    title: 'Outdoor Entertainment Space',
+    location: 'Nocatee, FL',
+    date: '2024',
+    category: 'Patio',
+    size: '600 sq ft',
+    description: 'Perfect entertaining space with custom decorative coating. Designed for hosting family gatherings and outdoor events with style and functionality.',
+    mainImage: '/images/Portfolio/Outdoor entertainment space/outdoor-entertainment-space-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Outdoor entertainment space/outdoor-entertainment-space-1.jpg',
+      '/images/Portfolio/Outdoor entertainment space/outdoor-entertainment-space-2.jpg',
+      '/images/Portfolio/Outdoor entertainment space/outdoor-entertainment-space-3.jpg',
+      '/images/Portfolio/Outdoor entertainment space/outdoor-entertainment-space-4.jpg'
+    ],
+    features: ['Custom Design', 'Entertainment Ready', 'Family Friendly', 'Low Maintenance'],
+    slug: 'outdoor-entertainment-space',
     hasDetailPage: false
   },
   {
     id: 8,
-    title: 'Outdoor Entertainment Space',
+    title: 'Gravel Flake Development Project',
+    location: 'Orange Park, FL',
+    date: '2024',
+    category: 'Residential',
+    size: '1,100 sq ft',
+    description: 'Large residential project featuring Gravel flake system. Natural stone appearance with superior durability for high-traffic residential areas.',
+    mainImage: '/images/Portfolio/Gravel job, Borishkevich developement/gravel-job-borishkevich-developement-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Gravel job, Borishkevich developement/gravel-job-borishkevich-developement-1.jpg',
+      '/images/Portfolio/Gravel job, Borishkevich developement/gravel-job-borishkevich-developement-2.jpg',
+      '/images/Portfolio/Gravel job, Borishkevich developement/gravel-job-borishkevich-developement-3.jpg',
+      '/images/Portfolio/Gravel job, Borishkevich developement/gravel-job-borishkevich-developement-4.jpg'
+    ],
+    features: ['Gravel Flakes', 'Natural Look', 'Large Area', 'Residential Grade'],
+    slug: 'gravel-flake-development',
+    hasDetailPage: false
+  },
+  {
+    id: 9,
+    title: 'Black Metallic LSC Project',
+    location: 'Jacksonville, FL',
+    date: '2024',
+    category: 'Garage',
+    size: '500 sq ft',
+    description: 'Sleek black metallic finish creates a sophisticated, modern look. Perfect for contemporary homes seeking a premium garage transformation.',
+    mainImage: '/images/Portfolio/Black Metallic job, LSC/black-metallic-job-lsc-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Black Metallic job, LSC/black-metallic-job-lsc-1.jpg',
+      '/images/Portfolio/Black Metallic job, LSC/black-metallic-job-lsc-2.jpg',
+      '/images/Portfolio/Black Metallic job, LSC/black-metallic-job-lsc-3.jpg',
+      '/images/Portfolio/Black Metallic job, LSC/black-metallic-job-lsc-4.jpg'
+    ],
+    features: ['Black Metallic', 'Modern Design', 'Premium Finish', 'Contemporary Style'],
+    slug: 'black-metallic-lsc-project',
+    hasDetailPage: false
+  },
+  {
+    id: 10,
+    title: 'Comet Flake Military Veteran Project',
+    location: 'Orange Park, FL',
+    date: '2024',
+    category: 'Garage',
+    size: '600 sq ft',
+    description: 'Honoring our military veterans with a Comet flake system installation. Patriotic service with premium results for those who served our country.',
+    mainImage: '/images/Portfolio/Comet job, Military vet job/comet-job-military-vet-job-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Comet job, Military vet job/comet-job-military-vet-job-1.jpg',
+      '/images/Portfolio/Comet job, Military vet job/comet-job-military-vet-job-2.jpg',
+      '/images/Portfolio/Comet job, Military vet job/comet-job-military-vet-job-3.jpg',
+      '/images/Portfolio/Comet job, Military vet job/comet-job-military-vet-job-4.jpg'
+    ],
+    features: ['Comet Flakes', 'Veteran Discount', 'Patriotic Service', 'Quality Installation'],
+    slug: 'comet-military-veteran-project',
+    hasDetailPage: false
+  },
+  {
+    id: 11,
+    title: 'Modern Garage Transformation',
     location: 'St. Johns, FL',
     date: '2024',
-    category: 'Patio',
-    size: '600 sq ft',
-    description: 'Perfect for entertaining with custom decorative pattern and integrated seating areas.',
-    beforeImage: '/portfolio/patio-before-2.jpg',
-    afterImage: '/portfolio/patio-after-2.jpg',
-    features: ['Custom Pattern', 'Entertainment Ready', 'Integrated Design', 'Low Maintenance'],
-    slug: 'st-johns-entertainment-patio',
+    category: 'Garage',
+    size: '550 sq ft',
+    description: 'Contemporary garage makeover with clean lines and modern aesthetic. Transform your garage into a space you\'re proud to show off.',
+    mainImage: '/images/Portfolio/Modern garage transformation /modern-garage-transformation--1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Modern garage transformation /modern-garage-transformation--1.jpg',
+      '/images/Portfolio/Modern garage transformation /modern-garage-transformation--2.jpg'
+    ],
+    features: ['Modern Design', 'Clean Lines', 'Contemporary Look', 'Space Enhancement'],
+    slug: 'modern-garage-transformation',
+    hasDetailPage: false
+  },
+  {
+    id: 12,
+    title: 'Resort Style Pool Deck',
+    location: 'Ponte Vedra Beach, FL',
+    date: '2024',
+    category: 'Pool Deck',
+    size: '900 sq ft',
+    description: 'Resort-quality pool deck transformation brings vacation vibes to your backyard. Cool, slip-resistant surface perfect for Florida poolside living.',
+    mainImage: '/images/Portfolio/Resort style pool/resort-style-pool-1.jpg',
+    imageGallery: [
+      '/images/Portfolio/Resort style pool/resort-style-pool-1.jpg'
+    ],
+    features: ['Resort Quality', 'Vacation Vibes', 'Slip Resistant', 'Cool Surface'],
+    slug: 'resort-style-pool-deck',
     hasDetailPage: false
   }
 ];
@@ -150,7 +263,7 @@ export default function PortfolioPage() {
       />
 
       {/* Portfolio Introduction */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -185,7 +298,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -206,12 +319,19 @@ export default function PortfolioPage() {
               {portfolioProjects.map((project) => (
                 <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="relative">
-                    {/* Placeholder for before/after images */}
-                    <div className="aspect-video bg-gradient-to-r from-gray-200 to-gray-300 flex items-center justify-center">
-                      <div className="text-center text-gray-500">
-                        <div className="text-sm font-medium">{project.category} Project</div>
-                        <div className="text-xs">Before & After Photos</div>
-                      </div>
+                    {/* Real project image */}
+                    <div className="aspect-video relative overflow-hidden">
+                      <img 
+                        src={project.mainImage} 
+                        alt={`${project.title} - ${project.location}`}
+                        className="w-full h-full object-cover transition-transform hover:scale-105"
+                        loading="lazy"
+                      />
+                      {project.hasVideo && (
+                        <div className="absolute top-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs">
+                          📹 Video
+                        </div>
+                      )}
                     </div>
                     <Badge className="absolute top-4 left-4 bg-blue-600">
                       {project.category}
@@ -274,7 +394,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Service Areas */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -300,7 +420,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Process Teaser */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">

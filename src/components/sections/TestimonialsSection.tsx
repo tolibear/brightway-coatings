@@ -13,7 +13,8 @@ const testimonials = [
     date: "June 2025",
     rating: 5,
     quote: "Shoutout to Brightway Coatings for the awesome job! Family owned and operated by Paul and his sons. They were very knowledgeable and professional, answering all our questions about the project we were planning. We are very happy with the amazing job they did on our workshop floor! It looks great and we are happy, happy customers!",
-    highlight: "Family Business Excellence"
+    highlight: "Family Business Excellence",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-1.jpg"
   },
   {
     name: "Richard Olszewski",
@@ -22,7 +23,8 @@ const testimonials = [
     date: "June 2025",
     rating: 5,
     quote: "Paul and Son's knocked it out of the park on my garage. Very respectful and took the time to explain the process. I would highly recommend them for any floor system needs.",
-    highlight: "Professional Service"
+    highlight: "Professional Service",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-2.jpg"
   },
   {
     name: "Jeffrey Blanton",
@@ -31,7 +33,8 @@ const testimonials = [
     date: "May 2025",
     rating: 5,
     quote: "Tim and Paul @ Brightway Coatings came out THE SAME DAY because I had just bought the place and needed to move in!!!! Cracked oil covered 2 car garage and adjoining single car garage. I did my research. Same material but a fraction of the Shark coating cost. Got the two top coats for a smidge extra. Definitely worth it. I highly recommend it. Even came out just to double check their work and make sure everything was tip top shape.",
-    highlight: "Same Day Service"
+    highlight: "Same Day Service",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-3.jpg"
   },
   {
     name: "Austin Beard",
@@ -40,7 +43,8 @@ const testimonials = [
     date: "May 2025",
     rating: 5,
     quote: "Awesome company! Paul and Tim were great to work with. They were friendly, punctual, and hard working. My garage looks brand new!",
-    highlight: "Outstanding Results"
+    highlight: "Outstanding Results",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-4.jpg"
   },
   {
     name: "Yelena Burshtynskiy",
@@ -49,7 +53,8 @@ const testimonials = [
     date: "February 2025",
     rating: 5,
     quote: "We had an excellent experience with Brightway Coatings Company! Reliable, nice, polite crew who showed up on time, communicated really well, answered all the questions, did an exceptional work and cleaned up after the job. Love the variety of colors that were introduced to us. The suggestions on our garage were excellent by the professionals, the quality of the product really made a difference for the older garage to look amazing! Thank you for going above and beyond with your work!",
-    highlight: "Exceptional Quality"
+    highlight: "Exceptional Quality",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-5.jpg"
   },
   {
     name: "Ray Torres",
@@ -58,7 +63,8 @@ const testimonials = [
     date: "March 2025",
     rating: 5,
     quote: "Paul and Timothy did an amazing job on my garage floor! I am very happy with their work. They were very knowledgeable and detailed. I would highly recommend!!",
-    highlight: "Amazing Results"
+    highlight: "Amazing Results",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-6.jpg"
   },
   {
     name: "Palm Coast Cycle Traders",
@@ -67,7 +73,8 @@ const testimonials = [
     date: "April 2025",
     rating: 5,
     quote: "Excellent experience with this small family owned company. They are very knowledgeable, very professional and very skilled at floor coatings. I was given a referral to use them to repair a bad job from another flooring company. Brightway did a fantastic job. Very neat and clean. Great communication. On time. Fair prices. I will use them again and so should you!",
-    highlight: "Problem Solving Experts"
+    highlight: "Problem Solving Experts",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-7.jpg"
   },
   {
     name: "Valentin Borishkevich",
@@ -76,7 +83,8 @@ const testimonials = [
     date: "April 2025",
     rating: 5,
     quote: "Tim and Paul at Brightway Coatings did an amazing job on my garage floor. The flake system they installed looks fantastic and really gives the space a clean, polished look. They were professional, on time, and clearly take pride in their work. We couldn't be happier with the result—highly recommend these guys if you're looking to upgrade your garage floor!",
-    highlight: "Flake System Specialists"
+    highlight: "Flake System Specialists",
+    photo: "/images/Reviews/Testimonial Vids- Pics/testimonial-vids--pics-8.jpg"
   }
 ];
 
@@ -115,7 +123,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-blue-50 via-slate-50 to-white">
+    <section className="py-32 bg-gradient-to-b from-blue-50 via-slate-50 to-white">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -135,7 +143,6 @@ export default function TestimonialsSection() {
               ))}
             </div>
             <span className="text-xl font-bold text-gray-900">5.0</span>
-            <span className="text-gray-600">({testimonials.length} reviews)</span>
           </div>
         </div>
         
@@ -213,29 +220,44 @@ export default function TestimonialsSection() {
                       
                       {/* Customer Info */}
                       <div className="border-t pt-4 mt-auto">
-                        <div className="flex items-start justify-between">
-                          <div>
-                            <h4 className="font-semibold text-gray-900 mb-1">
-                              {testimonial.name}
-                            </h4>
-                            <div className="flex items-center gap-4 text-sm text-gray-500 mb-2">
-                              <div className="flex items-center gap-1">
-                                <MapPin className="h-3 w-3" />
-                                {testimonial.location}
-                              </div>
-                              <div className="flex items-center gap-1">
-                                <Calendar className="h-3 w-3" />
-                                {testimonial.date}
-                              </div>
-                            </div>
-                            <div className="text-xs text-blue-600 font-medium">
-                              {testimonial.service}
-                            </div>
+                        <div className="flex items-start gap-4">
+                          {/* Customer Photo */}
+                          <div className="flex-shrink-0">
+                            <img 
+                              src={testimonial.photo}
+                              alt={`${testimonial.name} - satisfied Brightway Coatings customer`}
+                              className="w-12 h-12 rounded-full object-cover shadow-md"
+                              loading="lazy"
+                            />
                           </div>
                           
-                          {/* Highlight Badge */}
-                          <div className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full text-center">
-                            {testimonial.highlight}
+                          {/* Customer Details */}
+                          <div className="flex-grow">
+                            <div className="flex items-start justify-between">
+                              <div>
+                                <h4 className="font-semibold text-gray-900 mb-1">
+                                  {testimonial.name}
+                                </h4>
+                                <div className="flex items-center gap-3 text-sm text-gray-500 mb-2">
+                                  <div className="flex items-center gap-1">
+                                    <MapPin className="h-3 w-3" />
+                                    {testimonial.location}
+                                  </div>
+                                  <div className="flex items-center gap-1">
+                                    <Calendar className="h-3 w-3" />
+                                    {testimonial.date}
+                                  </div>
+                                </div>
+                                <div className="text-xs text-blue-600 font-medium">
+                                  {testimonial.service}
+                                </div>
+                              </div>
+                              
+                              {/* Highlight Badge */}
+                              <div className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full text-center flex-shrink-0">
+                                {testimonial.highlight}
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>

@@ -3,7 +3,7 @@ import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
 import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
-import FlakeColorShowcase from '@/components/sections/FlakeColorShowcase';
+import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
@@ -130,7 +130,7 @@ export default function PatioCoatingsPage() {
       />
 
       {/* Main Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -179,8 +179,81 @@ export default function PatioCoatingsPage() {
         </div>
       </section>
 
+      {/* Patio Gallery Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Jacksonville Patio Transformations
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Transform your outdoor living space with weather-resistant patio coatings. Beautiful, 
+                durable surfaces perfect for Florida's year-round outdoor lifestyle.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Portfolio/Elegant patio makeover /elegant-patio-makeover--1.jpg"
+                    alt="Elegant patio makeover with weather resistant coating in St. Johns"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Elegant Design
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Elegant Patio Makeover</h3>
+                  <p className="text-sm text-gray-600">Weather-resistant decorative finish</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Portfolio/Outdoor entertainment space/outdoor-entertainment-space-2.jpg"
+                    alt="Outdoor entertainment space with premium patio coating in Nocatee"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Entertainment Ready
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Entertainment Space</h3>
+                  <p className="text-sm text-gray-600">Perfect for hosting and family gatherings</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Portfolio/Outdoor entertainment space/outdoor-entertainment-space-4.jpg"
+                    alt="Custom patio design with decorative coating system"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Custom Design
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Custom Patio Design</h3>
+                  <p className="text-sm text-gray-600">Tailored to your outdoor lifestyle</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Applications Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -227,7 +300,7 @@ export default function PatioCoatingsPage() {
       </section>
 
       {/* Local Trust Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -270,10 +343,7 @@ export default function PatioCoatingsPage() {
         </div>
       </section>
 
-      <FlakeColorShowcase 
-        title="Beautiful Patio Color & Texture Options"
-        description="Design your perfect outdoor space with slip-resistant textures and stunning color combinations. Every option is engineered for Florida's climate and UV exposure."
-      />
+      <FlakeGallery />
 
       <TrustBadges />
       

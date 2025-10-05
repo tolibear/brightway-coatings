@@ -84,7 +84,7 @@ export default function AboutPage() {
       />
 
       {/* Family Story Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg max-w-none mb-12">
@@ -128,8 +128,93 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Family Photos Section */}
+      <section className="py-32 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Meet Paul & Tim
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                The father-and-son team behind Brightway Coatings, bringing three generations of 
+                craftsmanship and dedication to every project in Jacksonville and Northeast Florida.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <div className="space-y-4">
+                <img 
+                  src="/images/About/about-1.jpg"
+                  alt="Paul and Tim Brightway - father and son team at Brightway Coatings"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  loading="lazy"
+                />
+                <p className="text-center text-sm text-gray-600">Paul & Tim Brightway</p>
+              </div>
+              
+              <div className="space-y-4">
+                <img 
+                  src="/images/About/about-2.jpg"
+                  alt="Brightway Coatings family business - three generations of craftsmanship"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  loading="lazy"
+                />
+                <p className="text-center text-sm text-gray-600">Family Craftsmanship</p>
+              </div>
+              
+              <div className="space-y-4">
+                <img 
+                  src="/images/About/about-3.jpg"
+                  alt="Professional concrete coating installation by Brightway family team"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  loading="lazy"
+                />
+                <p className="text-center text-sm text-gray-600">Professional Installation</p>
+              </div>
+              
+              <div className="space-y-4">
+                <img 
+                  src="/images/About/about-4.jpg"
+                  alt="Brightway Coatings team working on concrete coating project in Jacksonville"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                  loading="lazy"
+                />
+                <p className="text-center text-sm text-gray-600">Quality Work</p>
+              </div>
+            </div>
+
+            {/* Family Video Section */}
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-center mb-6">
+                Our Story in Their Own Words
+              </h3>
+              <div className="relative aspect-video max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
+                <video 
+                  src="/images/About/about-video-1.mp4"
+                  controls
+                  className="w-full h-full object-cover"
+                  poster="/images/About/about-1.jpg"
+                >
+                  <p className="text-center text-gray-500 p-8">
+                    Your browser doesn't support video playback. 
+                    <a href="/images/About/about-video-1.mp4" className="text-blue-600 underline">
+                      Download the video
+                    </a> to watch our family story.
+                  </p>
+                </video>
+              </div>
+              <p className="text-center text-gray-600 mt-4">
+                Watch Paul and Tim share their journey from Ukraine to building Jacksonville's 
+                premier concrete coating company.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Family Values Grid */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -157,7 +242,7 @@ export default function AboutPage() {
       </section>
 
       {/* Company Milestones */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -182,7 +267,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Commitment */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">

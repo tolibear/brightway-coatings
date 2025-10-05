@@ -43,7 +43,7 @@ const warrantyFeatures: WarrantyFeature[] = [
 
 export default function WarrantySection() {
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
+    <section className="py-32 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">

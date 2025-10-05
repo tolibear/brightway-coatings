@@ -135,7 +135,7 @@ export default function CommercialFloorCoatingsPage() {
       />
 
       {/* Main Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -187,7 +187,7 @@ export default function CommercialFloorCoatingsPage() {
       </section>
 
       {/* Industries Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -250,7 +250,7 @@ export default function CommercialFloorCoatingsPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -307,7 +307,7 @@ export default function CommercialFloorCoatingsPage() {
       </section>
 
       {/* Local Trust Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">

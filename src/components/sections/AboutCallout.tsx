@@ -1,30 +1,5 @@
-import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Heart, Home, Award, Users } from 'lucide-react';
 import Link from 'next/link';
-
-const aboutStats = [
-  {
-    icon: Users,
-    number: "30+",
-    label: "Years Home Service Experience"
-  },
-  {
-    icon: Home,
-    number: "5+",
-    label: "Years Coatings Experience"
-  },
-  {
-    icon: Award,
-    number: "98%",
-    label: "Customer Satisfaction Rate"
-  },
-  {
-    icon: Heart,
-    number: "3rd",
-    label: "Generation American Family"
-  }
-];
 
 export default function AboutCallout() {
   const aboutText = `
@@ -39,7 +14,7 @@ export default function AboutCallout() {
   
 
   return (
-    <section className="py-16 bg-gradient-to-b from-slate-50 to-white">
+    <section className="py-32 bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -69,45 +44,15 @@ export default function AboutCallout() {
             </div>
             
             {/* Stats & Visual */}
-            <div className="space-y-6">
-              {/* Family Values Card */}
-              <Card className="bg-blue-50 border-2 border-blue-100">
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4">
-                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto">
-                      <Users className="h-8 w-8 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="font-bold text-xl mb-2 text-gray-900">
-                    Father & Son Partnership
-                  </h3>
-                  <p className="text-gray-700">
-                    Two generations working side-by-side, combining experience with innovation 
-                    to deliver unmatched quality in every installation.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 gap-4">
-                {aboutStats.map((stat, index) => {
-                  const IconComponent = stat.icon;
-                  return (
-                    <Card key={index} className="hover:shadow-md transition-shadow">
-                      <CardContent className="p-4 text-center">
-                        <div className="mb-2 flex justify-center">
-                          <IconComponent className="h-6 w-6 text-blue-600" />
-                        </div>
-                        <div className="text-2xl font-bold text-blue-600 mb-1">
-                          {stat.number}
-                        </div>
-                        <div className="text-xs text-gray-600">
-                          {stat.label}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
+            <div className="flex justify-center">
+              {/* Father & Son Image */}
+              <div className="w-full max-w-md aspect-square">
+                <img
+                  src="/images/Home Page/tim-and-paul.png"
+                  alt="Tim and Paul - Father and son team behind Brightway Coatings Jacksonville"
+                  className="w-full h-full object-cover rounded-2xl"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

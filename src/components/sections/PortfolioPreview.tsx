@@ -11,8 +11,8 @@ const portfolioProjects = [
     service: "Shop Floor Coating",
     completedDate: "May 2025",
     rating: 5,
-    beforeImage: "/images/portfolio/shop-before-1.jpg", // Placeholder
-    afterImage: "/images/portfolio/shop-after-1.jpg", // Placeholder
+    beforeImage: "/images/Home Page/Green cove shop transformation /green-cove-shop-transformation--1.jpg",
+    afterImage: "/images/Home Page/Green cove shop transformation /green-cove-shop-transformation--8.jpg",
     description: "Complete shop makeover with decorative flakes and commercial grade polyaspartic finish. Transformed from oil-stained concrete to showroom quality.",
     testimonialSnippet: "Shoutout to Brightway Coatings for the awesome job! Family owned and operated by Paul and his sons. They were very knowledgeable and professional, answering all our questions about the project we were planning. We are very happy with the amazing job they did on our workshop floor! It looks great and we are happy, happy customers!",
     customerName: "Joe Phoebus III"
@@ -24,8 +24,8 @@ const portfolioProjects = [
     service: "Pool Deck Coating", 
     completedDate: "July 2025",
     rating: 5,
-    beforeImage: "/images/portfolio/pool-before-1.jpg", // Placeholder
-    afterImage: "/images/portfolio/pool-after-1.jpg", // Placeholder
+    beforeImage: "/images/Home Page/Vilano beach pool deck /vilano-beach-pool-deck--1.jpg",
+    afterImage: "/images/Home Page/Vilano beach pool deck /vilano-beach-pool-deck--7.jpg",
     description: "Slip-resistant pool deck coating with cool-touch technology. Perfect for Florida heat with elegant stone-look finish.",
     testimonialSnippet: "Safe, beautiful, and stays cool even in summer heat. Exceeded expectations!",
     customerName: "Ronald Fossati"
@@ -37,8 +37,8 @@ const portfolioProjects = [
     service: "Garage Floor Coating",
     completedDate: "January 2025", 
     rating: 5,
-    beforeImage: "/images/portfolio/garage-before-1.jpg", // Placeholder
-    afterImage: "/images/portfolio/garage-after-1.jpg", // Placeholder
+    beforeImage: "/images/Home Page/Deer creek garage makeover /deer-creek-garage-makeover--1.jpg",
+    afterImage: "/images/Home Page/Deer creek garage makeover /deer-creek-garage-makeover--6.jpg",
     description: "Tim and Paul at Brightway Coatings did an amazing job on my garage floor. The flake system they installed looks fantastic and really gives the space a clean, polished look.",
     testimonialSnippet: "Tim and Paul were professional, on time, and clearly take pride in their work. We couldn't be happier with the result—highly recommend these guys if you're looking to upgrade your garage floor!",
     customerName: "Valentin Borishkevich"
@@ -47,7 +47,7 @@ const portfolioProjects = [
 
 export default function PortfolioPreview() {
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
@@ -67,26 +67,28 @@ export default function PortfolioPreview() {
                 <div className="relative h-48 bg-gray-200 overflow-hidden">
                   <div className="absolute inset-0 flex">
                     {/* Before Image (left half) */}
-                    <div className="w-1/2 relative bg-gray-300">
-                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                    <div className="w-1/2 relative overflow-hidden">
+                      <img 
+                        src={project.beforeImage} 
+                        alt={`${project.title} before transformation - ${project.location}`}
+                        className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-2 left-2 bg-red-500/90 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">
                         BEFORE
                       </div>
-                      <div className="flex items-center justify-center h-full text-gray-500">
-                        <span className="text-sm">Before Image</span>
-                      </div>
-                      {/* Placeholder for actual image */}
-                      {/* <Image src={project.beforeImage} alt={`${project.title} before`} fill className="object-cover" /> */}
                     </div>
                     {/* After Image (right half) */}
-                    <div className="w-1/2 relative bg-blue-100">
-                      <div className="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded">
+                    <div className="w-1/2 relative overflow-hidden">
+                      <img 
+                        src={project.afterImage} 
+                        alt={`${project.title} after transformation - ${project.location}`}
+                        className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-2 right-2 bg-green-500/90 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">
                         AFTER
                       </div>
-                      <div className="flex items-center justify-center h-full text-blue-600">
-                        <span className="text-sm">After Image</span>
-                      </div>
-                      {/* Placeholder for actual image */}
-                      {/* <Image src={project.afterImage} alt={`${project.title} after`} fill className="object-cover" /> */}
                     </div>
                   </div>
                 </div>

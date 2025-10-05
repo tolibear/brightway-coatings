@@ -139,7 +139,7 @@ export default function ContactPageClient() {
       />
 
       {/* Contact Information Cards */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -458,7 +458,7 @@ export default function ContactPageClient() {
       </section>
 
       {/* Google Maps Integration */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">

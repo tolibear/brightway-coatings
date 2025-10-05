@@ -66,7 +66,7 @@ export default function JacksonvillePoolDeckProject() {
       />
 
       {/* Back to Portfolio */}
-      <section className="py-8 bg-white border-b">
+      <section className="py-16 bg-white border-b">
         <div className="container mx-auto px-4">
           <Link 
             href="/portfolio" 

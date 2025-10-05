@@ -4,7 +4,7 @@ import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
 import CTABand from '@/components/sections/CTABand';
 import TrustBadges from '@/components/sections/TrustBadges';
-import FlakeColorShowcase from '@/components/sections/FlakeColorShowcase';
+import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
@@ -136,7 +136,7 @@ export default function PoolDeckCoatingsPage() {
       />
 
       {/* Main Content Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -188,8 +188,81 @@ export default function PoolDeckCoatingsPage() {
         </div>
       </section>
 
+      {/* Pool Deck Gallery Section */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Jacksonville Pool Deck Transformations
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                See how our slip-resistant, cool-touch pool deck coatings transform ordinary concrete into 
+                beautiful, safe surfaces perfect for Florida pool living.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Home Page/Vilano beach pool deck /vilano-beach-pool-deck--3.jpg"
+                    alt="Vilano Beach pool deck coating transformation - slip resistant and cool touch"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Vilano Beach
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Coastal Pool Deck</h3>
+                  <p className="text-sm text-gray-600">Cool-touch surface with slip-resistant texture</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Portfolio/Luxury pool deck coating/luxury-pool-deck-coating-2.jpg"
+                    alt="Luxury pool deck coating with chemical resistance in St. Augustine"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Luxury Grade
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Luxury Pool Deck</h3>
+                  <p className="text-sm text-gray-600">Premium coating with UV resistance</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48">
+                  <img 
+                    src="/images/Portfolio/Resort style pool/resort-style-pool-1.jpg"
+                    alt="Resort style pool deck with professional coating in Ponte Vedra Beach"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                    Resort Style
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-semibold mb-2">Resort Style Pool</h3>
+                  <p className="text-sm text-gray-600">Large area application with tropical finish</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Safety Features Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-32 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -243,7 +316,7 @@ export default function PoolDeckCoatingsPage() {
       </section>
 
       {/* Local Trust Section */}
-      <section className="py-16 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -287,10 +360,7 @@ export default function PoolDeckCoatingsPage() {
         </div>
       </section>
 
-      <FlakeColorShowcase 
-        title="Cool-Touch Pool Deck Colors & Textures"
-        description="Select from slip-resistant coatings designed specifically for pool areas. Every option stays cooler underfoot and provides superior safety around water."
-      />
+      <FlakeGallery />
 
       <TrustBadges />
       

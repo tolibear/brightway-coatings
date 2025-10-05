@@ -1,9 +1,9 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Clock, Shield, Award, Users, Zap } from 'lucide-react';
+import { Clock, Shield, Award, Users, Sparkles } from 'lucide-react';
 
 const valueProps = [
   {
-    icon: Zap,
+    icon: Sparkles,
     title: "Advanced Polyurea & Polyaspartic Systems", 
     description: "Our premium Polyurea and polyaspartic coating systems outperform traditional garage floor epoxy. UV-resistant, impact-proof, and chemical-resistant for Jacksonville's demanding climate."
   },
@@ -24,20 +24,34 @@ const valueProps = [
   },
   {
     icon: Clock,
-    title: "Complete Concrete Coating Solutions",
-    description: "From residential garages to commercial warehouses, we deliver custom coating solutions engineered for your specific needs and environment"
+    title: "1-Day Installation",
+    description: "Most residential concrete coating projects completed in just one day. Walk on your new floors the same evening with our advanced fast-cure polyaspartic systems."
   }
 ];
 
 export default function ValuePropositionCards() {
   return (
-    <section className="bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="relative py-32 bg-gray-900">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 opacity-10">
+        <div 
+          className="w-full h-full bg-repeat" 
+          style={{
+            backgroundImage: "url('/images/Flakes/Comet/comet.png')",
+            backgroundSize: "600px 600px"
+          }}
+        ></div>
+      </div>
+      
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-gray-900/80"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="mb-6 text-gray-900">
+          <h2 className="mb-6 text-white text-3xl md:text-4xl font-bold">
             Why Jacksonville Homeowners Choose Brightway for Concrete Coatings
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Five key advantages that make us Jacksonville's most trusted concrete coating specialists
           </p>
         </div>
@@ -47,17 +61,17 @@ export default function ValuePropositionCards() {
           {valueProps.slice(0, 3).map((prop, index) => {
             const IconComponent = prop.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-2 hover:border-blue-200 h-full">
+              <Card key={index} className="bg-gray-800 border border-gray-700 hover:border-gray-600 hover:shadow-xl transition-all duration-300 h-full">
                 <CardContent className="p-8 text-center card-content-enhanced h-full flex flex-col">
                   <div className="mb-6 flex justify-center">
-                    <div className="p-4 bg-blue-100 rounded-full">
-                      <IconComponent className="h-8 w-8 text-blue-600" />
+                    <div className="p-4 bg-gray-700 rounded-full">
+                      <IconComponent className="h-8 w-8 text-white" />
                     </div>
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-4 flex-grow-0">
+                  <h3 className="font-bold text-white mb-4 flex-grow-0">
                     {prop.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed flex-grow">
+                  <p className="text-gray-300 leading-relaxed flex-grow">
                     {prop.description}
                   </p>
                 </CardContent>
@@ -71,17 +85,17 @@ export default function ValuePropositionCards() {
           {valueProps.slice(3, 5).map((prop, index) => {
             const IconComponent = prop.icon;
             return (
-              <Card key={index + 3} className="hover:shadow-lg transition-shadow duration-300 border-2 hover:border-blue-200 h-full">
+              <Card key={index + 3} className="bg-gray-800 border border-gray-700 hover:border-gray-600 hover:shadow-xl transition-all duration-300 h-full">
                 <CardContent className="p-8 text-center card-content-enhanced h-full flex flex-col">
                   <div className="mb-6 flex justify-center">
-                    <div className="p-4 bg-blue-100 rounded-full">
-                      <IconComponent className="h-8 w-8 text-blue-600" />
+                    <div className="p-4 bg-gray-700 rounded-full">
+                      <IconComponent className="h-8 w-8 text-white" />
                     </div>
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-4 flex-grow-0">
+                  <h3 className="font-bold text-white mb-4 flex-grow-0">
                     {prop.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed flex-grow">
+                  <p className="text-gray-300 leading-relaxed flex-grow">
                     {prop.description}
                   </p>
                 </CardContent>

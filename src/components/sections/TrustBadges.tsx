@@ -38,13 +38,13 @@ const trustBadges: TrustBadge[] = [
 
 export default function TrustBadges() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-32 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">
             Why Jacksonville Homeowners Choose Brightway
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             Family-owned craftsmanship you can trust, backed by the industry's best warranties
           </p>
         </div>
@@ -53,21 +53,21 @@ export default function TrustBadges() {
           {trustBadges.map((badge, index) => {
             const IconComponent = badge.icon;
             return (
-              <Card key={index} className="border border-gray-200 hover:border-blue-300 transition-colors duration-300">
+              <Card key={index} className="bg-gray-800 border border-gray-700 hover:border-gray-600 transition-colors duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="mx-auto w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-4">
-                    <IconComponent className="w-8 h-8 text-blue-600" />
+                  <div className="mx-auto w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mb-4">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   
-                  <Badge className="bg-blue-600 text-white mb-3 px-3 py-1">
+                  <Badge className="bg-white text-gray-900 mb-3 px-3 py-1">
                     {badge.title}
                   </Badge>
                   
-                  <div className="text-sm font-semibold text-orange-600 mb-2">
+                  <div className="text-sm font-semibold text-gray-300 mb-2">
                     {badge.highlight}
                   </div>
                   
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-400 leading-relaxed">
                     {badge.description}
                   </p>
                 </CardContent>
@@ -77,7 +77,7 @@ export default function TrustBadges() {
         </div>
         
         <div className="text-center mt-8">
-          <p className="text-sm text-gray-500 max-w-3xl mx-auto">
+          <p className="text-sm text-gray-400 max-w-3xl mx-auto">
             Serving Jacksonville, St. Johns, St. Augustine, Ponte Vedra, Orange Park, Fleming Island, 
             Nocatee, Mandarin, and Julington Creek with professional concrete coating services.
           </p>
