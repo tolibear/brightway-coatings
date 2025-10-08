@@ -63,15 +63,15 @@ export default function ServicesOverview() {
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-300 h-full">
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="mb-4 flex justify-between items-start">
-                    <div className="p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
-                      <IconComponent className="h-8 w-8 text-blue-600" aria-hidden="true" />
+                    <div className="p-3 bg-primary/5 rounded-lg group-hover:bg-primary/10 transition-colors">
+                      <IconComponent className="h-8 w-8 text-primary" aria-hidden="true" />
                     </div>
                     <div className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
                       {service.highlight}
                     </div>
                   </div>
                   
-                  <h3 className="font-bold text-xl mb-3 text-gray-900 group-hover:text-blue-700 transition-colors">
+                  <h3 className="font-bold text-xl mb-3 text-gray-900 group-hover:text-primary/90 transition-colors">
                     {service.title}
                   </h3>
                   
@@ -83,7 +83,7 @@ export default function ServicesOverview() {
                     <Button 
                       asChild
                       variant="ghost" 
-                      className="w-full group-hover:bg-blue-50 transition-colors"
+                      className="w-full group-hover:bg-primary/5 transition-colors"
                     >
                       <Link href={service.slug} className="flex items-center justify-center gap-2">
                         Learn More 
@@ -106,15 +106,15 @@ export default function ServicesOverview() {
               <Card key={index + 3} className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-300 h-full">
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="mb-4 flex justify-between items-start">
-                    <div className="p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
-                      <IconComponent className="h-8 w-8 text-blue-600" aria-hidden="true" />
+                    <div className="p-3 bg-primary/5 rounded-lg group-hover:bg-primary/10 transition-colors">
+                      <IconComponent className="h-8 w-8 text-primary" aria-hidden="true" />
                     </div>
                     <div className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">
                       {service.highlight}
                     </div>
                   </div>
                   
-                  <h3 className="font-bold text-xl mb-3 text-gray-900 group-hover:text-blue-700 transition-colors">
+                  <h3 className="font-bold text-xl mb-3 text-gray-900 group-hover:text-primary/90 transition-colors">
                     {service.title}
                   </h3>
                   
@@ -126,7 +126,7 @@ export default function ServicesOverview() {
                     <Button 
                       asChild
                       variant="ghost" 
-                      className="w-full group-hover:bg-blue-50 transition-colors"
+                      className="w-full group-hover:bg-primary/5 transition-colors"
                     >
                       <Link href={service.slug} className="flex items-center justify-center gap-2">
                         Learn More 
@@ -145,7 +145,7 @@ export default function ServicesOverview() {
           <p className="text-sm text-gray-500 mb-4">
             Not sure which coating is right for you?
           </p>
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+          <Button size="lg" className="bg-primary hover:bg-primary/90">
             Get Free Consultation
           </Button>
         </div>

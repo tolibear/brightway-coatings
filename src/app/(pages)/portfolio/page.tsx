@@ -282,19 +282,19 @@ export default function PortfolioPage() {
             
             <div className="grid md:grid-cols-4 gap-6 mb-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
+                <div className="text-3xl font-bold text-primary mb-2">30+</div>
                 <div className="text-gray-600">Years Home Service</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-3xl font-bold text-primary mb-2">5+</div>
                 <div className="text-gray-600">Years Coatings Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">98%</div>
+                <div className="text-3xl font-bold text-primary mb-2">98%</div>
                 <div className="text-gray-600">Customer Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">2024</div>
+                <div className="text-3xl font-bold text-primary mb-2">2024</div>
                 <div className="text-gray-600">Founded</div>
               </div>
             </div>
@@ -313,7 +313,7 @@ export default function PortfolioPage() {
             {/* Category Filter - For future implementation */}
             <div className="flex flex-wrap justify-center gap-2 mb-12">
               {categories.map((category) => (
-                <Badge key={category} variant="outline" className="px-4 py-2 cursor-pointer hover:bg-blue-50">
+                <Badge key={category} variant="outline" className="px-4 py-2 cursor-pointer hover:bg-primary/5">
                   {category}
                 </Badge>
               ))}
@@ -338,7 +338,7 @@ export default function PortfolioPage() {
                         </div>
                       )}
                     </div>
-                    <Badge className="absolute top-4 left-4 bg-blue-600">
+                    <Badge className="absolute top-4 left-4 bg-primary">
                       {project.category}
                     </Badge>
                   </div>
@@ -372,7 +372,7 @@ export default function PortfolioPage() {
 
                     {/* View Details Button */}
                     {project.hasDetailPage ? (
-                      <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
+                      <Button asChild size="sm" className="w-full bg-primary hover:bg-primary/90">
                         <Link href={`/portfolio/${project.slug}`} className="flex items-center justify-center gap-2">
                           View Details
                           <ArrowRight className="w-4 h-4" />
@@ -390,7 +390,7 @@ export default function PortfolioPage() {
 
             {/* Load More Button - For future implementation */}
             <div className="text-center mt-12">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors">
                 View More Projects
               </button>
             </div>
@@ -439,21 +439,21 @@ export default function PortfolioPage() {
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div>
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   1
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Free Consultation</h3>
                 <p className="text-gray-600 text-sm">We visit your property to assess the space and understand your vision.</p>
               </div>
               <div>
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   2
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Custom Proposal</h3>
                 <p className="text-gray-600 text-sm">Detailed quote with material options, timeline, and warranty information.</p>
               </div>
               <div>
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">
                   3
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Professional Install</h3>

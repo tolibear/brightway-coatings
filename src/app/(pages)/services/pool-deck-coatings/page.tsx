@@ -164,10 +164,10 @@ export default function PoolDeckCoatingsPage() {
               </p>
 
               <p>
-                As <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">Jacksonville's pool coating specialists since 2024</Link>, we understand the unique demands pool environments 
+                As <Link href="/about" className="text-primary hover:text-primary/80 underline">Jacksonville's pool coating specialists since 2024</Link>, we understand the unique demands pool environments 
                 place on surface coatings. Our polyaspartic system is specifically formulated for wet areas, delivering 
                 the traction, chemical resistance, and temperature control that make pools safer and more enjoyable. Planning 
-                a complete outdoor makeover? Consider our <Link href="/services/patio-coatings" className="text-blue-600 hover:text-blue-800 underline">patio coatings</Link> for 
+                a complete outdoor makeover? Consider our <Link href="/services/patio-coatings" className="text-primary hover:text-primary/80 underline">patio coatings</Link> for 
                 surrounding entertainment areas.
               </p>
             </div>
@@ -179,8 +179,8 @@ export default function PoolDeckCoatingsPage() {
                 return (
                   <Card key={index} className="text-center p-6">
                     <CardContent className="space-y-4">
-                      <div className="mx-auto w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <IconComponent className="w-6 h-6 text-blue-600" />
+                      <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <IconComponent className="w-6 h-6 text-primary" />
                       </div>
                       <h3 className="font-semibold text-lg">{benefit.title}</h3>
                       <p className="text-gray-600 text-sm">{benefit.description}</p>
@@ -216,7 +216,7 @@ export default function PoolDeckCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Vilano Beach
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function PoolDeckCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Luxury Grade
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function PoolDeckCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Resort Style
                   </div>
                 </div>
@@ -286,7 +286,7 @@ export default function PoolDeckCoatingsPage() {
               ))}
             </div>
 
-            <div className="bg-blue-50 rounded-lg p-8">
+            <div className="bg-primary/5 rounded-lg p-8">
               <h3 className="text-2xl font-bold mb-6 text-center">
                 Perfect for All Pool Applications
               </h3>
@@ -297,7 +297,7 @@ export default function PoolDeckCoatingsPage() {
                   <ul className="space-y-2">
                     {poolTypes.map((type, index) => (
                       <li key={index} className="flex items-center">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                        <span className="w-2 h-2 bg-primary/50 rounded-full mr-3"></span>
                         <span className="text-gray-700">{type}</span>
                       </li>
                     ))}
@@ -330,20 +330,20 @@ export default function PoolDeckCoatingsPage() {
             
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-4xl font-bold text-primary mb-2">5+</div>
                 <div className="text-gray-600">Years of Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">Licensed</div>
+                <div className="text-4xl font-bold text-primary mb-2">Licensed</div>
                 <div className="text-gray-600">& Fully Insured</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">15 Year</div>
+                <div className="text-4xl font-bold text-primary mb-2">15 Year</div>
                 <div className="text-gray-600">Warranty</div>
               </div>
             </div>
 
-            <div className="bg-blue-50 rounded-lg p-8 mb-8">
+            <div className="bg-primary/5 rounded-lg p-8 mb-8">
               <p className="text-lg text-gray-700 mb-4">
                 <strong>Serving pool owners across Jacksonville:</strong> {businessInfo.serviceAreas.join(', ')}
               </p>

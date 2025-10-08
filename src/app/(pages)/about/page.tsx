@@ -113,7 +113,7 @@ export default function AboutPage() {
                 Tim grew up in the business, and together they launched Brightway Coatings in 2024, focusing on 
                 providing high-quality concrete coatings for residential and commercial customers throughout Jacksonville 
                 and Northeast Florida. You can see examples of our craftsmanship in our 
-                <Link href="/portfolio" className="text-blue-600 hover:text-blue-800 underline">project portfolio</Link>.
+                <Link href="/portfolio" className="text-primary hover:text-primary/80 underline">project portfolio</Link>.
               </p>
 
               <p>
@@ -203,7 +203,7 @@ export default function AboutPage() {
                 >
                   <p className="text-center text-gray-500 p-8">
                     Your browser doesn't support video playback. 
-                    <a href="/images/About/about-video-1.mp4" className="text-blue-600 underline">
+                    <a href="/images/About/about-video-1.mp4" className="text-primary underline">
                       Download the video
                     </a> to watch our family story.
                   </p>
@@ -232,8 +232,8 @@ export default function AboutPage() {
                 return (
                   <Card key={index} className="text-center p-6">
                     <CardContent className="space-y-4">
-                      <div className="mx-auto w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <IconComponent className="w-6 h-6 text-blue-600" />
+                      <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <IconComponent className="w-6 h-6 text-primary" />
                       </div>
                       <h3 className="font-semibold text-lg">{value.title}</h3>
                       <p className="text-gray-600 text-sm">{value.description}</p>
@@ -257,7 +257,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               {milestones.map((milestone, index) => (
                 <div key={index} className="flex items-start space-x-6">
-                  <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                  <div className="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
                     {milestone.year}
                   </div>
                   <div>
@@ -291,20 +291,20 @@ export default function AboutPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">30+</div>
+                <div className="text-4xl font-bold text-primary mb-2">30+</div>
                 <div className="text-gray-600">Years Home Service Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-4xl font-bold text-primary mb-2">5+</div>
                 <div className="text-gray-600">Years Coatings Expertise</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                <div className="text-4xl font-bold text-primary mb-2">98%</div>
                 <div className="text-gray-600">Customer Satisfaction Rate</div>
               </div>
             </div>
 
-            <div className="mt-12 bg-blue-50 rounded-lg p-8">
+            <div className="mt-12 bg-primary/5 rounded-lg p-8">
               <h3 className="text-2xl font-bold mb-4">
                 Proudly Serving Northeast Florida
               </h3>

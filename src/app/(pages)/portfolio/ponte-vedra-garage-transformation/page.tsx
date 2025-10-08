@@ -73,7 +73,7 @@ export default function PonteVedraGarageProject() {
         <div className="container mx-auto px-4">
           <Link 
             href="/portfolio" 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+            className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Portfolio
@@ -103,7 +103,7 @@ export default function PonteVedraGarageProject() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-3 text-blue-600">After</h3>
+                      <h3 className="text-lg font-semibold mb-3 text-primary">After</h3>
                       <ImagePlaceholder
                         alt={`After: ${projectDetails.afterDescription}`}
                         aspectRatio="landscape"
@@ -224,7 +224,7 @@ export default function PonteVedraGarageProject() {
       </section>
 
       {/* Customer Testimonial */}
-      <section className="bg-blue-50">
+      <section className="bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="mb-8 text-gray-900">What Our Customer Says</h2>
@@ -251,7 +251,7 @@ export default function PonteVedraGarageProject() {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <Badge className="mb-4 bg-blue-600">Garage</Badge>
+                  <Badge className="mb-4 bg-primary">Garage</Badge>
                   <ImagePlaceholder
                     alt="Multi-car garage system in Nocatee"
                     aspectRatio="landscape"
@@ -262,7 +262,7 @@ export default function PonteVedraGarageProject() {
                   <p className="text-sm text-gray-600 mb-3">Nocatee, FL • 950 sq ft</p>
                   <Link 
                     href="/portfolio/nocatee-multi-car-garage" 
-                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                    className="text-primary hover:text-primary/80 text-sm font-medium"
                   >
                     View Project →
                   </Link>
@@ -282,7 +282,7 @@ export default function PonteVedraGarageProject() {
                   <p className="text-sm text-gray-600 mb-3">Jacksonville, FL • 1,200 sq ft</p>
                   <Link 
                     href="/portfolio/jacksonville-luxury-pool-deck" 
-                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                    className="text-primary hover:text-primary/80 text-sm font-medium"
                   >
                     View Project →
                   </Link>
@@ -291,7 +291,7 @@ export default function PonteVedraGarageProject() {
 
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <Badge className="mb-4 bg-orange-600">Patio</Badge>
+                  <Badge className="mb-4 bg-secondary">Patio</Badge>
                   <ImagePlaceholder
                     alt="Elegant patio makeover in St. Augustine"
                     aspectRatio="landscape"
@@ -302,7 +302,7 @@ export default function PonteVedraGarageProject() {
                   <p className="text-sm text-gray-600 mb-3">St. Augustine, FL • 800 sq ft</p>
                   <Link 
                     href="/portfolio/st-augustine-patio-makeover" 
-                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                    className="text-primary hover:text-primary/80 text-sm font-medium"
                   >
                     View Project →
                   </Link>
@@ -313,7 +313,7 @@ export default function PonteVedraGarageProject() {
             <div className="text-center mt-12">
               <Link 
                 href="/portfolio" 
-                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
               >
                 View All Projects
               </Link>

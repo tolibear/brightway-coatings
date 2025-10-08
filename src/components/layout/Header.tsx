@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { businessInfo } from '@/data/business';
 
@@ -28,22 +29,26 @@ export default function Header() {
 
   return (
     <header 
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 z-50 -mb-24 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white border-b border-gray-200 shadow-sm' 
           : 'bg-white/10 backdrop-blur-md border-b border-white/20'
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24 py-4">
           {/* Logo */}
           <Link 
             href="/" 
-            className={`text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-blue-600' : 'text-white'
-            }`}
+            className="relative h-[81px] w-[325px] transition-opacity duration-300"
           >
-            {businessInfo.name}
+            <Image
+              src={isScrolled ? '/images/Logos/light-2.png' : '/images/Logos/dark-2.png'}
+              alt={`${businessInfo.name} Logo`}
+              fill
+              className="object-contain object-left"
+              priority
+            />
           </Link>
           
           {/* Desktop Navigation */}
@@ -52,7 +57,7 @@ export default function Header() {
               href="/" 
               className={`transition-colors duration-300 ${
                 isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600' 
+                  ? 'text-gray-700 hover:text-primary' 
                   : 'text-white/90 hover:text-white'
               }`}
             >
@@ -62,7 +67,7 @@ export default function Header() {
               href="/services" 
               className={`transition-colors duration-300 ${
                 isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600' 
+                  ? 'text-gray-700 hover:text-primary' 
                   : 'text-white/90 hover:text-white'
               }`}
             >
@@ -72,7 +77,7 @@ export default function Header() {
               href="/portfolio" 
               className={`transition-colors duration-300 ${
                 isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600' 
+                  ? 'text-gray-700 hover:text-primary' 
                   : 'text-white/90 hover:text-white'
               }`}
             >
@@ -82,7 +87,7 @@ export default function Header() {
               href="/about" 
               className={`transition-colors duration-300 ${
                 isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600' 
+                  ? 'text-gray-700 hover:text-primary' 
                   : 'text-white/90 hover:text-white'
               }`}
             >
@@ -92,7 +97,7 @@ export default function Header() {
               href="/contact" 
               className={`transition-colors duration-300 ${
                 isScrolled 
-                  ? 'text-gray-700 hover:text-blue-600' 
+                  ? 'text-gray-700 hover:text-primary' 
                   : 'text-white/90 hover:text-white'
               }`}
             >
@@ -106,7 +111,7 @@ export default function Header() {
               href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`}
               className={`hidden sm:block font-semibold transition-colors duration-300 ${
                 isScrolled 
-                  ? 'text-blue-600 hover:text-blue-700' 
+                  ? 'text-primary hover:text-primary/80' 
                   : 'text-white hover:text-white/80'
               }`}
             >
@@ -115,7 +120,7 @@ export default function Header() {
             <Button 
               className={`transition-all duration-300 ${
                 isScrolled 
-                  ? 'bg-blue-600 hover:bg-blue-700 text-white' 
+                  ? 'bg-primary hover:bg-primary/90 text-white' 
                   : 'bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/30'
               }`}
             >

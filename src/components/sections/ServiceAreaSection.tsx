@@ -99,9 +99,9 @@ export default function ServiceAreaSection() {
               return (
                 <div key={index} className="text-center">
                   <div className="mb-2 flex justify-center">
-                    <IconComponent className="h-6 w-6 text-blue-600" />
+                    <IconComponent className="h-6 w-6 text-primary" />
                   </div>
-                  <div className="text-xl font-bold text-blue-600">{stat.number}</div>
+                  <div className="text-xl font-bold text-primary">{stat.number}</div>
                   <div className="text-xs text-gray-600">{stat.label}</div>
                 </div>
               );
@@ -118,7 +118,7 @@ export default function ServiceAreaSection() {
                   {/* Area Header */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center gap-2">
-                      <MapPin className={`h-5 w-5 ${area.isHomeBase ? 'text-green-600' : 'text-blue-600'}`} />
+                      <MapPin className={`h-5 w-5 ${area.isHomeBase ? 'text-green-600' : 'text-primary'}`} />
                       <h4 className="font-bold text-lg text-gray-900">
                         {area.name}
                       </h4>
@@ -142,7 +142,7 @@ export default function ServiceAreaSection() {
                     </div>
                     <div className="flex flex-wrap gap-1">
                       {area.highlights.map((highlight, idx) => (
-                        <span key={idx} className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">
+                        <span key={idx} className="text-xs bg-primary/10 text-primary/90 px-2 py-1 rounded">
                           {highlight}
                         </span>
                       ))}
@@ -171,7 +171,7 @@ export default function ServiceAreaSection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
               <a href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`}>
                 <Phone className="mr-2 h-4 w-4" />
                 Call {businessInfo.phone}

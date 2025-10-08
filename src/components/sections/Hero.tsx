@@ -86,7 +86,7 @@ export default function Hero({
               )}
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button size="lg" className="bg-primary hover:bg-primary/90">
                   {ctaPrimary}
                 </Button>
                 <Button 
@@ -145,7 +145,7 @@ export default function Hero({
             )}
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
                 {ctaPrimary}
               </Button>
               <Button 

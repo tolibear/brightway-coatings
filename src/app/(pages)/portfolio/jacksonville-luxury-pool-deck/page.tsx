@@ -75,7 +75,7 @@ export default function JacksonvillePoolDeckProject() {
         <div className="container mx-auto px-4">
           <Link 
             href="/portfolio" 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+            className="inline-flex items-center text-primary hover:text-primary/80 font-medium"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Portfolio
@@ -105,7 +105,7 @@ export default function JacksonvillePoolDeckProject() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-3 text-blue-600">After</h3>
+                      <h3 className="text-lg font-semibold mb-3 text-primary">After</h3>
                       <ImagePlaceholder
                         alt={`After: ${projectDetails.afterDescription}`}
                         aspectRatio="landscape"
@@ -118,11 +118,11 @@ export default function JacksonvillePoolDeckProject() {
                 </div>
 
                 {/* Temperature Comparison */}
-                <Card className="bg-blue-50 border-blue-200">
+                <Card className="bg-primary/5 border-blue-200">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4 mb-4">
-                      <Thermometer className="w-8 h-8 text-blue-600" />
-                      <h3 className="text-xl font-bold text-blue-900">Cool Surface Technology</h3>
+                      <Thermometer className="w-8 h-8 text-primary" />
+                      <h3 className="text-xl font-bold text-primary/70">Cool Surface Technology</h3>
                     </div>
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="text-center">
@@ -130,7 +130,7 @@ export default function JacksonvillePoolDeckProject() {
                         <div className="text-sm text-gray-700">Original Concrete Temperature</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-3xl font-bold text-blue-600 mb-2">130°F</div>
+                        <div className="text-3xl font-bold text-primary mb-2">130°F</div>
                         <div className="text-sm text-gray-700">Cool-Surface Coating Temperature</div>
                       </div>
                     </div>
@@ -268,10 +268,10 @@ export default function JacksonvillePoolDeckProject() {
                     </CardContent>
                   </Card>
 
-                  <Card className="bg-blue-50">
+                  <Card className="bg-primary/5">
                     <CardContent className="p-6 text-center">
-                      <h3 className="text-lg font-bold mb-2 text-blue-900">Pool Area Specialist</h3>
-                      <p className="text-sm text-blue-800">
+                      <h3 className="text-lg font-bold mb-2 text-primary/70">Pool Area Specialist</h3>
+                      <p className="text-sm text-primary/80">
                         Certified for pool deck applications with specialized knowledge of pool chemistry and safety requirements.
                       </p>
                     </CardContent>
@@ -284,7 +284,7 @@ export default function JacksonvillePoolDeckProject() {
       </section>
 
       {/* Customer Testimonial */}
-      <section className="bg-blue-50">
+      <section className="bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="mb-8 text-gray-900">What Our Customer Says</h2>
@@ -322,7 +322,7 @@ export default function JacksonvillePoolDeckProject() {
                   <p className="text-sm text-gray-600 mb-3">Mandarin, FL • 1,800 sq ft</p>
                   <Link 
                     href="/portfolio/mandarin-resort-pool-area" 
-                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                    className="text-primary hover:text-primary/80 text-sm font-medium"
                   >
                     View Project →
                   </Link>
@@ -331,7 +331,7 @@ export default function JacksonvillePoolDeckProject() {
 
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <Badge className="mb-4 bg-blue-600">Garage</Badge>
+                  <Badge className="mb-4 bg-primary">Garage</Badge>
                   <ImagePlaceholder
                     alt="Modern garage transformation in Ponte Vedra"
                     aspectRatio="landscape"
@@ -342,7 +342,7 @@ export default function JacksonvillePoolDeckProject() {
                   <p className="text-sm text-gray-600 mb-3">Ponte Vedra Beach, FL • 650 sq ft</p>
                   <Link 
                     href="/portfolio/ponte-vedra-garage-transformation" 
-                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                    className="text-primary hover:text-primary/80 text-sm font-medium"
                   >
                     View Project →
                   </Link>
@@ -351,7 +351,7 @@ export default function JacksonvillePoolDeckProject() {
 
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <Badge className="mb-4 bg-orange-600">Patio</Badge>
+                  <Badge className="mb-4 bg-secondary">Patio</Badge>
                   <ImagePlaceholder
                     alt="Outdoor entertainment space in St. Johns"
                     aspectRatio="landscape"
@@ -362,7 +362,7 @@ export default function JacksonvillePoolDeckProject() {
                   <p className="text-sm text-gray-600 mb-3">St. Johns, FL • 600 sq ft</p>
                   <Link 
                     href="/portfolio/st-johns-entertainment-patio" 
-                    className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+                    className="text-primary hover:text-primary/80 text-sm font-medium"
                   >
                     View Project →
                   </Link>
@@ -373,7 +373,7 @@ export default function JacksonvillePoolDeckProject() {
             <div className="text-center mt-12">
               <Link 
                 href="/portfolio" 
-                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
               >
                 View All Projects
               </Link>

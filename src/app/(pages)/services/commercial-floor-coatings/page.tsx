@@ -179,7 +179,7 @@ export default function CommercialFloorCoatingsPage() {
                   <Card key={index} className="text-center p-6">
                     <CardContent className="space-y-4">
                       <div className="mx-auto w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                        <IconComponent className="w-6 h-6 text-orange-600" />
+                        <IconComponent className="w-6 h-6 text-secondary" />
                       </div>
                       <h3 className="font-semibold text-lg">{benefit.title}</h3>
                       <p className="text-gray-600 text-sm">{benefit.description}</p>
@@ -209,7 +209,7 @@ export default function CommercialFloorCoatingsPage() {
                     <div className="grid grid-cols-2 gap-2">
                       {industry.applications.map((application, appIndex) => (
                         <div key={appIndex} className="flex items-center text-sm">
-                          <span className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></span>
+                          <span className="w-1.5 h-1.5 bg-secondary rounded-full mr-2"></span>
                           <span className="text-gray-700">{application}</span>
                         </div>
                       ))}
@@ -226,7 +226,7 @@ export default function CommercialFloorCoatingsPage() {
               
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-orange-600 mb-2">30+</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">30+</div>
                   <div className="text-sm text-gray-600 mb-3">Years in Business</div>
                   <p className="text-gray-700 text-sm">
                     Three decades of commercial experience serving Northeast Florida businesses with 
@@ -234,7 +234,7 @@ export default function CommercialFloorCoatingsPage() {
                   </p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-600 mb-2">500+</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">500+</div>
                   <div className="text-sm text-gray-600 mb-3">Commercial Projects</div>
                   <p className="text-gray-700 text-sm">
                     From small retail spaces to large warehouses, we have the experience to handle 
@@ -242,7 +242,7 @@ export default function CommercialFloorCoatingsPage() {
                   </p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-600 mb-2">24/7</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">24/7</div>
                   <div className="text-sm text-gray-600 mb-3">Service Support</div>
                   <p className="text-gray-700 text-sm">
                     Emergency response and ongoing support ensure your business floors perform when 
@@ -268,19 +268,19 @@ export default function CommercialFloorCoatingsPage() {
                 <h3 className="text-xl font-semibold mb-4">Pre-Installation</h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Site assessment and usage analysis
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Custom system specification
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Detailed project timeline coordination
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Equipment and area protection setup
                   </li>
                 </ul>
@@ -290,19 +290,19 @@ export default function CommercialFloorCoatingsPage() {
                 <h3 className="text-xl font-semibold mb-4">Installation & Completion</h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Professional surface preparation
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Precision coating application
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Quality control inspections
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                    <span className="w-2 h-2 bg-secondary rounded-full mr-3 mt-2"></span>
                     Maintenance training and documentation
                   </li>
                 </ul>

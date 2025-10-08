@@ -207,7 +207,7 @@ export default function PatioCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Elegant Design
                   </div>
                 </div>
@@ -225,7 +225,7 @@ export default function PatioCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Entertainment Ready
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export default function PatioCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Custom Design
                   </div>
                 </div>
@@ -312,7 +312,7 @@ export default function PatioCoatingsPage() {
               Northeast Florida's Outdoor Coating Specialists
             </h2>
             
-            <div className="bg-blue-50 rounded-lg p-8 mb-8">
+            <div className="bg-primary/5 rounded-lg p-8 mb-8">
               <p className="text-lg text-gray-700 mb-4">
                 <strong>Serving the Jacksonville area since 2024:</strong> {businessInfo.serviceAreas.join(', ')}
               </p>

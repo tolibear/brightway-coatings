@@ -46,7 +46,7 @@ export default function WarrantySection() {
     <section className="py-32 bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          <div className="inline-block bg-primary/10 text-primary/80 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             Industry's Best Warranty Protection
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
@@ -65,8 +65,8 @@ export default function WarrantySection() {
               <Card key={index} className="border border-blue-100 hover:border-blue-200 transition-colors">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <IconComponent className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <IconComponent className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-2">
@@ -122,13 +122,13 @@ export default function WarrantySection() {
               </div>
             </div>
             
-            <div className="bg-blue-50 rounded-xl p-6">
+            <div className="bg-primary/5 rounded-xl p-6">
               <h4 className="font-bold text-gray-900 mb-4">
                 Simple Warranty Process
               </h4>
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
+                  <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
                     1
                   </div>
                   <p className="text-sm text-gray-700">
@@ -136,7 +136,7 @@ export default function WarrantySection() {
                   </p>
                 </div>
                 <div className="flex gap-3">
-                  <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
+                  <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
                     2
                   </div>
                   <p className="text-sm text-gray-700">
@@ -144,7 +144,7 @@ export default function WarrantySection() {
                   </p>
                 </div>
                 <div className="flex gap-3">
-                  <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
+                  <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
                     3
                   </div>
                   <p className="text-sm text-gray-700">
@@ -153,10 +153,10 @@ export default function WarrantySection() {
                 </div>
               </div>
               <div className="mt-6 p-4 bg-white rounded-lg border border-blue-200">
-                <p className="text-sm text-blue-800 font-medium text-center">
+                <p className="text-sm text-primary/80 font-medium text-center">
                   "We guarantee your complete satisfaction or we make it right - no exceptions."
                 </p>
-                <p className="text-xs text-blue-600 text-center mt-1">
+                <p className="text-xs text-primary text-center mt-1">
                   - Paul & Tim, Brightway Coatings
                 </p>
               </div>

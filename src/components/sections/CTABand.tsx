@@ -17,7 +17,7 @@ export default function CTABand({
   backgroundColor = 'blue',
 }: CTABandProps) {
   const bgClasses = {
-    blue: 'bg-blue-600 text-white',
+    blue: 'bg-primary text-white',
     gray: 'bg-gray-900 text-white',
     white: 'bg-gray-50 text-gray-900',
   };

@@ -156,11 +156,11 @@ export default function GarageFloorCoatingsPage() {
                 </p>
 
                 <p className="leading-relaxed">
-                  As Jacksonville's leading <Link href="/services" className="text-blue-600 hover:text-blue-800 underline font-medium">epoxy and concrete coating specialists</Link>, we've transformed thousands of Jacksonville area garages throughout 
+                  As Jacksonville's leading <Link href="/services" className="text-primary hover:text-primary/80 underline font-medium">epoxy and concrete coating specialists</Link>, we've transformed thousands of Jacksonville area garages throughout 
                   Northeast Florida, from downtown Jacksonville to Ponte Vedra to Orange Park. Every epoxy floor installation includes our comprehensive lifetime 
                   warranty because we know our garage floor epoxy systems will perform when traditional epoxy fails. Looking to coat other areas? We also specialize in 
-                  <Link href="/services/pool-deck-coatings" className="text-blue-600 hover:text-blue-800 underline font-medium"> Jacksonville pool deck coatings</Link> and 
-                  <Link href="/services/patio-coatings" className="text-blue-600 hover:text-blue-800 underline font-medium"> Jacksonville patio coatings</Link> using the same premium epoxy and polyaspartic systems.
+                  <Link href="/services/pool-deck-coatings" className="text-primary hover:text-primary/80 underline font-medium"> Jacksonville pool deck coatings</Link> and 
+                  <Link href="/services/patio-coatings" className="text-primary hover:text-primary/80 underline font-medium"> Jacksonville patio coatings</Link> using the same premium epoxy and polyaspartic systems.
                 </p>
               </div>
             </div>
@@ -172,8 +172,8 @@ export default function GarageFloorCoatingsPage() {
                 return (
                   <Card key={index} className="text-center h-full hover:shadow-lg transition-shadow duration-300">
                     <CardContent className="p-8 card-content-enhanced h-full flex flex-col">
-                      <div className="mx-auto w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                        <IconComponent className="w-8 h-8 text-blue-600" />
+                      <div className="mx-auto w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                        <IconComponent className="w-8 h-8 text-primary" />
                       </div>
                       <h3 className="font-bold text-gray-900 mb-4 flex-grow-0">{benefit.title}</h3>
                       <p className="text-gray-600 leading-relaxed flex-grow">{benefit.description}</p>
@@ -209,7 +209,7 @@ export default function GarageFloorCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Deer Creek
                   </div>
                 </div>
@@ -227,7 +227,7 @@ export default function GarageFloorCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Cappuccino Flakes
                   </div>
                 </div>
@@ -245,7 +245,7 @@ export default function GarageFloorCoatingsPage() {
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
-                  <div className="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
+                  <div className="absolute top-2 left-2 bg-primary text-white px-2 py-1 rounded text-xs">
                     Luxury Grade
                   </div>
                 </div>
@@ -273,7 +273,7 @@ export default function GarageFloorCoatingsPage() {
               {processSteps.map((step, index) => (
                 <div key={index} className="grid md:grid-cols-3 gap-8 items-center">
                   <div className="md:col-span-2 flex items-start space-x-8">
-                    <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl">
+                    <div className="flex-shrink-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">
                       {step.step}
                     </div>
                     <div className="flex-grow">
@@ -300,7 +300,7 @@ export default function GarageFloorCoatingsPage() {
               ))}
             </div>
 
-            <div className="mt-12 bg-blue-50 rounded-lg p-8">
+            <div className="mt-12 bg-primary/5 rounded-lg p-8">
               <h3 className="text-2xl font-bold mb-4 text-center">
                 Jacksonville Area Coverage
               </h3>
@@ -327,15 +327,15 @@ export default function GarageFloorCoatingsPage() {
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">30+</div>
+                <div className="text-4xl font-bold text-primary mb-2">30+</div>
                 <div className="text-gray-600">Years of Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-4xl font-bold text-primary mb-2">5+</div>
                 <div className="text-gray-600">Years Coatings Experience</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
+                <div className="text-4xl font-bold text-primary mb-2">100%</div>
                 <div className="text-gray-600">15 Year Warranty</div>
               </div>
             </div>

@@ -36,7 +36,7 @@ export default function ServiceCard({
         <ul className="space-y-2">
           {features.slice(0, 3).map((feature, index) => (
             <li key={index} className="flex items-center text-sm">
-              <span className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
+              <span className="w-2 h-2 bg-primary/50 rounded-full mr-3" />
               {feature}
             </li>
           ))}

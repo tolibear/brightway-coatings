@@ -56,7 +56,7 @@ export default function ImagePlaceholder({
 
   const variantClasses = {
     default: 'bg-gray-100 border-gray-200 text-gray-500',
-    blue: 'bg-blue-50 border-blue-200 text-blue-500',
+    blue: 'bg-primary/5 border-blue-200 text-blue-500',
     gray: 'bg-gray-50 border-gray-300 text-gray-400',
   };
 

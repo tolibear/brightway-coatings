@@ -168,7 +168,7 @@ export default function TestimonialsSection() {
                   onClick={() => goToSlide(index * testimonialsPerView)}
                   className={`w-3 h-3 rounded-full transition-colors ${
                     Math.floor(currentIndex / testimonialsPerView) === index
-                      ? 'bg-blue-600'
+                      ? 'bg-primary'
                       : 'bg-blue-200 hover:bg-blue-300'
                   }`}
                 />
@@ -203,8 +203,8 @@ export default function TestimonialsSection() {
                     <CardContent className="p-6 flex flex-col h-full">
                       {/* Quote Icon & Rating */}
                       <div className="flex justify-between items-start mb-4">
-                        <div className="p-2 bg-blue-100 rounded-lg">
-                          <Quote className="h-5 w-5 text-blue-600" />
+                        <div className="p-2 bg-primary/10 rounded-lg">
+                          <Quote className="h-5 w-5 text-primary" />
                         </div>
                         <div className="flex items-center">
                           {[...Array(testimonial.rating)].map((_, i) => (
@@ -248,7 +248,7 @@ export default function TestimonialsSection() {
                                     {testimonial.date}
                                   </div>
                                 </div>
-                                <div className="text-xs text-blue-600 font-medium">
+                                <div className="text-xs text-primary font-medium">
                                   {testimonial.service}
                                 </div>
                               </div>
@@ -273,15 +273,15 @@ export default function TestimonialsSection() {
         <div className="text-center bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-100">
           <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">98%</div>
+              <div className="text-3xl font-bold text-primary mb-1">98%</div>
               <div className="text-sm text-gray-600">Customer Satisfaction Rate</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">500+</div>
+              <div className="text-3xl font-bold text-primary mb-1">500+</div>
               <div className="text-sm text-gray-600">Northeast Florida Installations</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-1">30+</div>
+              <div className="text-3xl font-bold text-primary mb-1">30+</div>
               <div className="text-sm text-gray-600">Years Combined Experience</div>
             </div>
           </div>

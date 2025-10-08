@@ -112,11 +112,11 @@ export default function ThankYouPage() {
                 return (
                   <Card key={index} className="border border-blue-200 hover:border-blue-300 transition-colors">
                     <CardContent className="p-6 text-center">
-                      <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="w-8 h-8 text-blue-600" />
+                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <IconComponent className="w-8 h-8 text-primary" />
                       </div>
                       
-                      <div className="bg-blue-50 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                      <div className="bg-primary/5 text-primary/80 text-xs font-semibold px-3 py-1 rounded-full mb-3">
                         Step {index + 1}: {step.timeline}
                       </div>
                       
@@ -209,19 +209,19 @@ export default function ThankYouPage() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">30+</div>
+                  <div className="text-2xl font-bold text-primary">30+</div>
                   <div className="text-sm text-gray-600">Years Home Service</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">5+</div>
+                  <div className="text-2xl font-bold text-primary">5+</div>
                   <div className="text-sm text-gray-600">Years Coatings</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">98%</div>
+                  <div className="text-2xl font-bold text-primary">98%</div>
                   <div className="text-sm text-gray-600">Satisfaction Rate</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">15 Yr</div>
+                  <div className="text-2xl font-bold text-primary">15 Yr</div>
                   <div className="text-sm text-gray-600">Warranty</div>
                 </div>
               </div>

@@ -84,7 +84,7 @@ export default function BeforeAfterGallery({
                       
                       {/* After Image */}
                       <div>
-                        <h4 className="text-sm font-semibold text-blue-600 mb-2">After</h4>
+                        <h4 className="text-sm font-semibold text-primary mb-2">After</h4>
                         <ImagePlaceholder
                           alt={image.afterAlt}
                           aspectRatio="square"
@@ -106,7 +106,7 @@ export default function BeforeAfterGallery({
 
           {showCTA && (
             <div className="text-center">
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link href="/portfolio">View Full Portfolio</Link>
               </Button>
               <p className="text-sm text-gray-600 mt-3">

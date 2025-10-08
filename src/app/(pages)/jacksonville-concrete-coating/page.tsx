@@ -111,7 +111,7 @@ export default function JacksonvilleCoatingPage() {
                   <div className="grid md:grid-cols-3 gap-6">
                     <Card>
                       <CardContent className="p-4">
-                        <Badge className="mb-3 bg-blue-600">Garage</Badge>
+                        <Badge className="mb-3 bg-primary">Garage</Badge>
                         <ImagePlaceholder
                           alt="Garage floor coating in Riverside Jacksonville"
                           aspectRatio="landscape"
@@ -139,7 +139,7 @@ export default function JacksonvilleCoatingPage() {
 
                     <Card>
                       <CardContent className="p-4">
-                        <Badge className="mb-3 bg-orange-600">Patio</Badge>
+                        <Badge className="mb-3 bg-secondary">Patio</Badge>
                         <ImagePlaceholder
                           alt="Patio coating in San Marco Jacksonville"
                           aspectRatio="landscape"
@@ -155,7 +155,7 @@ export default function JacksonvilleCoatingPage() {
                   <div className="text-center mt-6">
                     <Link 
                       href="/portfolio" 
-                      className="inline-block text-blue-600 hover:text-blue-800 font-medium"
+                      className="inline-block text-primary hover:text-primary/80 font-medium"
                     >
                       View Full Jacksonville Portfolio →
                     </Link>
@@ -166,44 +166,44 @@ export default function JacksonvilleCoatingPage() {
               {/* Local Business Info Sidebar */}
               <div className="lg:col-span-1">
                 <div className="sticky top-8 space-y-6">
-                  <Card className="bg-blue-50 border-blue-200">
+                  <Card className="bg-primary/5 border-blue-200">
                     <CardContent className="p-6 text-center">
-                      <h3 className="text-lg font-bold mb-4 text-blue-900">Jacksonville Service Stats</h3>
+                      <h3 className="text-lg font-bold mb-4 text-primary/70">Jacksonville Service Stats</h3>
                       
                       <div className="grid grid-cols-2 gap-4 mb-6">
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.projectsCompleted}</div>
-                          <div className="text-sm text-blue-800">Projects Completed</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.projectsCompleted}</div>
+                          <div className="text-sm text-primary/80">Projects Completed</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.yearsInJacksonville}</div>
-                          <div className="text-sm text-blue-800">Years in Jacksonville</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.yearsInJacksonville}</div>
+                          <div className="text-sm text-primary/80">Years in Jacksonville</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.averageRating}</div>
-                          <div className="text-sm text-blue-800">Average Rating</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.averageRating}</div>
+                          <div className="text-sm text-primary/80">Average Rating</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.responseTime}</div>
-                          <div className="text-sm text-blue-800">Response Time</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.responseTime}</div>
+                          <div className="text-sm text-primary/80">Response Time</div>
                         </div>
                       </div>
 
-                      <div className="space-y-3 text-sm text-blue-800">
+                      <div className="space-y-3 text-sm text-primary/80">
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Licensed Florida Contractor</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Fully Insured & Bonded</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Family-Owned Since 2024</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Local Jacksonville Business</span>
                         </div>
                       </div>
@@ -213,13 +213,13 @@ export default function JacksonvilleCoatingPage() {
                   <Card>
                     <CardContent className="p-6">
                       <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                        <Phone className="w-5 h-5 text-blue-600" />
+                        <Phone className="w-5 h-5 text-primary" />
                         Quick Contact
                       </h3>
                       
                       <div className="space-y-3 text-sm">
                         <div>
-                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-blue-600 hover:text-blue-800">904-540-9693</a>
+                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-primary hover:text-primary/80">904-540-9693</a>
                         </div>
                         <div>
                           <strong>Service Area:</strong> All of Jacksonville & Northeast FL
@@ -233,7 +233,7 @@ export default function JacksonvilleCoatingPage() {
                       <div className="mt-4 pt-4 border-t">
                         <Link 
                           href="/contact"
-                          className="block w-full bg-blue-600 text-white text-center py-2 px-4 rounded hover:bg-blue-700 transition-colors"
+                          className="block w-full bg-primary text-white text-center py-2 px-4 rounded hover:bg-primary/90 transition-colors"
                         >
                           Get Free Quote
                         </Link>

@@ -109,7 +109,7 @@ export default function PortfolioPreview() {
                   <span className="text-sm text-gray-500">({project.rating}.0)</span>
                 </div>
                 
-                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-blue-700 transition-colors">
+                <h3 className="font-bold text-lg mb-2 text-gray-900 group-hover:text-primary/90 transition-colors">
                   {project.title}
                 </h3>
                 
@@ -128,11 +128,11 @@ export default function PortfolioPreview() {
                   {project.description}
                 </p>
                 
-                <div className="bg-blue-50 p-3 rounded-lg mb-4">
-                  <p className="text-sm italic text-blue-800">
+                <div className="bg-primary/5 p-3 rounded-lg mb-4">
+                  <p className="text-sm italic text-primary/80">
                     &ldquo;{project.testimonialSnippet}&rdquo;
                   </p>
-                  <p className="text-xs text-blue-600 mt-1 font-medium">
+                  <p className="text-xs text-primary mt-1 font-medium">
                     - {project.customerName}
                   </p>
                 </div>
@@ -146,7 +146,7 @@ export default function PortfolioPreview() {
             Over 500+ successful installations throughout Northeast Florida
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
               <Link href="/portfolio">
                 View Complete Portfolio <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

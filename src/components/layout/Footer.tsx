@@ -86,7 +86,7 @@ export default function Footer() {
                   <div className="space-y-4">
                     <Button 
                       size="lg" 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-6"
+                      className="w-full bg-primary hover:bg-primary/90 text-lg py-6"
                       asChild
                     >
                       <a href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`}>
@@ -213,7 +213,7 @@ export default function Footer() {
             <div className="space-y-3">
               <a 
                 href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`}
-                className="block bg-blue-600 text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                className="block bg-primary text-white text-center py-3 px-4 rounded-lg hover:bg-primary/90 transition-colors font-medium"
               >
                 📞 Call {businessInfo.phone}
               </a>

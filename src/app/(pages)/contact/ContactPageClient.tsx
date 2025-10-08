@@ -151,14 +151,14 @@ export default function ContactPageClient() {
                 return (
                   <Card key={index} className="text-center hover:shadow-md transition-shadow">
                     <CardHeader className="pb-4">
-                      <div className="mx-auto w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <IconComponent className="w-6 h-6 text-blue-600" />
+                      <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <IconComponent className="w-6 h-6 text-primary" />
                       </div>
                       <CardTitle className="text-lg">{info.title}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-2">
                       {info.href ? (
-                        <a href={info.href} className="font-medium text-blue-600 hover:text-blue-800 block">
+                        <a href={info.href} className="font-medium text-primary hover:text-primary/80 block">
                           {info.content}
                         </a>
                       ) : (
@@ -205,7 +205,7 @@ export default function ContactPageClient() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
-                      <Calculator className="w-5 h-5 text-blue-600" />
+                      <Calculator className="w-5 h-5 text-primary" />
                       Free Project Estimate
                     </CardTitle>
                   </CardHeader>
@@ -314,8 +314,8 @@ export default function ContactPageClient() {
                           )}
                         />
 
-                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                          <p className="text-sm text-blue-800">
+                        <div className="bg-primary/5 border border-blue-200 rounded-lg p-4">
+                          <p className="text-sm text-primary/80">
                             <strong>Quick Response Promise:</strong> We typically respond to all inquiries within 2 hours during business hours. 
                             For urgent projects, call us directly at {businessInfo.phone}.
                           </p>
@@ -396,7 +396,7 @@ export default function ContactPageClient() {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
                         1
                       </div>
                       <div>
@@ -405,7 +405,7 @@ export default function ContactPageClient() {
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
                         2
                       </div>
                       <div>
@@ -414,7 +414,7 @@ export default function ContactPageClient() {
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
+                      <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
                         3
                       </div>
                       <div>

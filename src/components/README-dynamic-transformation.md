@@ -106,3 +106,5 @@ function CustomComponent() {
 - TransformationSetter component renders nothing (null) - it only sets the context state
 - Footer component subscribes to context changes and updates automatically
 - State persists across navigation within the session
+
+

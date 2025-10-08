@@ -37,8 +37,8 @@ export default function StickyMobileCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
       <div className="bg-white border-t border-gray-200 shadow-lg">
         {/* Trust text */}
-        <div className="bg-blue-50 px-4 py-2 text-center">
-          <p className="text-xs text-blue-700 font-medium">
+        <div className="bg-primary/5 px-4 py-2 text-center">
+          <p className="text-xs text-primary/90 font-medium">
             Licensed • Family-Owned Since 2024 • Same Day Response
           </p>
           <button
@@ -54,7 +54,7 @@ export default function StickyMobileCTA() {
         <div className="flex">
           <a
             href={`tel:${businessInfo.phone.replace(/[^0-9]/g, '')}`}
-            className="flex-1 bg-orange-600 text-white py-4 px-4 flex items-center justify-center gap-2 font-semibold hover:bg-orange-700 transition-colors"
+            className="flex-1 bg-secondary text-white py-4 px-4 flex items-center justify-center gap-2 font-semibold hover:bg-orange-700 transition-colors"
           >
             <Phone className="w-5 h-5" />
             <div className="text-center">
@@ -65,7 +65,7 @@ export default function StickyMobileCTA() {
           
           <a
             href="/contact"
-            className="flex-1 bg-blue-600 text-white py-4 px-4 flex items-center justify-center gap-2 font-semibold hover:bg-blue-700 transition-colors"
+            className="flex-1 bg-primary text-white py-4 px-4 flex items-center justify-center gap-2 font-semibold hover:bg-primary/90 transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
             <div className="text-center">

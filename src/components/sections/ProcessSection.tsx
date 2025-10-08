@@ -109,11 +109,11 @@ export default function ProcessSection() {
                       {/* Step Number & Icon */}
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+                          <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
                             {step.step}
                           </div>
-                          <div className="p-2 bg-blue-100 rounded-lg">
-                            <IconComponent className="h-6 w-6 text-blue-600" />
+                          <div className="p-2 bg-primary/10 rounded-lg">
+                            <IconComponent className="h-6 w-6 text-primary" />
                           </div>
                         </div>
                         <div className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
@@ -158,8 +158,8 @@ export default function ProcessSection() {
               return (
                 <div key={index} className="text-center">
                   <div className="mb-3 flex justify-center">
-                    <div className="p-3 bg-blue-100 rounded-full">
-                      <IconComponent className="h-6 w-6 text-blue-600" />
+                    <div className="p-3 bg-primary/10 rounded-full">
+                      <IconComponent className="h-6 w-6 text-primary" />
                     </div>
                   </div>
                   <h4 className="font-semibold text-gray-900 mb-2">
@@ -180,7 +180,7 @@ export default function ProcessSection() {
             Ready to experience our professional process firsthand?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
               Schedule Free Consultation
             </Button>
             <Button variant="outline" size="lg">

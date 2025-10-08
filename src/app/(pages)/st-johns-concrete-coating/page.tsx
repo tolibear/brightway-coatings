@@ -63,14 +63,14 @@ export default function StJohnsCoatingPage() {
       />
 
       {/* Local Business Emphasis */}
-      <section className="bg-blue-50 border-b-2 border-blue-100">
+      <section className="bg-primary/5 border-b-2 border-blue-100">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Home className="w-8 h-8 text-blue-600" />
-              <h3 className="text-2xl font-bold text-blue-900">Locally Owned & Operated</h3>
+              <Home className="w-8 h-8 text-primary" />
+              <h3 className="text-2xl font-bold text-primary/70">Locally Owned & Operated</h3>
             </div>
-            <p className="text-lg text-blue-800">
+            <p className="text-lg text-primary/80">
               Located at 172 Little Bear Run, St Johns, FL 32259 - We're not just your contractors, we're your neighbors.
             </p>
           </div>
@@ -138,7 +138,7 @@ export default function StJohnsCoatingPage() {
                   <div className="grid md:grid-cols-3 gap-6">
                     <Card>
                       <CardContent className="p-4">
-                        <Badge className="mb-3 bg-blue-600">Garage</Badge>
+                        <Badge className="mb-3 bg-primary">Garage</Badge>
                         <ImagePlaceholder
                           alt="Garage floor coating in Nocatee St. Johns"
                           aspectRatio="landscape"
@@ -166,7 +166,7 @@ export default function StJohnsCoatingPage() {
 
                     <Card>
                       <CardContent className="p-4">
-                        <Badge className="mb-3 bg-orange-600">Patio</Badge>
+                        <Badge className="mb-3 bg-secondary">Patio</Badge>
                         <ImagePlaceholder
                           alt="Patio coating in Fruit Cove"
                           aspectRatio="landscape"
@@ -182,7 +182,7 @@ export default function StJohnsCoatingPage() {
                   <div className="text-center mt-6">
                     <Link 
                       href="/portfolio" 
-                      className="inline-block text-blue-600 hover:text-blue-800 font-medium"
+                      className="inline-block text-primary hover:text-primary/80 font-medium"
                     >
                       View Full St. Johns Portfolio →
                     </Link>
@@ -193,44 +193,44 @@ export default function StJohnsCoatingPage() {
               {/* Local Business Info Sidebar */}
               <div className="lg:col-span-1">
                 <div className="sticky top-8 space-y-6">
-                  <Card className="bg-blue-50 border-blue-200">
+                  <Card className="bg-primary/5 border-blue-200">
                     <CardContent className="p-6 text-center">
-                      <h3 className="text-lg font-bold mb-4 text-blue-900">Local St. Johns Stats</h3>
+                      <h3 className="text-lg font-bold mb-4 text-primary/70">Local St. Johns Stats</h3>
                       
                       <div className="grid grid-cols-2 gap-4 mb-6">
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.projectsCompleted}</div>
-                          <div className="text-sm text-blue-800">Local Projects</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.projectsCompleted}</div>
+                          <div className="text-sm text-primary/80">Local Projects</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.yearsInStJohns}</div>
-                          <div className="text-sm text-blue-800">Years in St. Johns</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.yearsInStJohns}</div>
+                          <div className="text-sm text-primary/80">Years in St. Johns</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.averageRating}</div>
-                          <div className="text-sm text-blue-800">Local Rating</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.averageRating}</div>
+                          <div className="text-sm text-primary/80">Local Rating</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.responseTime}</div>
-                          <div className="text-sm text-blue-800">Local Response</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.responseTime}</div>
+                          <div className="text-sm text-primary/80">Local Response</div>
                         </div>
                       </div>
 
-                      <div className="space-y-3 text-sm text-blue-800">
+                      <div className="space-y-3 text-sm text-primary/80">
                         <div className="flex items-center gap-2">
-                          <Home className="w-4 h-4 text-blue-600" />
+                          <Home className="w-4 h-4 text-primary" />
                           <span>Local St. Johns Family</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>30+ Years Same Address</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Licensed Florida Contractor</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Active Community Member</span>
                         </div>
                       </div>
@@ -240,7 +240,7 @@ export default function StJohnsCoatingPage() {
                   <Card>
                     <CardContent className="p-6">
                       <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                        <MapPin className="w-5 h-5 text-blue-600" />
+                        <MapPin className="w-5 h-5 text-primary" />
                         Local Contact
                       </h3>
                       
@@ -251,7 +251,7 @@ export default function StJohnsCoatingPage() {
                           St Johns, FL 32259
                         </div>
                         <div>
-                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-blue-600 hover:text-blue-800">904-540-9693</a>
+                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-primary hover:text-primary/80">904-540-9693</a>
                         </div>
                         <div className="flex items-center gap-2">
                           <Clock className="w-4 h-4 text-gray-500" />
@@ -262,7 +262,7 @@ export default function StJohnsCoatingPage() {
                       <div className="mt-4 pt-4 border-t">
                         <Link 
                           href="/contact"
-                          className="block w-full bg-blue-600 text-white text-center py-2 px-4 rounded hover:bg-blue-700 transition-colors"
+                          className="block w-full bg-primary text-white text-center py-2 px-4 rounded hover:bg-primary/90 transition-colors"
                         >
                           Get Local Quote
                         </Link>

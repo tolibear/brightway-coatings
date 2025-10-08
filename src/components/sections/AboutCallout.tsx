@@ -30,7 +30,7 @@ export default function AboutCallout() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                   <Link href="/about">
                     Our Complete Story
                   </Link>

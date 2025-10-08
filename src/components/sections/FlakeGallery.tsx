@@ -81,7 +81,7 @@ export default function FlakeGallery() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
               Schedule Color Consultation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button 

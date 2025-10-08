@@ -64,14 +64,14 @@ export default function PonteVedraCoatingPage() {
       />
 
       {/* Coastal Expertise Highlight */}
-      <section className="bg-blue-50 border-b-2 border-blue-100">
+      <section className="bg-primary/5 border-b-2 border-blue-100">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <Waves className="w-8 h-8 text-blue-600" />
-              <h3 className="text-2xl font-bold text-blue-900">Coastal Environment Specialists</h3>
+              <Waves className="w-8 h-8 text-primary" />
+              <h3 className="text-2xl font-bold text-primary/70">Coastal Environment Specialists</h3>
             </div>
-            <p className="text-lg text-blue-800">
+            <p className="text-lg text-primary/80">
               Our coatings are specifically engineered to withstand salt air, humidity, and UV exposure from the Atlantic Ocean.
             </p>
           </div>
@@ -112,30 +112,30 @@ export default function PonteVedraCoatingPage() {
                 {/* Premium Features */}
                 <Card className="bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200 mb-8">
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-blue-900 mb-4">Premium Services for Luxury Homes</h3>
+                    <h3 className="text-xl font-bold text-primary/70 mb-4">Premium Services for Luxury Homes</h3>
                     <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
                       <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-600" />
+                        <CheckCircle className="w-4 h-4 text-primary" />
                         <span>Custom color matching services</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-600" />
+                        <CheckCircle className="w-4 h-4 text-primary" />
                         <span>Architect & designer coordination</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-600" />
+                        <CheckCircle className="w-4 h-4 text-primary" />
                         <span>Premium material upgrades</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-600" />
+                        <CheckCircle className="w-4 h-4 text-primary" />
                         <span>White-glove installation service</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-600" />
+                        <CheckCircle className="w-4 h-4 text-primary" />
                         <span>Extended warranty options</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-600" />
+                        <CheckCircle className="w-4 h-4 text-primary" />
                         <span>Concierge project management</span>
                       </div>
                     </div>
@@ -148,7 +148,7 @@ export default function PonteVedraCoatingPage() {
                   <div className="grid md:grid-cols-3 gap-6">
                     <Card>
                       <CardContent className="p-4">
-                        <Badge className="mb-3 bg-blue-600">Estate Garage</Badge>
+                        <Badge className="mb-3 bg-primary">Estate Garage</Badge>
                         <ImagePlaceholder
                           alt="Luxury garage floor coating in Ponte Vedra Beach estate"
                           aspectRatio="landscape"
@@ -159,7 +159,7 @@ export default function PonteVedraCoatingPage() {
                         <p className="text-sm text-gray-600">Custom granite flakes, 1,200 sq ft</p>
                         <Link 
                           href="/portfolio/ponte-vedra-garage-transformation" 
-                          className="text-blue-600 hover:text-blue-800 text-xs font-medium"
+                          className="text-primary hover:text-primary/80 text-xs font-medium"
                         >
                           View Details →
                         </Link>
@@ -198,7 +198,7 @@ export default function PonteVedraCoatingPage() {
                   <div className="text-center mt-6">
                     <Link 
                       href="/portfolio" 
-                      className="inline-block text-blue-600 hover:text-blue-800 font-medium"
+                      className="inline-block text-primary hover:text-primary/80 font-medium"
                     >
                       View Full Luxury Portfolio →
                     </Link>
@@ -211,42 +211,42 @@ export default function PonteVedraCoatingPage() {
                 <div className="sticky top-8 space-y-6">
                   <Card className="bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200">
                     <CardContent className="p-6 text-center">
-                      <h3 className="text-lg font-bold mb-4 text-blue-900">Ponte Vedra Expertise</h3>
+                      <h3 className="text-lg font-bold mb-4 text-primary/70">Ponte Vedra Expertise</h3>
                       
                       <div className="grid grid-cols-2 gap-4 mb-6">
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.projectsCompleted}</div>
-                          <div className="text-sm text-blue-800">Luxury Projects</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.projectsCompleted}</div>
+                          <div className="text-sm text-primary/80">Luxury Projects</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.yearsInPonteVedra}</div>
-                          <div className="text-sm text-blue-800">Years in Ponte Vedra</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.yearsInPonteVedra}</div>
+                          <div className="text-sm text-primary/80">Years in Ponte Vedra</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.averageRating}</div>
-                          <div className="text-sm text-blue-800">Client Rating</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.averageRating}</div>
+                          <div className="text-sm text-primary/80">Client Rating</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-blue-600">{localStats.avgHomeValue}</div>
-                          <div className="text-sm text-blue-800">Avg Home Value</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.avgHomeValue}</div>
+                          <div className="text-sm text-primary/80">Avg Home Value</div>
                         </div>
                       </div>
 
-                      <div className="space-y-3 text-sm text-blue-800">
+                      <div className="space-y-3 text-sm text-primary/80">
                         <div className="flex items-center gap-2">
-                          <Waves className="w-4 h-4 text-blue-600" />
+                          <Waves className="w-4 h-4 text-primary" />
                           <span>Coastal Environment Expert</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Luxury Home Specialist</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Premium Material Access</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <CheckCircle className="w-4 h-4 text-primary" />
                           <span>Concierge Service Level</span>
                         </div>
                       </div>
@@ -256,13 +256,13 @@ export default function PonteVedraCoatingPage() {
                   <Card>
                     <CardContent className="p-6">
                       <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                        <Phone className="w-5 h-5 text-blue-600" />
+                        <Phone className="w-5 h-5 text-primary" />
                         Premium Service Contact
                       </h3>
                       
                       <div className="space-y-3 text-sm">
                         <div>
-                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-blue-600 hover:text-blue-800">904-540-9693</a>
+                          <strong>Phone:</strong> <a href="tel:904-540-9693" className="text-primary hover:text-primary/80">904-540-9693</a>
                         </div>
                         <div>
                           <strong>Service Area:</strong> All Ponte Vedra communities
