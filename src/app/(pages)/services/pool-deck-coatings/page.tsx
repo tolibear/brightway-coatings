@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
 import TrustBadges from '@/components/sections/TrustBadges';
 import FlakeGallery from '@/components/sections/FlakeGallery';
+import ProcessSection from '@/components/sections/ProcessSection';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { ctaText, businessInfo } from '@/data/business';
@@ -366,6 +367,8 @@ export default function PoolDeckCoatingsPage() {
       </section>
 
       <TrustBadges />
+      
+      <ProcessSection />
       
       <FAQSection faqs={faqs} title="Pool Deck Coating Questions" />
 

@@ -62,7 +62,7 @@ export default function Header() {
             className="relative h-[81px] w-[325px] transition-opacity duration-300"
           >
             <Image
-              src={isScrolled ? '/images/Logos/light-2.png' : '/images/Logos/dark-2.png'}
+              src={isScrolled ? '/images/Logos/light.png' : '/images/Logos/dark.png'}
               alt={`${businessInfo.name} Logo`}
               fill
               className="object-contain object-left"
@@ -74,6 +74,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <NavigationMenu>
               <NavigationMenuList>
+                {/* Residential Dropdown */}
                 <NavigationMenuItem>
                   <NavigationMenuTrigger 
                     className={cn(
@@ -83,23 +84,10 @@ export default function Header() {
                         : 'text-white/90 hover:text-white data-[state=open]:text-white'
                     )}
                   >
-                    Services
+                    Residential
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4">
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/services"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">All Services</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              View our complete range of coating solutions
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
@@ -142,23 +130,10 @@ export default function Header() {
                       <li>
                         <NavigationMenuLink asChild>
                           <Link
-                            href="/services/commercial-floor-coatings"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">Commercial Coatings</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              Heavy-duty solutions for businesses
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li>
-                        <NavigationMenuLink asChild>
-                          <Link
                             href="/services/residential-floor-coatings"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
-                            <div className="text-sm font-medium leading-none">Residential Coatings</div>
+                            <div className="text-sm font-medium leading-none">Residential Floor Coatings</div>
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                               Premium finishes for your home
                             </p>
@@ -170,16 +145,43 @@ export default function Header() {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
+            
+            {/* Commercial Direct Link */}
             <Link 
-              href="/portfolio" 
+              href="/services/commercial-floor-coatings" 
               className={`transition-colors duration-300 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-primary' 
                   : 'text-white/90 hover:text-white'
               }`}
             >
-              Portfolio
+              Commercial
             </Link>
+            
+            {/* Colors Link */}
+            <Link 
+              href="/colors" 
+              className={`transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-gray-700 hover:text-primary' 
+                  : 'text-white/90 hover:text-white'
+              }`}
+            >
+              Colors
+            </Link>
+            
+            {/* Gallery Link (renamed from Portfolio) */}
+            <Link 
+              href="/gallery" 
+              className={`transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-gray-700 hover:text-primary' 
+                  : 'text-white/90 hover:text-white'
+              }`}
+            >
+              Gallery
+            </Link>
+            
             <Link 
               href="/about" 
               className={`transition-colors duration-300 ${
@@ -244,29 +246,23 @@ export default function Header() {
                   <SheetTitle>Menu</SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col space-y-4 mt-8">
+                  {/* Residential Dropdown */}
                   <div>
                     <button
                       onClick={() => {
-                        const servicesMenu = document.getElementById('mobile-services-menu');
-                        const chevron = document.getElementById('mobile-services-chevron');
-                        if (servicesMenu && chevron) {
-                          servicesMenu.classList.toggle('hidden');
+                        const residentialMenu = document.getElementById('mobile-residential-menu');
+                        const chevron = document.getElementById('mobile-residential-chevron');
+                        if (residentialMenu && chevron) {
+                          residentialMenu.classList.toggle('hidden');
                           chevron.classList.toggle('rotate-180');
                         }
                       }}
                       className="flex items-center justify-between w-full text-lg font-medium hover:text-primary transition-colors"
                     >
-                      Services
-                      <ChevronDown id="mobile-services-chevron" className="h-4 w-4 transition-transform duration-200" />
+                      Residential
+                      <ChevronDown id="mobile-residential-chevron" className="h-4 w-4 transition-transform duration-200" />
                     </button>
-                    <div id="mobile-services-menu" className="hidden mt-2 ml-4 space-y-2">
-                      <Link 
-                        href="/services" 
-                        className="block text-sm text-gray-600 hover:text-primary transition-colors py-1"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                      >
-                        All Services
-                      </Link>
+                    <div id="mobile-residential-menu" className="hidden mt-2 ml-4 space-y-2">
                       <Link 
                         href="/services/garage-floor-coatings" 
                         className="block text-sm text-gray-600 hover:text-primary transition-colors py-1"
@@ -289,28 +285,42 @@ export default function Header() {
                         Pool Deck Coatings
                       </Link>
                       <Link 
-                        href="/services/commercial-floor-coatings" 
-                        className="block text-sm text-gray-600 hover:text-primary transition-colors py-1"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                      >
-                        Commercial Coatings
-                      </Link>
-                      <Link 
                         href="/services/residential-floor-coatings" 
                         className="block text-sm text-gray-600 hover:text-primary transition-colors py-1"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        Residential Coatings
+                        Residential Floor Coatings
                       </Link>
                     </div>
                   </div>
+                  
+                  {/* Commercial Direct Link */}
                   <Link 
-                    href="/portfolio" 
+                    href="/services/commercial-floor-coatings" 
                     className="text-lg font-medium hover:text-primary transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Portfolio
+                    Commercial
                   </Link>
+                  
+                  {/* Colors Link */}
+                  <Link 
+                    href="/colors" 
+                    className="text-lg font-medium hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Colors
+                  </Link>
+                  
+                  {/* Gallery Link */}
+                  <Link 
+                    href="/gallery" 
+                    className="text-lg font-medium hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Gallery
+                  </Link>
+                  
                   <Link 
                     href="/about" 
                     className="text-lg font-medium hover:text-primary transition-colors"
@@ -348,3 +358,4 @@ export default function Header() {
     </header>
   );
 }
+

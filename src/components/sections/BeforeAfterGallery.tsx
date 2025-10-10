@@ -107,7 +107,7 @@ export default function BeforeAfterGallery({
           {showCTA && (
             <div className="text-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href="/portfolio">View Full Portfolio</Link>
+                <Link href="/gallery">View Full Gallery</Link>
               </Button>
               <p className="text-sm text-gray-600 mt-3">
                 See more transformations from across Northeast Florida

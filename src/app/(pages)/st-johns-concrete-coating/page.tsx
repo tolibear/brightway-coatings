@@ -181,10 +181,10 @@ export default function StJohnsCoatingPage() {
                   
                   <div className="text-center mt-6">
                     <Link 
-                      href="/portfolio" 
+                      href="/gallery" 
                       className="inline-block text-primary hover:text-primary/80 font-medium"
                     >
-                      View Full St. Johns Portfolio →
+                      View Full St. Johns Gallery →
                     </Link>
                   </div>
                 </div>

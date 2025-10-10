@@ -147,8 +147,8 @@ export default function PortfolioPreview() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <Link href="/portfolio">
-                View Complete Portfolio <ArrowRight className="ml-2 h-4 w-4" />
+              <Link href="/gallery">
+                View Complete Gallery <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button variant="outline" size="lg">

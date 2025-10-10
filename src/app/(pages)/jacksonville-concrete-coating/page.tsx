@@ -154,10 +154,10 @@ export default function JacksonvilleCoatingPage() {
                   
                   <div className="text-center mt-6">
                     <Link 
-                      href="/portfolio" 
+                      href="/gallery" 
                       className="inline-block text-primary hover:text-primary/80 font-medium"
                     >
-                      View Full Jacksonville Portfolio →
+                      View Full Jacksonville Gallery →
                     </Link>
                   </div>
                 </div>

@@ -158,7 +158,7 @@ export default function PonteVedraCoatingPage() {
                         <h4 className="font-semibold mb-1">Oceanfront Estate</h4>
                         <p className="text-sm text-gray-600">Custom granite flakes, 1,200 sq ft</p>
                         <Link 
-                          href="/portfolio/ponte-vedra-garage-transformation" 
+                          href="/gallery" 
                           className="text-primary hover:text-primary/80 text-xs font-medium"
                         >
                           View Details →
@@ -197,10 +197,10 @@ export default function PonteVedraCoatingPage() {
                   
                   <div className="text-center mt-6">
                     <Link 
-                      href="/portfolio" 
+                      href="/gallery" 
                       className="inline-block text-primary hover:text-primary/80 font-medium"
                     >
-                      View Full Luxury Portfolio →
+                      View Full Luxury Gallery →
                     </Link>
                   </div>
                 </div>

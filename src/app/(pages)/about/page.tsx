@@ -120,7 +120,7 @@ export default function AboutPage() {
                 Tim grew up in the business, and together they launched Brightway Coatings in 2024, focusing on 
                 providing high-quality concrete coatings for residential and commercial customers throughout Jacksonville 
                 and Northeast Florida. You can see examples of our craftsmanship in our 
-                <Link href="/portfolio" className="text-primary hover:text-primary/80 underline">project portfolio</Link>.
+                <Link href="/gallery" className="text-primary hover:text-primary/80 underline">project gallery</Link>.
               </p>
 
               <p>

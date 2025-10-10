@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero';
 import FAQSection from '@/components/sections/FAQSection';
 import TrustBadges from '@/components/sections/TrustBadges';
 import FlakeGallery from '@/components/sections/FlakeGallery';
+import ProcessSection from '@/components/sections/ProcessSection';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
 import { generateOpenGraphMetadata } from '@/utils/metadata';
@@ -162,7 +163,7 @@ export default function GarageFloorCoatingsPage() {
                 </p>
 
                 <p className="leading-relaxed">
-                  As Jacksonville's leading <Link href="/services" className="text-primary hover:text-primary/80 underline font-medium">epoxy and concrete coating specialists</Link>, we've transformed thousands of Jacksonville area garages throughout 
+                  As Jacksonville's leading epoxy and concrete coating specialists, we've transformed thousands of Jacksonville area garages throughout 
                   Northeast Florida, from downtown Jacksonville to Ponte Vedra to Orange Park. Every epoxy floor installation includes our comprehensive lifetime 
                   warranty because we know our garage floor epoxy systems will perform when traditional epoxy fails. Looking to coat other areas? We also specialize in 
                   <Link href="/services/pool-deck-coatings" className="text-primary hover:text-primary/80 underline font-medium"> Jacksonville pool deck coatings</Link> and 
@@ -358,6 +359,8 @@ export default function GarageFloorCoatingsPage() {
       </section>
 
       <TrustBadges />
+      
+      <ProcessSection />
       
       <FAQSection faqs={faqs} title="Garage Floor Coating Questions" />
 
