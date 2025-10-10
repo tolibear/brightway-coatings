@@ -5,6 +5,7 @@ import { businessInfo, ctaText } from '@/data/business';
 import { MapPin, Phone, Mail, Clock, CheckCircle, Shield, Award, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTransformation } from '@/contexts/TransformationContext';
+import { useModal } from '@/contexts/ModalContext';
 
 const finalBenefits = [
   "15 year warranty included",
@@ -17,6 +18,7 @@ const finalBenefits = [
 
 export default function Footer() {
   const { title, subtitle } = useTransformation();
+  const { openConsultationModal } = useModal();
   
   return (
     <footer className="bg-gray-900 text-white">
@@ -99,11 +101,9 @@ export default function Footer() {
                       variant="outline" 
                       size="lg" 
                       className="w-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900 text-lg py-6"
-                      asChild
+                      onClick={openConsultationModal}
                     >
-                      <Link href="/contact">
-                        Schedule Free Consultation <ArrowRight className="ml-3 h-5 w-5" />
-                      </Link>
+                      Schedule Free Consultation <ArrowRight className="ml-3 h-5 w-5" />
                     </Button>
                   </div>
                   

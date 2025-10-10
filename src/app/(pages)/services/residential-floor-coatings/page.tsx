@@ -77,7 +77,7 @@ const applications = [
   },
   {
     title: 'Walkways & Entryways',
-    description: 'Create welcoming, slip-resistant pathways that complement your home\'s exterior design.',
+    description: "Create welcoming, slip-resistant pathways that complement your home's exterior design.",
     features: ['Slip resistance', 'Decorative options', 'Weather durability', 'Professional appearance']
   }
 ];
@@ -97,19 +97,19 @@ const faqs = [
   },
   {
     question: 'Will the coating work in high-humidity areas like Florida?',
-    answer: 'Absolutely. Our system is specifically designed for Florida\'s climate. The non-porous surface prevents moisture absorption and resists mold and mildew growth.'
+    answer: "Absolutely. Our system is specifically designed for Florida's climate. The non-porous surface prevents moisture absorption and resists mold and mildew growth."
   },
   {
-    question: 'Can you match colors to my home\'s interior design?',
+    question: "Can you match colors to my home's interior design?",
     answer: 'We offer a wide range of solid colors and decorative flake systems. We can help you choose options that complement your existing décor and design preferences.'
   },
   {
     question: 'How long do residential coatings typically last?',
-    answer: 'With proper maintenance, our residential coatings last decades. We provide 15 year warranties because we\'re confident in the long-term performance of our polyaspartic systems.'
+    answer: "With proper maintenance, our residential coatings last decades. We provide 15 year warranties because we're confident in the long-term performance of our polyaspartic systems."
   },
   {
     question: 'Do you handle furniture and equipment moving?',
-    answer: 'We can help move lighter items, but large furniture and equipment should be removed before we arrive. We\'ll provide specific preparation instructions based on your project.'
+    answer: "We can help move lighter items, but large furniture and equipment should be removed before we arrive. We'll provide specific preparation instructions based on your project."
   }
 ];
 

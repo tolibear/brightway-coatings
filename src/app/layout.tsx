@@ -5,6 +5,10 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import StickyMobileCTA from "@/components/sections/StickyMobileCTA";
 import { TransformationProvider } from "@/contexts/TransformationContext";
+import { ModalProvider } from "@/contexts/ModalContext";
+import QuoteRequestModal from "@/components/modals/QuoteRequestModal";
+import ConsultationModal from "@/components/modals/ConsultationModal";
+import { GoogleAnalytics } from "@/components/Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +25,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
+      </head>
       <body className={inter.className}>
-        <TransformationProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <StickyMobileCTA />
-        </TransformationProvider>
+        <ModalProvider>
+          <TransformationProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <StickyMobileCTA />
+            <QuoteRequestModal />
+            <ConsultationModal />
+          </TransformationProvider>
+        </ModalProvider>
       </body>
     </html>
   );

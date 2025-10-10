@@ -47,20 +47,20 @@ export const ctaText = {
 export const heroVariations = [
   {
     id: 'current',
-    title: 'Jacksonville\'s Premium Concrete Transformation',
+    title: "Jacksonville's Premium Concrete Transformation",
     subtitle: 'Polyaspartic floor coatings that last a lifetime - installed in just one day',
-    description: 'Father-and-son craftsmanship meets modern coating technology. Transform garages, patios, and pool decks with surfaces built to endure Florida\'s toughest conditions.',
+    description: "Father-and-son craftsmanship meets modern coating technology. Transform garages, patios, and pool decks with surfaces built to endure Florida's toughest conditions.",
   },
   {
     id: 'speed-focused',
     title: 'Beautiful Floors in Just One Day',
-    subtitle: 'Jacksonville\'s fastest concrete coating installation with 15 year durability',
+    subtitle: "Jacksonville's fastest concrete coating installation with 15 year durability",
     description: 'Why wait weeks for a floor makeover? Our polyaspartic system transforms your garage, patio, or pool deck in a single day. Family-owned craftsmanship you can trust since 2024.',
   },
   {
     id: 'quality-focused', 
     title: 'Concrete Floors That Never Fail',
-    subtitle: 'Premium polyaspartic coatings engineered for Florida\'s harsh climate',
+    subtitle: "Premium polyaspartic coatings engineered for Florida's harsh climate",
     description: 'Forget about epoxy that chips and yellows. Our polyaspartic system delivers unmatched durability against heat, UV rays, and heavy traffic. Built right the first time.',
   },
   {

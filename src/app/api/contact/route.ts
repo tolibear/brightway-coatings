@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { Resend } from 'resend';
 import { businessInfo } from '@/data/business';
 
 // Contact form validation schema
@@ -10,6 +11,7 @@ const contactSchema = z.object({
   serviceType: z.string().min(1, 'Please select a service type'),
   projectSize: z.string().min(1, 'Please provide project size'),
   message: z.string().min(10, 'Please provide more details about your project'),
+  source: z.string().optional(), // Track if from modal or contact page
 });
 
 export async function POST(request: NextRequest) {
@@ -19,32 +21,65 @@ export async function POST(request: NextRequest) {
     // Validate the form data
     const validatedData = contactSchema.parse(body);
     
-    // In a production environment, you would:
-    // 1. Send email using a service like Resend, SendGrid, or Nodemailer
-    // 2. Store in database
-    // 3. Send to CRM
-    // 4. Set up webhook notifications
+    // Get source information
+    const userAgent = request.headers.get('user-agent') || 'unknown';
+    const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
+    const submissionSource = validatedData.source || 'contact_page';
     
-    // For now, we'll simulate successful submission
-    console.log('Contact form submission:', {
-      ...validatedData,
-      submittedAt: new Date().toISOString(),
-      userAgent: request.headers.get('user-agent'),
-      ip: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown',
-    });
-
-    // Simulate processing delay
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Send email notification
+    if (process.env.RESEND_API_KEY) {
+      try {
+        const resend = new Resend(process.env.RESEND_API_KEY);
+        await resend.emails.send({
+          from: 'Brightway Coatings Website <noreply@brightwaycoatings.com>',
+          to: [businessInfo.email],
+          replyTo: validatedData.email,
+          subject: `New ${submissionSource === 'quote_modal' ? 'Quote Request' : submissionSource === 'consultation_modal' ? 'Consultation Request' : 'Contact Form'}: ${validatedData.serviceType}`,
+          html: `
+            <h2>New Lead from Brightway Coatings Website</h2>
+            <p><strong>Source:</strong> ${submissionSource === 'quote_modal' ? 'Quick Quote Modal' : submissionSource === 'consultation_modal' ? 'Consultation Modal' : 'Contact Page Form'}</p>
+            <hr />
+            <h3>Contact Information</h3>
+            <p><strong>Name:</strong> ${validatedData.name}</p>
+            <p><strong>Email:</strong> <a href="mailto:${validatedData.email}">${validatedData.email}</a></p>
+            <p><strong>Phone:</strong> <a href="tel:${validatedData.phone}">${validatedData.phone}</a></p>
+            
+            <h3>Project Details</h3>
+            <p><strong>Service Type:</strong> ${validatedData.serviceType}</p>
+            <p><strong>Project Size:</strong> ${validatedData.projectSize}</p>
+            <p><strong>Message:</strong></p>
+            <p>${validatedData.message.replace(/\n/g, '<br>')}</p>
+            
+            <hr />
+            <p><small>Submitted: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })} EST</small></p>
+            <p><small>IP: ${ip}</small></p>
+            <p><small>User Agent: ${userAgent}</small></p>
+          `,
+        });
+      } catch (emailError) {
+        console.error('Failed to send email:', emailError);
+        // Don't fail the request if email fails, just log it
+      }
+    } else {
+      // Log to console if no Resend API key (development mode)
+      console.log('📧 Contact form submission (no Resend API key):', {
+        ...validatedData,
+        submittedAt: new Date().toISOString(),
+        source: submissionSource,
+        userAgent,
+        ip,
+      });
+    }
 
     // Send success response
     return NextResponse.json({
       success: true,
-      message: 'Thank you for your inquiry! We\'ll respond within 2 hours.',
+      message: "Thank you for your inquiry! We'll respond within 24 hours.",
       data: {
         submissionId: `BW${Date.now()}`,
-        estimatedResponse: '2 hours',
+        estimatedResponse: '24 hours',
         nextSteps: [
-          'We\'ll review your project details',
+          "We'll review your project details",
           'Contact you via phone or email',
           'Schedule your free on-site consultation'
         ]

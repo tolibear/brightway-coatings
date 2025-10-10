@@ -32,12 +32,12 @@ const warrantyFeatures: WarrantyFeature[] = [
   {
     icon: Users,
     title: 'Local Guarantee',
-    description: 'Family business rooted in St. Johns County - we\'ll be here to honor our warranty commitments',
+    description: "Family business rooted in St. Johns County - we'll be here to honor our warranty commitments",
   },
   {
     icon: Star,
     title: 'Performance Promise',
-    description: 'If your floors don\'t exceed expectations, we make it right - no questions asked',
+    description: "If your floors don't exceed expectations, we make it right - no questions asked",
   },
 ];
 

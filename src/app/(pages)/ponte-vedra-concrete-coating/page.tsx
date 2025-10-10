@@ -9,10 +9,10 @@ import BeforeAfterGallery from '@/components/sections/BeforeAfterGallery';
 import StructuredData from '@/components/SEO/StructuredData';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
-import { ctaText, businessInfo } from '@/data/business';
+import { businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { MapPin, Phone, Clock, Star, CheckCircle, Users, Waves } from 'lucide-react';
+import { Phone, Clock, CheckCircle, Waves } from 'lucide-react';
 import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
@@ -37,10 +37,10 @@ const ponteVedraAreas = [
 ];
 
 const localStats = {
-  projectsCompleted: '98%',
-  yearsInPonteVedra: '5+',
-  averageRating: '15 Yr',
-  avgHomeValue: 'Licensed'
+  experienceYears: '30+',
+  coatingsExpertise: '5+',
+  warranty: '15 Yr',
+  licensed: 'FL Licensed'
 };
 
 export default function PonteVedraCoatingPage() {
@@ -96,10 +96,10 @@ export default function PonteVedraCoatingPage() {
                   </p>
                   
                   <p className="leading-relaxed text-gray-700">
-                    For over 15 years, Ponte Vedra's most discerning homeowners have trusted Brightway Coatings to protect 
-                    and enhance their significant investments. Our premium polyaspartic systems are specifically formulated 
-                    to excel in the coastal environment - resisting salt air corrosion, UV degradation, and the thermal 
-                    cycling that destroys inferior epoxy coatings.
+                    Backed by 30+ years of home service expertise and 5+ years of specialized coatings experience, 
+                    Brightway Coatings delivers the premium results Ponte Vedra's discerning homeowners expect. 
+                    Our polyaspartic systems are specifically formulated to excel in the coastal environment - 
+                    resisting salt air corrosion, UV degradation, and the thermal cycling that destroys inferior epoxy coatings.
                   </p>
 
                   <p className="leading-relaxed text-gray-700">
@@ -215,20 +215,20 @@ export default function PonteVedraCoatingPage() {
                       
                       <div className="grid grid-cols-2 gap-4 mb-6">
                         <div>
-                          <div className="text-2xl font-bold text-primary">{localStats.projectsCompleted}</div>
-                          <div className="text-sm text-primary/80">Luxury Projects</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.experienceYears}</div>
+                          <div className="text-sm text-primary/80">Years Home Service</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-primary">{localStats.yearsInPonteVedra}</div>
-                          <div className="text-sm text-primary/80">Years in Ponte Vedra</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.coatingsExpertise}</div>
+                          <div className="text-sm text-primary/80">Coatings Expertise</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-primary">{localStats.averageRating}</div>
-                          <div className="text-sm text-primary/80">Client Rating</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.warranty}</div>
+                          <div className="text-sm text-primary/80">Warranty</div>
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-primary">{localStats.avgHomeValue}</div>
-                          <div className="text-sm text-primary/80">Avg Home Value</div>
+                          <div className="text-2xl font-bold text-primary">{localStats.licensed}</div>
+                          <div className="text-sm text-primary/80">Contractor Status</div>
                         </div>
                       </div>
 

@@ -271,14 +271,10 @@ export default function TestimonialsSection() {
         
         {/* Trust Indicators */}
         <div className="text-center bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-100">
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-1">98%</div>
-              <div className="text-sm text-gray-600">Customer Satisfaction Rate</div>
-            </div>
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-1">500+</div>
-              <div className="text-sm text-gray-600">Northeast Florida Installations</div>
+              <div className="text-sm text-gray-600">Projects Serviced</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary mb-1">30+</div>

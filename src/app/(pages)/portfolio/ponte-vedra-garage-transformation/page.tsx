@@ -5,7 +5,7 @@ import TrustBadges from '@/components/sections/TrustBadges';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData } from '@/utils/seo';
-import { ctaText, businessInfo } from '@/data/business';
+import { businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Calendar, Square, Clock, CheckCircle, ArrowLeft } from 'lucide-react';
@@ -35,7 +35,7 @@ const projectDetails = {
     'Non-slip additives'
   ],
   beforeDescription: 'Heavily stained concrete with multiple oil stains, surface cracks, and years of wear from vehicle traffic. The homeowners were embarrassed to have their garage door open.',
-  afterDescription: 'Stunning transformation with a modern charcoal and silver flake system that complements the home\'s contemporary architecture. The surface is now oil-resistant and easy to maintain.',
+  afterDescription: "Stunning transformation with a modern charcoal and silver flake system that complements the home's contemporary architecture. The surface is now oil-resistant and easy to maintain.",
   testimonial: {
     quote: "We couldn't be happier with the results. Our garage went from being an eyesore to the most beautiful part of our home. The one-day installation was incredible - we parked our cars that same evening!",
     author: "Sarah Johnson",

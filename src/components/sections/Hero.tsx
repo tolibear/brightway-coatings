@@ -1,6 +1,8 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { businessInfo, ctaText } from '@/data/business';
-import ImagePlaceholder from '@/components/ui/image-placeholder';
+import { useModal } from '@/contexts/ModalContext';
 
 interface HeroProps {
   title: string;
@@ -25,6 +27,8 @@ export default function Hero({
   ctaPrimary = ctaText.primary,
   ctaSecondary = ctaText.secondary,
 }: HeroProps) {
+  const { openQuoteModal } = useModal();
+  
   return (
     <section className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white -mt-16 pt-16">
       {showVideo && (
@@ -86,7 +90,7 @@ export default function Hero({
               )}
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Button onClick={openQuoteModal} size="lg" className="bg-primary hover:bg-primary/90">
                   {ctaPrimary}
                 </Button>
                 <Button 
@@ -145,7 +149,7 @@ export default function Hero({
             )}
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Button onClick={openQuoteModal} size="lg" className="bg-primary hover:bg-primary/90">
                 {ctaPrimary}
               </Button>
               <Button 

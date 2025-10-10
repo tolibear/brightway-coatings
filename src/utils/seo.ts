@@ -101,7 +101,7 @@ export function generateLocalBusinessStructuredData() {
         name: 'Florida',
       },
     })),
-    description: 'Family-owned concrete coating experts specializing in polyaspartic floor systems. Licensed, insured, and serving Jacksonville area for 30+ years.',
+    description: 'Family-owned concrete coating experts specializing in polyaspartic floor systems. Licensed, insured, backed by 30+ years home service experience, founded 2024.',
     priceRange: '$$',
     paymentAccepted: 'Cash, Check, Credit Card',
   };

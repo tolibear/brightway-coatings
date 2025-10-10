@@ -4,6 +4,7 @@ import Hero from '@/components/sections/Hero';
 import TrustBadges from '@/components/sections/TrustBadges';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
+import { generateOpenGraphMetadata } from '@/utils/metadata';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Users, Award, Shield, Clock, Home } from 'lucide-react';
@@ -11,8 +12,14 @@ import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'About | Family-Owned Concrete Coatings Jacksonville',
-  description: 'Meet the family behind Jacksonville\'s premier concrete coating company. 30+ years home service experience, 5+ years coatings expertise, licensed and insured, serving St. Johns County with pride.',
+  description: "Meet the family behind Jacksonville's premier concrete coating company. 30+ years home service experience, 5+ years coatings expertise, licensed and insured, serving St. Johns County with pride.",
   keywords: ['about Brightway Coatings', 'family concrete coating business Jacksonville', 'Paul and Tim Brightway owners', 'St Johns concrete contractors', 'family business FL'],
+  ...generateOpenGraphMetadata({
+    title: 'About Brightway Coatings | Father & Son Jacksonville Coating Team',
+    description: "Meet Paul and Tim, the family behind Jacksonville's premier concrete coating company. 30+ years experience, licensed, insured. Serving St. Johns County with pride.",
+    url: '/about',
+    image: '/images/Home Page/tim-and-paul.png',
+  }),
 };
 
 const familyValues = [
@@ -67,7 +74,7 @@ const milestones = [
   {
     year: 'Today',
     title: 'Third Generation American',
-    description: 'Paul has the privilege of working alongside his son, Tim, in the same way he once worked with his father. At Brightway Coatings, we\'re more than just a business, we\'re a family.'
+    description: "Paul has the privilege of working alongside his son, Tim, in the same way he once worked with his father. At Brightway Coatings, we're more than just a business, we're a family."
   }
 ];
 
@@ -289,7 +296,7 @@ export default function AboutPage() {
               <p className="font-semibold text-lg">- Paul & Tim, Brightway Coatings</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">30+</div>
                 <div className="text-gray-600">Years Home Service Experience</div>
@@ -297,10 +304,6 @@ export default function AboutPage() {
               <div>
                 <div className="text-4xl font-bold text-primary mb-2">5+</div>
                 <div className="text-gray-600">Years Coatings Expertise</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">98%</div>
-                <div className="text-gray-600">Customer Satisfaction Rate</div>
               </div>
             </div>
 

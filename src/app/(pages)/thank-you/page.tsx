@@ -8,7 +8,7 @@ import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Thank You | Contact Received - Brightway Coatings',
-  description: 'Thank you for contacting Brightway Coatings. We\'ll respond within 24 hours with your free quote and next steps.',
+  description: "Thank you for contacting Brightway Coatings. We'll respond within 24 hours with your free quote and next steps.",
   robots: 'noindex, follow', // Prevent indexing of thank you pages
 };
 
@@ -22,7 +22,7 @@ const nextSteps = [
   {
     icon: Calendar,
     title: 'Free On-Site Consultation',
-    description: 'We\'ll visit your property to assess the surfaces, show samples, and provide an accurate quote with no hidden fees.',
+    description: "We'll visit your property to assess the surfaces, show samples, and provide an accurate quote with no hidden fees.",
     timeline: '2-3 days',
   },
   {
@@ -34,7 +34,7 @@ const nextSteps = [
   {
     icon: Shield,
     title: 'Installation Scheduling',
-    description: 'Once approved, we\'ll schedule your installation typically within 1-2 weeks, with most jobs completed in one day.',
+    description: "Once approved, we'll schedule your installation typically within 1-2 weeks, with most jobs completed in one day.",
     timeline: '1-2 weeks',
   },
 ];
@@ -207,7 +207,7 @@ export default function ThankYouPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Why Jacksonville Families Trust Brightway
               </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              <div className="grid grid-cols-3 gap-4 mb-6">
                 <div>
                   <div className="text-2xl font-bold text-primary">30+</div>
                   <div className="text-sm text-gray-600">Years Home Service</div>
@@ -215,10 +215,6 @@ export default function ThankYouPage() {
                 <div>
                   <div className="text-2xl font-bold text-primary">5+</div>
                   <div className="text-sm text-gray-600">Years Coatings</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-primary">98%</div>
-                  <div className="text-sm text-gray-600">Satisfaction Rate</div>
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-primary">15 Yr</div>

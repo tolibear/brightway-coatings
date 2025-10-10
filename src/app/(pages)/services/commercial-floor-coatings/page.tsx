@@ -85,7 +85,7 @@ const industries = [
 const faqs = [
   {
     question: 'Can your coatings handle forklift and heavy equipment traffic?',
-    answer: 'Yes. Our commercial-grade coating systems are specifically engineered for heavy traffic loads. We\'ve coated warehouses with constant forklift traffic, loading docks with pallet jack use, and manufacturing floors with heavy machinery.'
+    answer: "Yes. Our commercial-grade coating systems are specifically engineered for heavy traffic loads. We've coated warehouses with constant forklift traffic, loading docks with pallet jack use, and manufacturing floors with heavy machinery."
   },
   {
     question: 'How do you minimize disruption to business operations?',
@@ -93,7 +93,7 @@ const faqs = [
   },
   {
     question: 'Do you provide different slip-resistance levels for different areas?',
-    answer: 'Absolutely. We customize slip resistance based on each area\'s specific needs - smooth finishes for easy cleaning in some areas, textured surfaces for safety in others. We meet OSHA requirements for workplace safety.'
+    answer: "Absolutely. We customize slip resistance based on each area's specific needs - smooth finishes for easy cleaning in some areas, textured surfaces for safety in others. We meet OSHA requirements for workplace safety."
   },
   {
     question: 'What chemicals can the coating resist?',

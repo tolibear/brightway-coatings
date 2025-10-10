@@ -6,6 +6,7 @@ import TrustBadges from '@/components/sections/TrustBadges';
 import FlakeGallery from '@/components/sections/FlakeGallery';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData, generateFAQStructuredData } from '@/utils/seo';
+import { generateOpenGraphMetadata } from '@/utils/metadata';
 import { ctaText, businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Shield, Clock, Star, Award, Users } from 'lucide-react';
@@ -13,8 +14,13 @@ import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {
   title: 'Garage Floor Concrete Coating Jacksonville FL | Brightway Coatings',
-  description: 'Jacksonville\'s premier garage floor concrete coatings. Premium polyurea and polyaspartic systems. Oil resistant, no hot tire pickup, 15 year warranty. Licensed family business since 2024.',
+  description: "Jacksonville's premier garage floor concrete coatings. Premium polyurea and polyaspartic systems. Oil resistant, no hot tire pickup, 15 year warranty. Licensed family business.",
   keywords: ['garage floor coating Jacksonville', 'concrete coating Jacksonville', 'garage floor polyurea Jacksonville', 'polyaspartic garage floors Jacksonville', 'garage flooring Jacksonville FL'],
+  ...generateOpenGraphMetadata({
+    title: 'Garage Floor Coatings Jacksonville FL | Brightway Coatings',
+    description: 'Transform your garage with professional polyaspartic floor coatings. Oil resistant, no hot tire pickup, 15-year warranty. 1-day installation. Free quotes.',
+    url: '/services/garage-floor-coatings',
+  }),
 };
 
 const benefits = [
@@ -31,7 +37,7 @@ const benefits = [
   {
     icon: Star,
     title: 'No Hot Tire Pickup',
-    description: 'Unlike epoxy, polyaspartic won\'t peel or stick to hot tires from summer driving.'
+    description: "Unlike epoxy, polyaspartic won't peel or stick to hot tires from summer driving."
   },
   {
     icon: Award,
@@ -80,10 +86,10 @@ const faqs = [
   },
   {
     question: 'Will the coating peel up from hot tires like epoxy does?',
-    answer: 'No. This is one of the biggest advantages of polyaspartic over polyurea. Our polyaspartic system has excellent heat resistance and will not soften or peel from hot tires, even during Florida\'s hottest summer days.'
+    answer: "No. This is one of the biggest advantages of polyaspartic over polyurea. Our polyaspartic system has excellent heat resistance and will not soften or peel from hot tires, even during Florida's hottest summer days."
   },
   {
-    question: 'Can you coat over existing epoxy that\'s failing?',
+    question: "Can you coat over existing epoxy that's failing?",
     answer: 'Absolutely not. Every coating we install must be poured on fresh ground concrete. If there are any previous failed epoxy coatings we make sure to professionally remove them and continue with our grind prep.'
   },
   {
@@ -92,7 +98,7 @@ const faqs = [
   },
   {
     question: 'How do I choose decorative flake colors?',
-    answer: 'We bring sample boards showing popular flake combinations that work well with different home styles. Many customers choose neutral blends that complement their home\'s exterior or go with bold colors that hide dirt and tire marks.'
+    answer: "We bring sample boards showing popular flake combinations that work well with different home styles. Many customers choose neutral blends that complement their home's exterior or go with bold colors that hide dirt and tire marks."
   },
   {
     question: 'Is the coating slippery when wet?',

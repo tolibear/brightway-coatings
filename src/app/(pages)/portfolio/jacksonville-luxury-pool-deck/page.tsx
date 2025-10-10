@@ -5,7 +5,7 @@ import TrustBadges from '@/components/sections/TrustBadges';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import StructuredData from '@/components/SEO/StructuredData';
 import { generateServiceStructuredData } from '@/utils/seo';
-import { ctaText, businessInfo } from '@/data/business';
+import { businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Calendar, Square, Clock, CheckCircle, ArrowLeft, Thermometer } from 'lucide-react';

@@ -1,4 +1,6 @@
-import { Metadata } from 'next';
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import Hero from '@/components/sections/Hero';
 import TrustBadges from '@/components/sections/TrustBadges';
@@ -10,12 +12,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { MapPin, Calendar, Square, ArrowRight } from 'lucide-react';
 import TransformationSetter from '@/components/TransformationSetter';
-
-export const metadata: Metadata = {
-  title: 'Portfolio | Brightway Coatings Jacksonville FL',
-  description: 'See stunning before and after photos of garage floors, pool decks, patios, and commercial concrete coatings by Brightway Coatings in Jacksonville, FL.',
-  keywords: ['concrete coating portfolio Jacksonville', 'garage floor before after', 'pool deck coatings gallery', 'patio coating photos', 'Brightway Coatings projects'],
-};
 
 // Real project data based on actual completed projects
 const portfolioProjects = [
@@ -218,7 +214,7 @@ const portfolioProjects = [
     date: '2024',
     category: 'Garage',
     size: '550 sq ft',
-    description: 'Contemporary garage makeover with clean lines and modern aesthetic. Transform your garage into a space you\'re proud to show off.',
+    description: "Contemporary garage makeover with clean lines and modern aesthetic. Transform your garage into a space you're proud to show off.",
     mainImage: '/images/Portfolio/Modern garage transformation /modern-garage-transformation--1.jpg',
     imageGallery: [
       '/images/Portfolio/Modern garage transformation /modern-garage-transformation--1.jpg',
@@ -249,6 +245,22 @@ const portfolioProjects = [
 const categories = ['All', 'Garage', 'Pool Deck', 'Patio', 'Commercial', 'Residential'];
 
 export default function PortfolioPage() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [visibleProjects, setVisibleProjects] = useState(12);
+
+  // Filter projects based on selected category
+  const filteredProjects = selectedCategory === 'All' 
+    ? portfolioProjects 
+    : portfolioProjects.filter(project => project.category === selectedCategory);
+
+  // Projects to display (for "Load More" functionality)
+  const displayedProjects = filteredProjects.slice(0, visibleProjects);
+  const hasMore = visibleProjects < filteredProjects.length;
+
+  const loadMore = () => {
+    setVisibleProjects(prev => Math.min(prev + 6, filteredProjects.length));
+  };
+
   return (
     <>
       <TransformationSetter 
@@ -280,7 +292,7 @@ export default function PortfolioPage() {
               attention to detail and commitment to excellence to every job.
             </p>
             
-            <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">30+</div>
                 <div className="text-gray-600">Years Home Service</div>
@@ -288,10 +300,6 @@ export default function PortfolioPage() {
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">5+</div>
                 <div className="text-gray-600">Years Coatings Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">98%</div>
-                <div className="text-gray-600">Customer Satisfaction</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">2024</div>
@@ -310,18 +318,36 @@ export default function PortfolioPage() {
               Featured Project Gallery
             </h2>
 
-            {/* Category Filter - For future implementation */}
+            {/* Category Filter */}
             <div className="flex flex-wrap justify-center gap-2 mb-12">
               {categories.map((category) => (
-                <Badge key={category} variant="outline" className="px-4 py-2 cursor-pointer hover:bg-primary/5">
+                <Badge 
+                  key={category} 
+                  variant={selectedCategory === category ? "default" : "outline"}
+                  className={`px-4 py-2 cursor-pointer transition-colors ${
+                    selectedCategory === category 
+                      ? 'bg-primary text-white hover:bg-primary/90' 
+                      : 'hover:bg-primary/5'
+                  }`}
+                  onClick={() => {
+                    setSelectedCategory(category);
+                    setVisibleProjects(12); // Reset visible count when changing filter
+                  }}
+                >
                   {category}
                 </Badge>
               ))}
             </div>
+            
+            {/* Results count */}
+            <div className="text-center text-gray-600 mb-8">
+              Showing {displayedProjects.length} of {filteredProjects.length} projects
+              {selectedCategory !== 'All' && ` in ${selectedCategory}`}
+            </div>
 
             {/* Project Grid */}
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-              {portfolioProjects.map((project) => (
+              {displayedProjects.map((project) => (
                 <Card key={project.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="relative">
                     {/* Real project image */}
@@ -388,12 +414,19 @@ export default function PortfolioPage() {
               ))}
             </div>
 
-            {/* Load More Button - For future implementation */}
-            <div className="text-center mt-12">
-              <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors">
-                View More Projects
-              </button>
-            </div>
+            {/* Load More Button */}
+            {hasMore && (
+              <div className="text-center mt-16">
+                <Button 
+                  onClick={loadMore}
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90"
+                >
+                  Load More Projects ({filteredProjects.length - visibleProjects} remaining)
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </div>
+            )}
           </div>
         </div>
       </section>

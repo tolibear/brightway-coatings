@@ -20,7 +20,7 @@ const benefits = [
   {
     icon: Sun,
     title: 'UV Stable Formula',
-    description: 'Won\'t yellow, fade, or chalk under Florida\'s intense sun. Maintains color and clarity for decades.'
+    description: "Won't yellow, fade, or chalk under Florida's intense sun. Maintains color and clarity for decades."
   },
   {
     icon: Droplets,
@@ -87,7 +87,7 @@ const faqs = [
   },
   {
     question: 'How does the coating handle Florida weather extremes?',
-    answer: 'Our polyaspartic system is engineered for Florida\'s climate. It handles temperature swings, humidity, torrential rains, and UV exposure without cracking, peeling, or deteriorating.'
+    answer: "Our polyaspartic system is engineered for Florida's climate. It handles temperature swings, humidity, torrential rains, and UV exposure without cracking, peeling, or deteriorating."
   },
   {
     question: 'What color and design options are available?',

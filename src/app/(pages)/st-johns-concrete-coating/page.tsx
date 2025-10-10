@@ -9,10 +9,10 @@ import BeforeAfterGallery from '@/components/sections/BeforeAfterGallery';
 import StructuredData from '@/components/SEO/StructuredData';
 import ImagePlaceholder from '@/components/ui/image-placeholder';
 import { generateLocalBusinessStructuredData } from '@/utils/seo';
-import { ctaText, businessInfo } from '@/data/business';
+import { businessInfo } from '@/data/business';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { MapPin, Phone, Clock, Star, CheckCircle, Users, Home } from 'lucide-react';
+import { Clock, CheckCircle, Home, MapPin } from 'lucide-react';
 import TransformationSetter from '@/components/TransformationSetter';
 
 export const metadata: Metadata = {

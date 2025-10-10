@@ -36,7 +36,7 @@ const benefits = [
   {
     icon: Footprints,
     title: 'Bare-Foot Comfortable',
-    description: 'Smooth, splinter-free surface that\'s comfortable to walk on while providing necessary traction.'
+    description: "Smooth, splinter-free surface that's comfortable to walk on while providing necessary traction."
   },
   {
     icon: Star,

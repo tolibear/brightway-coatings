@@ -29,7 +29,7 @@ const services = [
     title: 'Patio Coatings',
     description: 'Create stunning outdoor living spaces with UV-resistant coatings that handle Florida sun and weather. Perfect for entertaining and relaxation.',
     features: [
-      'UV stable - won\'t yellow or fade',
+      "UV stable - won't yellow or fade",
       'Slip-resistant texture options',
       'Weather resistant in all conditions',
       'Easy to clean and maintain',
@@ -51,7 +51,7 @@ const services = [
   },
   {
     title: 'Residential Floor Coatings',
-    description: 'Transform your home\'s concrete surfaces - whether in basements, workshops, or living areas - into durable, stylish spaces built to last. Our industrial-grade coatings lock out humidity and create sleek, easy to clean finishes.',
+    description: "Transform your home's concrete surfaces - whether in basements, workshops, or living areas - into durable, stylish spaces built to last. Our industrial-grade coatings lock out humidity and create sleek, easy to clean finishes.",
     features: [
       'Interior and exterior applications',
       'Moisture barrier protection',
